@@ -1,12 +1,12 @@
 ! Title: 📛 Heokyde List
 ! Homepage: 
 ! License: MIT
-! Last modified: 27 February 2024
+! Last modified: 26 February 2024
 ! Expires: 7 days
-! Description: Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs. Annoyances elements, such as pop-up ads, cookie notifications, etc.
+! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs. Annoyances elements, such as pop-up ads, cookie notifications, etc.
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
-! Список блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
+! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
 
 ! Yandex LLC
