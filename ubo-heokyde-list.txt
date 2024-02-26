@@ -1,4 +1,4 @@
-! Title: 📛📌🔐 Heokyde List
+! Title: 🔐 Heokyde List
 ! Homepage: 
 ! License: MIT
 ! Last modified: 26 February 2024
