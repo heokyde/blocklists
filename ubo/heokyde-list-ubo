@@ -236,7 +236,7 @@ vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout
 
 ! Gazprom Media
 ||rutube.ru^$domain=2ch.hk|2ch.life
-||log.rutube.ru^
+||log.rutube.ru^$all
 ||static.rutube.ru/static/lotties/gazprom.json$script
 rutube.ru##.app-download-default-banner-module__appDownloadPopup
 rutube.ru##.freyja_char-popup
@@ -249,13 +249,11 @@ rutube.ru##aside
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
 ||dmp.sbermarketing.ru^$all
-||s16376.cdn.ngenix.net^$3p
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
-||stories-res-web.online.sberbank.ru^$3p
 ||sve.online.sberbank.ru^$domain=2gis.ru
-||svi.online.sberbank.ru^
-||visor.sberbank.ru^
+||svi.online.sberbank.ru^$all
+||visor.sberbank.ru^$all
 sbermarket.ru##.ShowJsPlacement_rootInvisible__Gn4zZ.ShowJsPlacement_bannerMainHeader__luUR5.ShowJsPlacement_root__nZt1b
 sbermarket.ru##.BannerResize_root__f2tiI
 id.sber.ru##.eli1ri2.css-1optnd4
@@ -266,22 +264,22 @@ fusionbrain.ai##.styles_visible__5L2Yv.styles_wrap__erzrS
 ! Rambler Media Group
 ||rambler.ru^$domain=livejournal.com|lenta.ru
 ||rambler.ru/*counters
-||counter.rambler.ru^
-||csp.rambler-co.ru^$3p
+||counter.rambler.ru^$all
+||csp.rambler-co.ru^$all
 ||dsp-rambler.ru^$all
-||err.rambler.ru^
-||hlsvod.rambler.eaglecdn.com^$3p
+||err.rambler.ru^$all
+||hlsvod.rambler.eaglecdn.com^$all
 ||kraken.rambler.ru^$all
-||loyalty.rambler-co.ru^$3p
+||loyalty.rambler-co.ru^$all
 ||rcmjs.rambler.ru^$all
-||rcounter.rambler.ru^
-||scounter.rambler.ru^
+||rcounter.rambler.ru^$all
+||scounter.rambler.ru^$all
 ||sentry-saas.rambler-co.ru^$all
-||ssp.rambler.ru^$3p
-||sync.rambler.ru^$3p
+||ssp.rambler.ru^$all
+||sync.rambler.ru^$all
 ||top100.ru^$all
 ||trafffgen.rambler.ru^$all
-||xc3.services.livejournal.com$3p
+||xc3.services.livejournal.com$all
 !||zoomdecorate.rambler.ru^
 www.rambler.ru##.r-ll68yvTX
 www.rambler.ru##.r-phyRqcrl
@@ -311,9 +309,9 @@ www.livejournal.com##.b-discoverytimes-container
 ||p.ozon.ru^$all
 ||sentry.ozon.ru^$all
 ||wstat.ozon.ru^$all
-||xapi.ozon.ru$3p
-||track.price.ru^
-||sentry.price-co.ru^
+||xapi.ozon.ru$all
+||track.price.ru^$all
+||sentry.price-co.ru^$all
 ||banners-website.wildberries.ru^$xhr
 ||main-page.wildberries.ru/*site-recommendation$xhr
 ||price.ru/*ConfirmationCookie*$stylesheet
@@ -329,8 +327,8 @@ www.ozon.ru##div.gj4:nth-of-type(10)
 ||bihunekus.com/87018.js$script
 ||cdn.sib.fm/storage/banner*$all
 ||78.ru^$3p
-||a.pikabu.ru^
-||a.ria.ru^$3p
+||a.pikabu.ru^$all
+||a.ria.ru^$all
 ||ad.smi-press.ru^$all
 ||analytics.e1.ru^$all
 ||analytics.fontanka.ru^$all
