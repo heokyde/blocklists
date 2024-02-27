@@ -1042,6 +1042,9 @@ xhcdn.com/promo$image
 ###popupOverlay
 ###popupTool
 ###privacy-consent
+###privacy-popup-container
+###reg-overlay
+###share-overlay
 ###shortpixel-cookies
 ##.-cookies.popup-box
 ##.-pro.popup-box
@@ -1065,6 +1068,7 @@ xhcdn.com/promo$image
 ##.StyledCookiesConsent
 ##.abm-purple-back.use-cookie-message
 ##.ad
+##.ad-container
 ##.ad-mark
 ##.ad-mark__info
 ##.ad-mark__mark
@@ -1073,6 +1077,7 @@ xhcdn.com/promo$image
 ##.ad_banner_example
 ##.adsbytrafficjunky
 ##.agreement-cookies-wrap
+##.android-smart-banner
 ##.auth-popup-feed-trigger
 ##.banner
 ##.banner-placement
@@ -1137,6 +1142,7 @@ xhcdn.com/promo$image
 ##.cookies__button
 ##.cookies__panel__open.cookies__panel
 ##.cookies_policy_wrap
+##.cookinfo
 ##.direct-close-block__close-popup-disclaimer
 ##.direct-close-block__confirm-popup
 ##.direct-close-block__confirm-popup-content
@@ -1150,6 +1156,7 @@ xhcdn.com/promo$image
 ##.header-promo-place
 ##.js-cookie
 ##.js-cookies-banner.cookies
+##.js-elevatePostActions
 ##.js-notif-cookies.notification--cookies.notification
 ##.js-submit
 ##.layout__cookies-policy-notification
@@ -1188,6 +1195,7 @@ xhcdn.com/promo$image
 ##.sites-cookie
 ##.sites-cookie-notice
 ##.sites-cookie-notice-fit
+##.social-with-popup
 ##.socialSnackbar_paper__LT8Ax
 ##.suggest_push.suggest
 ##.tg-popup
