@@ -385,26 +385,6 @@ www.fontanka.ru##.RDf
 www.forbes.ru##.W\+Jq9.tRQHu
 www.hibiny.ru##.up-pek-top
 www.kommersant.ru##div.layout:nth-of-type(4)
-www.kp.ru##.bnzPif.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.cHvXfY.sc-pvrlgu-0 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.cejnAg.sc-1a8tb7h-1
-www.kp.ru##.dA-Djkl.sc-1izj9yl-1
-www.kp.ru##.deZCrb.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.eAYZlj.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.eKtFHr.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.egzEwa.sc-1a8tb7h-0
-www.kp.ru##.fVtHwT.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.gGprEn.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.gISVaf.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.gLbHrX.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.gPUJhz.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.gkbLPr.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.iBXWcn.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##.jMQzKe.sc-p3c2r3-10
-www.kp.ru##.jTdUlJ.sc-1a8tb7h-1.fBAWDD.sc-1j1ncyf-0
-www.kp.ru##.jqUWZz.sc-1j1ncyf-0 > .ebqiAK.sc-1j1ncyf-1 > .bwGVzz.sc-10r6yic-0.hSknpe.sc-1ktpw9t-0 > .gATzXn.sc-1ktpw9t-1 > .hRyybV.sc-1a8tb7h-0
-www.kp.ru##div#adwrap.bTWuFS.sc-1tmrjox-0.hRyybV.sc-1a8tb7h-0:nth-of-type(5)
-www.kp.ru##div#adwrap.bTWuFS.sc-1tmrjox-0.hRyybV.sc-1a8tb7h-0:nth-of-type(7)
 www.m24.ru##.b-home-main > .container2 > .columns2 > .columns2-right
 www.m24.ru##.b-home-rubrics > .container2 > .columns2 > .columns2-right
 www.m24.ru##.g-clearfix.b-header-adv-stripe
@@ -1042,9 +1022,6 @@ xhcdn.com/promo$image
 ###popupOverlay
 ###popupTool
 ###privacy-consent
-###privacy-popup-container
-###reg-overlay
-###share-overlay
 ###shortpixel-cookies
 ##.-cookies.popup-box
 ##.-pro.popup-box
@@ -1068,7 +1045,6 @@ xhcdn.com/promo$image
 ##.StyledCookiesConsent
 ##.abm-purple-back.use-cookie-message
 ##.ad
-##.ad-container
 ##.ad-mark
 ##.ad-mark__info
 ##.ad-mark__mark
@@ -1077,7 +1053,6 @@ xhcdn.com/promo$image
 ##.ad_banner_example
 ##.adsbytrafficjunky
 ##.agreement-cookies-wrap
-##.android-smart-banner
 ##.auth-popup-feed-trigger
 ##.banner
 ##.banner-placement
@@ -1142,7 +1117,6 @@ xhcdn.com/promo$image
 ##.cookies__button
 ##.cookies__panel__open.cookies__panel
 ##.cookies_policy_wrap
-##.cookinfo
 ##.direct-close-block__close-popup-disclaimer
 ##.direct-close-block__confirm-popup
 ##.direct-close-block__confirm-popup-content
@@ -1156,7 +1130,6 @@ xhcdn.com/promo$image
 ##.header-promo-place
 ##.js-cookie
 ##.js-cookies-banner.cookies
-##.js-elevatePostActions
 ##.js-notif-cookies.notification--cookies.notification
 ##.js-submit
 ##.layout__cookies-policy-notification
@@ -1195,7 +1168,6 @@ xhcdn.com/promo$image
 ##.sites-cookie
 ##.sites-cookie-notice
 ##.sites-cookie-notice-fit
-##.social-with-popup
 ##.socialSnackbar_paper__LT8Ax
 ##.suggest_push.suggest
 ##.tg-popup
