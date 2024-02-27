@@ -919,12 +919,12 @@ www.glasswire.com##.window
 www.glasswire.com##.news-ribbon
 
 ! hoster.ru
+hoster.ru##.bg-white.md\:mb-10.mb-5.lg\:mt-15.md\:mt-10.mt-5 > .container
 hoster.ru##.disclaimer
-hoster.ru##.header
+hoster.ru##.eviXIf.sc-fMiknA
 hoster.ru##.footer__bottom
 hoster.ru##.footer__top
-hoster.ru##.bg-white.md\:mb-10.mb-5.lg\:mt-15.md\:mt-10.mt-5 > .container
-hoster.ru##.eviXIf.sc-fMiknA
+hoster.ru##.header
 
 ! cp.wowcircle.net
 ||dscord.com^$domain=cp.wowcircle.net
@@ -936,8 +936,8 @@ cp.wowcircle.net##.flex-sbc.footer
 cp.wowcircle.net##[src="https://wowcircle.net/images/corner_tbc.png"]
 
 ! funpay.com
-funpay.com##.cd-container
 funpay.com###footer
+funpay.com##.cd-container
 funpay.com##.js-main-chat.container
 
 ! pastebin.com
@@ -946,12 +946,13 @@ pastebin.com##.header__logo
 
 ! mxtoolbox.com
 ||mxtoolbox.com/*banners$image
-mxtoolbox.com##.mx-inline-ad-link
-mxtoolbox.com###divAd_1
 mxtoolbox.com###ctl00_divFooter
+mxtoolbox.com###divAd_1
+mxtoolbox.com##.mx-inline-ad-link
 
 ! mywot.com
 www.mywot.com##.dLClwL.StyledCookiesConsent__CookiesConsentContainer-sc-1hx0re8-0.StyledUtils__FlexRow-sc-14r66vj-0
+
 ! adult sites
 ||hubt.pornhub.com^
 pornhub.com###welcome
@@ -974,13 +975,13 @@ xhcdn.com/promo$image
 /pixel/events.js$script
 /popupTool.php
 /popup_new_banner.php
+/s3/client-metrics
 /sovetnik/popup$all
 /type=analytics$xhr
-/wp-popup-scheduler/
+/wp-popup-scheduler
 /yandex-metrica-watch$xhr,script
 
 ! Cosmetic filters
-##.vpn-geo-picker-container
 ###acceptCookies
 ###ageVerificationOverlay
 ###banner-streamer
@@ -1198,6 +1199,7 @@ xhcdn.com/promo$image
 ##.video-ad
 ##.visible.cookie-privacy
 ##.vkui--vkCom--light.CookieBanner_wrapper___Pfqg
+##.vpn-geo-picker-container
 ##.warning-cookie
 ##.warning-cookie-inner
 ##CookieNotification
