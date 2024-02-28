@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 26 February 2024
+! Last modified: 28 February 2024
 ! Expires: 7 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
@@ -24,7 +24,7 @@
 ||yandex.*/metrika
 ||yandex.*/ping$xhr,ping
 ||yandex.*/uxfeedback
-||ya.ru/clck/*$xhr,ping
+||ya.ru/clck/$xhr,ping
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
 ||yastatic.net/*adfox$script
@@ -41,9 +41,8 @@
 @@||redirect.appmetrica.yandex.com^$domain=yandex.ru
 @@||strm.yandex.ru^$xhr,domain=hd.kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket,1p
-@@||uniproxy.alice.yandex.net^$1p
 @@||widevine-proxy.ott.yandex.ru^
-@@||ya.ru/alisa_davay_pridumaem$document
+@@||ya.ru/alisa_davay_pridumaem
 @@||yastatic.net/*alice-web
 @@||yastatic.net/*text$font
 ||a.flow.yandex.$all
@@ -487,6 +486,7 @@ chromewebstore.google.com##.DKwHHf
 ||udcm.yahoo.com^$all
 
 ! Twitter
+||ads.twitter.com^$3p
 ||ads-api.twitter.com^$all
 ||ads-bidder-api.twitter.com^$all
 ||ads-twitter.com^$3p
@@ -710,6 +710,7 @@ www.microsoft.com##.context-uhf.c-uhff
 ! OTHER
 ||aatkit.com^$3p
 ||acsbapp.com^$3p
+||ad-delivery.net^$3p
 ||adadvisor.net^$3p
 ||ads.imovideo.ru^$3p
 ||adsrvr.org^$3p
@@ -745,9 +746,11 @@ www.microsoft.com##.context-uhf.c-uhff
 ||failover-telemetry-us.tradingview.com^$3p
 ||gbqofs.com^$3p
 ||geo.homenewtab.com^$all
+||geojs.io^$all
 ||geolocation-db.com^$all
 ||geolocation.onetrust.com^$all
 ||geoplugin.net^$all
+||hotoffers.info^$all
 ||https-api-eu.bigoapp.ru^$all
 ||hybrid.ai^$3p
 ||imgsct.cookiebot.com^$3p
@@ -760,6 +763,7 @@ www.microsoft.com##.context-uhf.c-uhff
 ||ipgraber.ru^$all
 ||iplis.ru^$all
 ||iplo.ru^$all
+||iplogger.com^$all
 ||iplogger.ru^$all
 ||js.go2sdk.com^$3p
 ||jsn.24smi.net^$3p
@@ -817,19 +821,25 @@ www.microsoft.com##.context-uhf.c-uhff
 ||code-portal.ru^$all
 ||starrater.pp.ru^$all
 ||xosr.ru^$all
+||go.1oleads.net^$all
+||phalangette.in.net^$all
 ||shell.ams.ichilton.net^$all
+||eglob.vontos.buzz^$all
+||fenarqwi.buzz^$all
 ||obrtga.buzz^$all
 ||otnsos.buzz^$all
-||fenarqwi.buzz^$all
 ||pigurde.buzz^$all
 ||redakt.top^$all
 ||ofdakk.top^$all
 ||hotoffers.info^$all
 ||c6ooe.shop^$all
-||doorhousebigleft.motorcycles^
+||doorhousebigleft.motorcycles^$all
+
+||telegra.ph/Aktivaciya-polzovatelya-525476-07-25?z9h^$doc
 
 ! any.run
 ||analytics.any.run^$all
+||cllctr.any.run^$all
 ||counter.any.run^$all
 ||sentry.any.run^$all
 !app.any.run##.anyrun-popup-default-template__inner
@@ -952,7 +962,9 @@ xhcdn.com/promo$image
 ! Generic Filters
 
 ! Analytics | Annoyances
+/?sentry_key
 /PopupCookie
+/ad-event
 /contact-popup-form.js$script
 /cookie-overlay
 /cookie-popup
@@ -1209,7 +1221,7 @@ xhcdn.com/promo$image
 ##sendsay-subscription-dialog
 
 ! non-Latin TLDs | github.com/DandelionSprout
-! https://github.com/hagezi/dns-blocklists/issues/143#issuecomment-1579896974
+! github.com/hagezi/dns-blocklists/issues/143#issuecomment-1579896974
 /(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/
 
 ! Malicious TLDs
@@ -1219,7 +1231,7 @@ xhcdn.com/promo$image
 ||discount^$doc
 ||gdn^$doc
 ||lol^$doc
-||market^$doc,domain=plati.market|digiseller.market
+||market^$doc,domain=~digiseller.market|~plati.market
 ||ooo^$doc
 ||sbs^$doc
 ||win^$doc
@@ -1237,7 +1249,7 @@ xhcdn.com/promo$image
 ||ею^$doc
 ||мкд^$doc
 ||мон^$doc
-! Russian Latin TLDs
+! Russian Latin TLDs 
 ||abkhazia.su^$doc
 ||adygeya.ru^$doc
 ||adygeya.su^$doc
