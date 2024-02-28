@@ -157,42 +157,17 @@ ya.ru,dzen.ru,yandex.*##.ImagesViewer-SidebarAdv
 ya.ru,dzen.ru,yandex.*##.Modal-Content
 ya.ru,dzen.ru,yandex.*##.Modal-Table
 ya.ru,dzen.ru,yandex.*##.Modal-Wrapper
-ya.ru,dzen.ru,yandex.*##.SplashscreenDefault_outer-cross.SplashscreenDefault.Distribution-Splashscreen.Modal_theme_normal.Modal_hasAnimation.Modal_visible.Modal
 ya.ru,dzen.ru,yandex.*##.alert
-ya.ru,dzen.ru,yandex.*##.auth-popup-feed-trigger__loginContentWrapper-ZI
 ya.ru,dzen.ru,yandex.*##.banner-media__click-area.home-link2
 ya.ru,dzen.ru,yandex.*##.banner_js_inited.i-mini-bem.banner
-ya.ru,dzen.ru,yandex.*##.black-header-base__header-1E
-ya.ru,dzen.ru,yandex.*##.dist-stripe.i-mini-bem
-ya.ru,dzen.ru,yandex.*##.dist-stripe_dark
-ya.ru,dzen.ru,yandex.*##.dist-stripe_js_inited
-ya.ru,dzen.ru,yandex.*##.dist-stripe_js_inited.i-mini-bem.dist-stripe
-ya.ru,dzen.ru,yandex.*##.distr-popup__content.popup2__content
-ya.ru,dzen.ru,yandex.*##.distr-popup_js_inited.popup2_visible_yes.popup2_direction_bottom-right.popup2_js_inited.i-dbn-cookie_js_inited.i-bem.card__colorize.i-dbn-cookie.distr-popup_animation_slide-show.distr-popup_shadow_yes.distr-popup_motley_grey.distr-popup_type_landing.distr-popup_layout_simple.distr-popup_location_right-bottom.distr-popup.popup2_view_classic.popup2_theme_clear.popup2_target_position.popup2
-ya.ru,dzen.ru,yandex.*##.distr-popup_js_inited.popup2_visible_yes.popup2_js_inited.i-dbn-cookie_js_inited.i-bem.card__colorize.colorize-xb4ah1.i-dbn-cookie.distr-popup_hide-on-popups_yes.distr-popup_animation_slide-show.distr-popup_shadow_yes.distr-popup_motley_white-old.distr-popup_type_extensions-landing.distr-popup_layout_flat.distr-popup_location_right-only.distr-popup.popup2_view_classic.popup2_direction_bottom-right.popup2_theme_clear.popup2_target_position.popup2
-ya.ru,dzen.ru,yandex.*##.home-link2_color_inherit.i-mini-bem.alert_weather.alert-common.alert__content.home-link2
-ya.ru,dzen.ru,yandex.*##.home-link2_hover_secondary.home-link2_color_gray.link-bro__link.home-link2
 ya.ru,dzen.ru,yandex.*##.i-mini-bem.banner
-ya.ru,dzen.ru,yandex.*##.i-mini-bem.banner-dist.banner__content
 ya.ru,dzen.ru,yandex.*##.link-bro__text
 ya.ru,dzen.ru,yandex.*##.market-banner
-ya.ru,dzen.ru,yandex.*##.multifeed_js_inited.i-mini-bem.multifeed
 ya.ru,dzen.ru,yandex.*##.search3__doodle
-ya.ru,dzen.ru,yandex.*##.simple-popup_shown.simple-popup_js_inited.simple-popup_has-close_yes.simple-popup_overlay_yes.simple-popup_autoclosable_yes.simple-popup_theme_modal.dist-overlay__popup.i-mini-bem.simple-popup
-ya.ru,dzen.ru,yandex.*##.widgets_js_inited.i-mini-bem.widgets
-ya.ru,dzen.ru,yandex.*##.DistrNav-Link
-bank.yandex.ru##.FirstScreenBanner-module__firstBanner__T9i5.Banner-module__banner_horizontal__CuXd.Banner-module__banner__Gfw5
-bank.yandex.ru##.colors__fintechBaseMode__S16s.modes-module__lightMode__DkSR.Qr-module__fixed__V1Rs.Qr-module__qr__zT4T
-bank.yandex.ru##div.WrapperSdk-module__wrapperSize_L__GCM_.WrapperSdk-module__wrapperPadding_none__eKhm.WrapperSdk-module__block__b1JI:nth-of-type(6)
-hd.kinopoisk.ru##.Footer_content__l7Y5A
-market.yandex.ru###banner-streamer._3miGS
-market.yandex.ru##.BIOEp._3ajRv
-market.yandex.ru##._1fDDF > div
-market.yandex.ru##._8pW1F
-music.yandex.ru##.footer__main
-music.yandex.ru##.teaser
-partner.yandex.ru###group-footer > .lc-offsets > .lc-group > .lpc-section.lc-group__content_justify_start.lc-group__content > div.lc-background-empty
-partner.yandex.ru##.group-carousel.lc-carousel_justify_none.lc-carousel_arrows_small.lc-carousel_direction_horizontal.lc-carousel_narrowSlides.lc-carousel.slider-container.lc-swiper > .swiper-container-horizontal.swiper-container-initialized.swiper-container > .swiper-wrapper
+ya.ru,market.yandex.ru##.DistrNav
+ya.ru,market.yandex.ru##.DistrNav-Link
+ya.ru,market.yandex.ru##.overlay__panel
+ya.ru##.market-feed
 
 ! vk.com | mail.ru
 ||vk.com^$from=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
