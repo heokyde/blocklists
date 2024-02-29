@@ -4,8 +4,8 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 28 February 2024
-! Expires: 7 days
+! Last modified: 29 February 2024
+! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -153,8 +153,11 @@
 ya.ru,market.yandex.ru#@#.i-mini-bem.alice-fab
 ya.ru,market.yandex.ru#@#[class^="alice-fab"]
 ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+ya.ru,dzen.ru,yandex.*##.DistrNav
+ya.ru,dzen.ru,yandex.*##.DistrNav-Link
 ya.ru,dzen.ru,yandex.*##.ImagesViewer-SidebarAdv
 ya.ru,dzen.ru,yandex.*##.Modal-Content
+ya.ru,dzen.ru,yandex.*##.Modal-Overlay
 ya.ru,dzen.ru,yandex.*##.Modal-Table
 ya.ru,dzen.ru,yandex.*##.Modal-Wrapper
 ya.ru,dzen.ru,yandex.*##.alert
@@ -163,11 +166,10 @@ ya.ru,dzen.ru,yandex.*##.banner_js_inited.i-mini-bem.banner
 ya.ru,dzen.ru,yandex.*##.i-mini-bem.banner
 ya.ru,dzen.ru,yandex.*##.link-bro__text
 ya.ru,dzen.ru,yandex.*##.market-banner
+ya.ru,dzen.ru,yandex.*##.overlay__panel
+ya.ru,dzen.ru,yandex.*##.overlay__panel-inner
 ya.ru,dzen.ru,yandex.*##.search3__doodle
-ya.ru,market.yandex.ru##.DistrNav
-ya.ru,market.yandex.ru##.DistrNav-Link
-ya.ru,market.yandex.ru##.overlay__panel
-ya.ru##.market-feed
+ya.ru,dzen.ru##.market-feed
 
 ! vk.com | mail.ru
 ||vk.com^$from=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
@@ -1081,6 +1083,7 @@ xhcdn.com/promo$image
 ##.cookie-consent
 ##.cookie-consent-banner
 ##.cookie-consent-wrapper
+##.cookie-info
 ##.cookie-law
 ##.cookie-message-block
 ##.cookie-notice
@@ -1197,7 +1200,7 @@ xhcdn.com/promo$image
 
 ! non-Latin TLDs | github.com/DandelionSprout
 ! github.com/hagezi/dns-blocklists/issues/143#issuecomment-1579896974
-/(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/
+/(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/$domain=~антивирус.рф|~кц.рф|~правительство.рф|~президент.рф|~путин.рф|~тци.рф|~топ100.рус
 
 ! Malicious TLDs
 ||buzz^$doc
@@ -1212,8 +1215,8 @@ xhcdn.com/promo$image
 ||win^$doc
 ||zip^$doc
 ! Cyrillic TLDs
-!||рф^$doc
-!||рус^$doc
+||рф^$doc,domain=~антивирус.рф|~кц.рф|~правительство.рф|~президент.рф|~путин.рф|~тци.рф
+||рус^$doc,domain=~топ100.рус
 ||мир.рус^$doc,3p
 ||мск.рус^$doc,3p
 ||спб.рус^$doc,3p
@@ -1266,6 +1269,7 @@ xhcdn.com/promo$image
 ||marine.ru^$doc
 ||mordovia.ru^$doc
 ||mordovia.su^$doc
+||moscow^doc
 ||murmansk.su^$doc
 ||mytis.ru^$doc
 ||nalchik.ru^$doc
@@ -1277,6 +1281,7 @@ xhcdn.com/promo$image
 ||pp.ru^$doc
 ||pyatigorsk.ru^$doc
 ||tashkent.su^$doc
+||tatar$doc
 ||termez.su^$doc
 ||togliatti.su^$doc
 ||troitsk.su^$doc
