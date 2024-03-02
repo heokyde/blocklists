@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 29 February 2024
+! Last modified: 2 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
@@ -295,13 +295,6 @@ www.livejournal.com##.b-discoverytimes-container
 ||banners-website.wildberries.ru^$xhr
 ||main-page.wildberries.ru/*site-recommendation$xhr
 ||price.ru/*ConfirmationCookie*$stylesheet
-www.ozon.ru##.g8d
-www.ozon.ru##.xt0
-www.ozon.ru##.zb5a
-www.ozon.ru##.y8t
-www.ozon.ru##.al2
-www.ozon.ru##div.gj4:nth-of-type(2)
-www.ozon.ru##div.gj4:nth-of-type(10)
 
 ! Ru Mass Media
 ||bihunekus.com/87018.js$script
@@ -323,99 +316,38 @@ www.ozon.ru##div.gj4:nth-of-type(10)
 ||target.smi2.net^$3p
 ||cdn.russiatoday.com/shop/1128x90_site_ru.mp4
 ||cdn.rt.com/spprojects/domrt/DOM_RT_COM_1240x90_txt2.mp4
-msk1.ru,ngs.ru,ngs.ru##.Cr6Nv.PReP\+
-www.e1.ru,ngs.ru##.gridMinHeight.gridFullTablet.gridHalfLaptop._4SSXl.It0d9
-www.e1.ru,ngs.ru##.gridMinHeight.gridFullTablet.gridHalfLaptop.sGH46.It0d9
-ktv-ray.ru##.m20.container-adr > .br-slideshow > div.slide
-ktv-ray.ru##.main-right > div.m20.squad-br > .dv-ad
-ktv-ray.ru##.hidden980.m20.dezurn
-ktv-ray.ru##.timeline-br.br-vert.br-slideshow
-3dnews.ru###adfox_side160
-3dnews.ru###adslot_240x600_single_etc
-3dnews.ru##.adfox_slide2_sticky.margin-bottom.sidebar-chunk
-3dnews.ru##.if280f715.qfad391e1
-3dnews.ru##.index-top-2.margin-bottom.margin-top
-3dnews.ru##.j5c8f89a7.kf073576c
-3dnews.ru##.typ240-400._revtop-2.ad.nomargins
-iz.ru##.partner_before_head
-iz.ru##.two-col-with-partner__inside__right
-iz.ru##.v2-p4s-confirm
-kurer-sreda.ru##.tax-top
-popcake.tv##.neca20ef6
-regnum.ru##.footer-header
-ren.tv###adfox_151870616241374263
-ren.tv##.footer
-ren.tv##div.adfox-wrapper:nth-of-type(6)
-ria.ru##.widgets__b-slide
-russian.rt.com##.banners__cover
-russian.rt.com##.banners__link
-tass.ru##.TopAD_container__PrBEm
-tatmedia.ru###adfox_167422127430737728
-ukraina.ru##.widgets__b-slide
-ura.news###top_banner_A
-ura.news##.cl-game-block > div
-vesiskitim.ru##.mesto-1.tax-970.tax
-vz.ru##._4th_container
-vz.ru##.ad_banner_2
-www.fontanka.ru###adv_hb-top-index
-prokazan.ru##.MTcwNjQxNDg1MjkzNwjcf9
-prokazan.ru##.pi_top.m-b.m-t.container
-prokazan.ru##.MTcwNjQxNDk4MTg5Nwsmf4
-www.fontanka.ru##.RDf
-www.forbes.ru##.W\+Jq9.tRQHu
-www.hibiny.ru##.up-pek-top
-www.kommersant.ru##div.layout:nth-of-type(4)
-www.m24.ru##.b-home-main > .container2 > .columns2 > .columns2-right
-www.m24.ru##.b-home-rubrics > .container2 > .columns2 > .columns2-right
-www.m24.ru##.g-clearfix.b-header-adv-stripe
-www.marieclaire.ru##._displayed._MainPage._hb-top.hb-top.creative-container
-www.maximonline.ru##._borders._hb-low.creative-placeholder > .creative-placeholder__placeholder
-www.maximonline.ru##._borders._hb-top.creative-placeholder > .creative-placeholder__placeholder
-www.mk.ru##.good-place__top
-www.mk.ru##.good-place__under-ring
-www.mk.ru##.main-grid__right-bottom
-www.mk.ru##.main-grid__spec-not-mobile.main-grid__spec
-www.mk.ru##.news-listing__wraper_main-top > .news-listing__list-with-good.news-listing__day-list > .good-place__in-main-news-top
-www.mk.ru##.suggest_push.suggest
-www.msk.kp.ru##.cejnAg.sc-1a8tb7h-1
-www.msk.kp.ru##.egzEwa.sc-1a8tb7h-0
-www.rg.ru##.page_index.media1-adfox.Adfox_media1__cp7hJ.Adfox_wrapper__0UV9n
-www.rosbalt.ru##.yandex_rtb_R-A-2831149-1.UZznxc
-www.rosbalt.ru##.yandex_rtb_R-A-2831149-3.UZznxc
-www.spb.kp.ru##.kMmGmG.sc-1a8tb7h-1
-www.vedomosti.ru##.--banner.rows-1.cols-12.articles-cards-list__card.card-banner-messages
 
 ! Google
-||tagmanager.google.com^$3p
-||admob.google.com^$3p
+||tagmanager.google.com^$all
+||admob.google.com^$all
 ||ads.youtube.com^$all
-||adservice.google.com^$3p
-||adservice.google.ru^$3p
-||analytics-alv.google.com^$3p
-||analytics.google.com^$3p
-||analytics.googleapis.com^$3p
-||app-measurement.com^$3p
-||beacons5.gvt3.com^$3p
-||crashlytics.com^$3p
+||adservice.google.com^$all
+||adservice.google.ru^$all
+||analytics-alv.google.com^$all
+||analytics.google.com^$all
+||analytics.googleapis.com^$all
+||app-measurement.com^$all
+||beacons5.gvt3.com^$all
+||crashlytics.com^$$all
 ||crashlyticsreports-pa.googleapis.com^$all
-||csp.withgoogle.com^$3p
+||csp.withgoogle.com^$all
 ||doubleclick.$all
-||firebaseinstallations.googleapis.com^$3p
-||firebaselogging-pa.googleapis.com^$3p
-||firebaselogging.googleapis.com^$3p
-||google-analytics.com^$3p
+||firebaseinstallations.googleapis.com^$all
+||firebaselogging-pa.googleapis.com^$all
+||firebaselogging.googleapis.com^$all
+||google-analytics.com^$$all
 ||google-pagerank.net^$all
-||googleadservices.com^$3p
+||googleadservices.com^$all
 ||googleanalytics.com^$all
 ||googleoptimize.com^$all
-||googlesyndication.com^$3p
-||googletagmanager.com^$3p
-||googletagservices.com^$3p
+||googlesyndication.com^$all
+||googletagmanager.com^$all
+||googletagservices.com^$all
 ||gvt2.com^$all
 ||imasdk.googleapis.com^$all
 ||mail-ads.google.com^$all
-||optimizationguide-pa.googleapis.com^$3p
-||semanticlocation-pa.googleapis.com^$3p
+||optimizationguide-pa.googleapis.com^$all
+||semanticlocation-pa.googleapis.com^$all
 transparencyreport.google.com##.hercules
 transparencyreport.google.com##social-action
 chromewebstore.google.com##.DKwHHf
@@ -535,7 +467,6 @@ www.microsoft.com##.context-uhf.c-uhff
 ||adobedtm.com^$3p
 ||adplay.ru^$3p
 ||adriver.ru^$3p
-||ads.tatar.ru^$all
 ||adspend.space^$3p
 ||adsrvr.org^$3p
 ||advg.agency^$3p
@@ -921,8 +852,10 @@ mxtoolbox.com###ctl00_divFooter
 mxtoolbox.com###divAd_1
 mxtoolbox.com##.mx-inline-ad-link
 
-! mywot.com
-www.mywot.com##.dLClwL.StyledCookiesConsent__CookiesConsentContainer-sc-1hx0re8-0.StyledUtils__FlexRow-sc-14r66vj-0
+! tatarstan.ru
+tatarstan.ru#@##popup
+tatarstan.ru#@#.popup
+||ads.tatar.ru^$all
 
 ! adult sites
 ||hubt.pornhub.com^
@@ -942,7 +875,9 @@ xhcdn.com/promo$image
 /?sentry_key
 /PopupCookie
 /ad-event
+/adfox
 /contact-popup-form.js$script
+/cookie-info
 /cookie-overlay
 /cookie-popup
 /cookie-privacy
@@ -961,6 +896,7 @@ xhcdn.com/promo$image
 /pixel/events.js$script
 /popupTool
 /popup_new_banner
+/privacy-policy.js
 /privacy_popup
 /s3/client-metrics
 /sovetnik/popup$all
@@ -1013,6 +949,7 @@ xhcdn.com/promo$image
 ###cookiesdirective
 ###cookiewrapper
 ###divpopup
+###ebpa.fixtop
 ###footer-upsell-banner-hole
 ###gdpr-cookie-message
 ###gdpr-cookie-notice
@@ -1029,6 +966,7 @@ xhcdn.com/promo$image
 ###popupOverlay
 ###popupTool
 ###privacy-consent
+###pso-widget-container
 ###shortpixel-cookies
 ##.-cookies.popup-box
 ##.-pro.popup-box
@@ -1132,6 +1070,8 @@ xhcdn.com/promo$image
 ##.dist-overlay__popup
 ##.dist-popup
 ##.dist-popup__content.popup__content
+##.ebpa-inner
+##.ebpa-message
 ##.footer-promo-place
 ##.fr.cookies-allow
 ##.fs-cc-banner_component
@@ -1196,11 +1136,12 @@ xhcdn.com/promo$image
 ##app-use-cookie
 ##app-use-cookie-banner
 ##div.-cookies
+##lib-pso
 ##sendsay-subscription-dialog
 
 ! non-Latin TLDs | github.com/DandelionSprout
 ! github.com/hagezi/dns-blocklists/issues/143#issuecomment-1579896974
-/(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/$domain=~антивирус.рф|~кц.рф|~правительство.рф|~президент.рф|~путин.рф|~тци.рф|~топ100.рус
+/(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/$domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф|~топ100.рус
 
 ! Malicious TLDs
 ||buzz^$doc
@@ -1215,7 +1156,7 @@ xhcdn.com/promo$image
 ||win^$doc
 ||zip^$doc
 ! Cyrillic TLDs
-||рф^$doc,domain=~антивирус.рф|~кц.рф|~правительство.рф|~президент.рф|~путин.рф|~тци.рф
+||рф^$doc,domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф
 ||рус^$doc,domain=~топ100.рус
 ||мир.рус^$doc,3p
 ||мск.рус^$doc,3p
