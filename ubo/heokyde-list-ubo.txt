@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 2 March 2024
+! Last modified: 3 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
@@ -35,7 +35,7 @@
 ||dzen.ru/pingx$xhr,ping
 ||avatars.mds.yandex.net/get-market-adv/
 ||avatars.mds.yandex.net/get-zen_doc/
-||ipv6-internet.yandex.net$xhr,3p
+||ipv6-internet.yandex.net^
 @@||captcha-api.yandex.ru^$domain=rutube.ru
 @@||passport.yandex.ru^$domain=hd.kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^$domain=yandex.ru
@@ -732,16 +732,24 @@ www.microsoft.com##.context-uhf.c-uhff
 ||go.1oleads.net^$all
 ||phalangette.in.net^$all
 ||shell.ams.ichilton.net^$all
+
+||c6ooe.shop^$all
+||dlnhighpressurecleaningservicesltd.co.uk^$all
+||doorhousebigleft.motorcycles^$all
 ||eglob.vontos.buzz^$all
 ||fenarqwi.buzz^$all
+||heytrhrerght.buzz^$all
+||hotoffers.info^$all
+||meryruytss.buzz^$all
 ||obrtga.buzz^$all
+||ofdakk.top^$all
 ||otnsos.buzz^$all
 ||pigurde.buzz^$all
+||premium-gifts-2024.xyz^$all
 ||redakt.top^$all
-||ofdakk.top^$all
-||hotoffers.info^$all
-||c6ooe.shop^$all
-||doorhousebigleft.motorcycles^$all
+||removalsinrotherham.co.uk^$all
+||tutyutyutyu.buzz^$all
+||v9xq2.shop^$all
 
 ||telegra.ph/Aktivaciya-polzovatelya-525476-07-25?z9h^$doc
 
@@ -903,6 +911,7 @@ xhcdn.com/promo$image
 /type=analytics$xhr
 /wp-popup-scheduler
 /yandex-metrica-watch$xhr,script
+buzz/antibot/antibot2.php?key=$all
 
 ! Cosmetic filters
 ###acceptCookies
@@ -988,6 +997,9 @@ xhcdn.com/promo$image
 ##.Popup_root
 ##.Popup_root_sl2fL
 ##.StyledCookiesConsent
+##._intro
+##._intro-message
+##._intro-title
 ##.abm-purple-back.use-cookie-message
 ##.ad
 ##.ad-mark
@@ -1168,7 +1180,7 @@ xhcdn.com/promo$image
 ||ею^$doc
 ||мкд^$doc
 ||мон^$doc
-! Russian Latin TLDs 
+! Unreliable Russian Latin TLDs
 ||abkhazia.su^$doc
 ||adygeya.ru^$doc
 ||adygeya.su^$doc
