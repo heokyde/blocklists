@@ -36,13 +36,16 @@
 ||avatars.mds.yandex.net/get-market-adv/
 ||avatars.mds.yandex.net/get-zen_doc/
 ||ipv6-internet.yandex.net^
+@@||adfstat.yandex.ru/captcha$image,1p
 @@||captcha-api.yandex.ru^$domain=rutube.ru
+@@||ext.captcha.yandex.net^
 @@||passport.yandex.ru^$domain=hd.kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^$domain=yandex.ru
 @@||strm.yandex.ru^$xhr,domain=hd.kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket,1p
 @@||widevine-proxy.ott.yandex.ru^
 @@||ya.ru/alisa_davay_pridumaem
+@@||yandex.ru/captchapgrd$script
 @@||yastatic.net/*alice-web
 @@||yastatic.net/*text$font
 ||a.flow.yandex.$all
@@ -178,7 +181,9 @@ ya.ru,dzen.ru##.market-feed
 ||vkplay.ru^$domain=mail.ru
 ||vk.com/*ads
 ||mail.ru/*counter
-||ad.mail.ru/static/sync-loader.js^$script
+@@||yandex.ru/portal/searchframe$subdocument,domain=mail.ru
+@@||yandex.ru/search$subdocument,domain=mail.ru
+@@||yandex.ru/showcaptcha$subdocument,domain=mail.ru
 ||ad.mail.ru^$all
 ||ads.vk.com^$all
 ||adtech.vk.team^$all
