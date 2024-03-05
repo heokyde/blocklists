@@ -224,7 +224,7 @@ rutube.ru##.notification-module__infoNotifications
 rutube.ru##.pen-message-popup__overlay
 rutube.ru##aside
 
-! SBER
+! Sber | Gitverse
 ||api.eapteka.ru^$3p
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
@@ -234,12 +234,7 @@ rutube.ru##aside
 ||sve.online.sberbank.ru^$domain=2gis.ru
 ||svi.online.sberbank.ru^$all
 ||visor.sberbank.ru^$all
-sbermarket.ru##.ShowJsPlacement_rootInvisible__Gn4zZ.ShowJsPlacement_bannerMainHeader__luUR5.ShowJsPlacement_root__nZt1b
-sbermarket.ru##.BannerResize_root__f2tiI
-id.sber.ru##.eli1ri2.css-1optnd4
-www.sberbank.com##.ZYqGEfyt_gzCo7qxSm0k
-fusionbrain.ai##.styles_wrap__T3kgh
-fusionbrain.ai##.styles_visible__5L2Yv.styles_wrap__erzrS
+gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 
 ! Rambler Media Group
 ||rambler.ru^$domain=livejournal.com|lenta.ru
@@ -434,16 +429,6 @@ chromewebstore.google.com##.DKwHHf
 ||pipe.aria.microsoft.com^$all
 ||r.bing.com.edgekey.net^$all
 ||uhf.microsoft.com^$all
-www.bing.com##.no_mod.hc_card.footer
-www.bing.com##.b_footer
-www.skype.com##.context-uhf.c-uhff
-www.skype.com##.paddingVertical0.verticalAlignCenter.sectionStandard.section.skypeFooter
-www.office.com##.context-uhf.c-uhff
-www.office.com##.mobile-app-upsell__flex-container
-www.office.com##.social-media__section.section
-outlook.live.com##.LBktY > .GssDD
-onedrive.live.com##.od-PremiumUpsellBanner
-www.microsoft.com##.context-uhf.c-uhff
 
 ! Cloudflare
 ||a.nel.cloudflare.com^$3p
@@ -504,6 +489,7 @@ www.microsoft.com##.context-uhf.c-uhff
 ||clickagy.com^$3p
 ||const.uno^$3p
 ||counter.log24.ru^$3p
+||datadoghq.com^$3p
 ||digitaltarget.ru^$3p
 ||ds-s7.addthis.com.edgekey.net^$all
 ||easytarget.ru^$3p
@@ -517,6 +503,8 @@ www.microsoft.com##.context-uhf.c-uhff
 ||gnezdo.ru^$3p
 ||gum.criteo.com^$3p
 ||gum.da1.vip.prod.criteo.com^$3p
+||heap.io^$3p
+||heapanalytics.com^$3p
 ||honest-metrics.com^$3p
 ||hotjar.com^$all
 ||hotjar.dualsidedapp.com^$3p
@@ -738,6 +726,7 @@ www.microsoft.com##.context-uhf.c-uhff
 ||doorhousebigleft.motorcycles^$all
 ||eglob.vontos.buzz^$all
 ||fenarqwi.buzz^$all
+||game-info2024.world^$all
 ||heytrhrerght.buzz^$all
 ||hotoffers.info^$all
 ||meryruytss.buzz^$all
@@ -966,6 +955,7 @@ buzz/antibot/antibot2.php?key=$all
 ###hs-banner-gpc
 ###myModalBannerPopup
 ###notice_welcome
+###notice_welcome
 ###onetrust-policy
 ###onetrust-policy-text
 ###page_cookie_menu
@@ -999,6 +989,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.Popup_root
 ##.Popup_root_sl2fL
 ##.StyledCookiesConsent
+##._banner_1jn84_89
 ##._intro
 ##._intro-message
 ##._intro-title
@@ -1153,9 +1144,8 @@ buzz/antibot/antibot2.php?key=$all
 ##lib-pso
 ##sendsay-subscription-dialog
 
-! non-Latin TLDs | github.com/DandelionSprout
-! github.com/hagezi/dns-blocklists/issues/143#issuecomment-1579896974
-/(://|^)[a-z0-9.-]{2,}\.xn--[a-z0-9]{4,}($|/)/$domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф|~топ100.рус
+||xn--$doc,frame,domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф|~топ100.рус
+||buzz*antibot*.php*?key$all
 
 ! Malicious TLDs
 ||buzz^$doc
