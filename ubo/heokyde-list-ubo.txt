@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 3 March 2024
+! Last modified: 5 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
@@ -328,14 +328,14 @@ www.livejournal.com##.b-discoverytimes-container
 ||analytics.googleapis.com^$all
 ||app-measurement.com^$all
 ||beacons5.gvt3.com^$all
-||crashlytics.com^$$all
+||crashlytics.com^$all
 ||crashlyticsreports-pa.googleapis.com^$all
 ||csp.withgoogle.com^$all
 ||doubleclick.$all
 ||firebaseinstallations.googleapis.com^$all
 ||firebaselogging-pa.googleapis.com^$all
 ||firebaselogging.googleapis.com^$all
-||google-analytics.com^$$all
+||google-analytics.com^$all
 ||google-pagerank.net^$all
 ||googleadservices.com^$all
 ||googleanalytics.com^$all
@@ -897,6 +897,7 @@ xhcdn.com/promo$image
 /facebook-popup
 /get-zen-logos$all
 /gtag/js$script
+/logos/static
 /newsletter-popup
 /newsletterpopup
 /overlay.js$script
@@ -964,6 +965,7 @@ buzz/antibot/antibot2.php?key=$all
 ###gdpr-cookie-notice
 ###hs-banner-gpc
 ###myModalBannerPopup
+###notice_welcome
 ###onetrust-policy
 ###onetrust-policy-text
 ###page_cookie_menu
