@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 6 March 2024
+! Last modified: 7 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
@@ -500,7 +500,7 @@ chromewebstore.google.com##.DKwHHf
 ||easytarget.ru^$3p
 ||fanplayr.com^$3p
 ||flocktory.com^$3p
-||freshmarketer.com^
+||freshmarketer.com^$3p
 ||gemius.pl^$3p
 ||getsentry.$3p
 ||giraff.io^$3p
@@ -651,6 +651,7 @@ chromewebstore.google.com##.DKwHHf
 ||geolocation-db.com^$all
 ||geolocation.onetrust.com^$all
 ||geoplugin.net^$all
+||gosmonitor.ru^$all
 ||hotoffers.info^$all
 ||https-api-eu.bigoapp.ru^$all
 ||hybrid.ai^$3p
@@ -1041,6 +1042,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.cookie-pop
 ##.cookie-popup
 ##.cookie-privacy-informer
+##.cookie-warn
 ##.cookie-warning
 ##.cookie-warning__container
 ##.cookieBarInner
@@ -1149,7 +1151,7 @@ buzz/antibot/antibot2.php?key=$all
 ##lib-pso
 ##sendsay-subscription-dialog
 
-||xn--$doc,frame,domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф|~топ100.рус
+||xn--$doc,frame,domain=~антивирус.рф|~правительство.рф|~президент.рф||~мвд.рф|~фси.рф|~дом.рф|~тци.рф||~топ100.рус
 ||buzz*antibot*.php*?key$all
 
 ! Malicious TLDs
@@ -1165,19 +1167,20 @@ buzz/antibot/antibot2.php?key=$all
 ||win^$doc
 ||zip^$doc
 ! Cyrillic TLDs
-||рф^$doc,domain=~антивирус.рф|~правительство.рф|~президент.рф|~тци.рф
+||рф^$doc,domain=~антивирус.рф|~правительство.рф|~президент.рф||~мвд.рф|~фси.рф|~дом.рф|~тци.рф|
 ||рус^$doc,domain=~топ100.рус
 ||мир.рус^$doc,3p
 ||мск.рус^$doc,3p
 ||спб.рус^$doc,3p
 ||я.рус^$doc,3p
-||ком^$doc
-||орг^$doc
 ||дети^$doc
 ||ею^$doc
+||ком^$doc
 ||мкд^$doc
 ||мон^$doc
-! Unreliable Russian Latin TLDs
+||москва$doc
+||орг^$doc
+! Unreliable Russian Latin generic TLDs
 ||abkhazia.su^$doc
 ||adygeya.ru^$doc
 ||adygeya.su^$doc
@@ -1196,7 +1199,6 @@ buzz/antibot/antibot2.php?key=$all
 ||chimkent.su^$doc
 ||dagestan.ru^$doc
 ||dagestan.su^$doc
-||east-kazakhstan.su^$doc
 ||exnet.su^$doc
 ||georgia.su^$doc
 ||grozny.ru^$doc
@@ -1231,7 +1233,7 @@ buzz/antibot/antibot2.php?key=$all
 ||pp.ru^$doc
 ||pyatigorsk.ru^$doc
 ||tashkent.su^$doc
-||tatar$doc
+||tatar$doc,domain=~domain.tatar
 ||termez.su^$doc
 ||togliatti.su^$doc
 ||troitsk.su^$doc
