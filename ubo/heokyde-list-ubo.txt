@@ -1,13 +1,13 @@
 ! Title: 📛 Heokyde List
 ! Homepage: github.com/heokyde/blocklists
-! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs. Annoyances elements, such as pop-up ads, cookie notifications, etc.
+! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs (IDN). Annoyances elements, such as pop-up ads, cookie notifications, etc.
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
 ! Last modified: 7 March 2024
 ! Expires: 1 days
 
-! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня. Ориентирован на российский интернет.
+! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
 
 ! Yandex LLC
@@ -875,6 +875,7 @@ xhcdn.com/promo$image
 ! Generic Filters
 
 ! Analytics | Annoyances
+/*lms-analytics$script
 /?sentry_key
 /PopupCookie
 /ad-event
@@ -907,7 +908,6 @@ xhcdn.com/promo$image
 /type=analytics$xhr
 /wp-popup-scheduler
 /yandex-metrica-watch$xhr,script
-buzz/antibot/antibot2.php?key=$all
 
 ! Cosmetic filters
 ###acceptCookies
@@ -955,12 +955,14 @@ buzz/antibot/antibot2.php?key=$all
 ###cookiewrapper
 ###divpopup
 ###ebpa.fixtop
+###ensBannerDescription
 ###footer-upsell-banner-hole
 ###gdpr-cookie-message
 ###gdpr-cookie-notice
 ###hs-banner-gpc
+###hs-en-cookie-confirmation-buttons-area
+###hs-eu-cookie-confirmation-inner
 ###myModalBannerPopup
-###notice_welcome
 ###notice_welcome
 ###onetrust-policy
 ###onetrust-policy-text
@@ -1028,6 +1030,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.cookie-banner-wrapper
 ##.cookie-bar
 ##.cookie-bar__inner
+##.cookie-block
 ##.cookie-confirmation
 ##.cookie-consent
 ##.cookie-consent-banner
@@ -1088,6 +1091,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.fr.cookies-allow
 ##.fs-cc-banner_component
 ##.header-promo-place
+##.hs-cookie-notification-position-bottom
 ##.js-cookie
 ##.js-cookies-banner.cookies
 ##.js-notif-cookies.notification--cookies.notification
@@ -1118,6 +1122,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.rtterms-banner
 ##.rtterms-banner_cnt
 ##.rtterms-banner_txt
+##.seers-cmp-banner-bar
 ##.show.cookie-snack
 ##.simple-popup
 ##.simple-popup__content
@@ -1130,6 +1135,7 @@ buzz/antibot/antibot2.php?key=$all
 ##.sites-cookie-notice-fit
 ##.socialSnackbar_paper__LT8Ax
 ##.suggest_push.suggest
+##.tarteaucitronAlertBigBottom
 ##.tg-popup
 ##.tooltip__description
 ##.use-cookie
@@ -1151,36 +1157,35 @@ buzz/antibot/antibot2.php?key=$all
 ##lib-pso
 ##sendsay-subscription-dialog
 
-||xn--$doc,frame,domain=~антивирус.рф|~правительство.рф|~президент.рф||~мвд.рф|~фси.рф|~дом.рф|~тци.рф||~топ100.рус
+! Global rules for TLDs
+! Shows a warning before visiting sites using an Internationalized Domain Name (IDN). twitter.com/gorhill/status/1422914791077732352
+||xn--$doc,frame,domain=~рф|~рус
+
 ||buzz*antibot*.php*?key$all
 
 ! Malicious TLDs
-||buzz^$doc
+||market^$doc,domain=~cdek.market|~digiseller.market|~kalashnikov.market|~plati.market|~yandex.market
+||buzz^$doc,domain=~cleepr.buzz|~domino.buzz|~huebee.buzz|~seasoned.buzz
 ||cfd^$doc
-||click^$doc
-||discount^$doc
-||gdn^$doc
-||lol^$doc
-||market^$doc,domain=~digiseller.market|~plati.market
-||ooo^$doc
-||sbs^$doc
+||live^$doc
 ||win^$doc
 ||zip^$doc
-! Cyrillic TLDs
-||рф^$doc,domain=~антивирус.рф|~правительство.рф|~президент.рф||~мвд.рф|~фси.рф|~дом.рф|~тци.рф|
-||рус^$doc,domain=~топ100.рус
-||мир.рус^$doc,3p
-||мск.рус^$doc,3p
-||спб.рус^$doc,3p
-||я.рус^$doc,3p
+! Cyrillic Unreliable TLDs
+||рф^$doc,domain=~антивирус.рф|~ввгу.рф|~госархив.рф|~инион.рф|~историк.рф|~мвд.рф|~мегастрой.рф|~мойучасток.рф|~мфц.рф|~офисмаг.рф|~правительство.рф|~президент.рф|~пушка.рф|~роскомнадзор.рф|~россиясегодня.рф|~рпо.рф|~фси.рф|~юнилаб.рф
+||рус^$doc,domain=~рфо.рус
+||мир.рус^$3p
+||мск.рус^$3p
+||спб.рус^$3p
+||я.рус^$3p
 ||дети^$doc
 ||ею^$doc
 ||ком^$doc
 ||мкд^$doc
 ||мон^$doc
-||москва$doc
+||москва^$doc
 ||орг^$doc
 ! Unreliable Russian Latin generic TLDs
+||tatar$doc,domain=~antat.tatar|~domain.tatar|~kamaz.tatar|~tatar-inform.tatar|~translate.tatar|~vdpo.tatar
 ||abkhazia.su^$doc
 ||adygeya.ru^$doc
 ||adygeya.su^$doc
@@ -1233,7 +1238,6 @@ buzz/antibot/antibot2.php?key=$all
 ||pp.ru^$doc
 ||pyatigorsk.ru^$doc
 ||tashkent.su^$doc
-||tatar$doc,domain=~domain.tatar
 ||termez.su^$doc
 ||togliatti.su^$doc
 ||troitsk.su^$doc
