@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 7 March 2024
+! Last modified: 8 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -31,10 +31,10 @@
 ||yastatic.net/*adfox$script
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
-||ya.ru/clck/$xhr,ping
+||ya.ru/clck
 ||dzen.ru/*counter$xhr,ping
-||dzen.ru/clck$xhr,ping,1p
-||dzen.ru/pingx$xhr,ping
+||dzen.ru/clck
+||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
 @@||adfstat.yandex.ru/captcha$image,1p
 @@||captcha-api.yandex.ru^$3p
@@ -1048,6 +1048,8 @@ xhcdn.com/promo$image
 ##.cookie-warn
 ##.cookie-warning
 ##.cookie-warning__container
+##.cookieAgreement
+##.cookieAgreement__inner
 ##.cookieBarInner
 ##.cookieContainer
 ##.cookiePolicy
