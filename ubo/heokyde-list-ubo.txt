@@ -362,11 +362,11 @@ chromewebstore.google.com##.DKwHHf
 ||facebook.net^$domain=kaspersky.*
 ||ads.facebook.com^$all
 ||an.facebook.com^$all
-||analytics.facebook.com^$$all
-||badge.facebook.com^$$all
-||crashlogs.whatsapp.net^$$all
-||graph.facebook-hardware.com^$$all
-||pixel.facebook.com^$$all
+||analytics.facebook.com^$all
+||badge.facebook.com^$all
+||crashlogs.whatsapp.net^$all
+||graph.facebook-hardware.com^$all
+||pixel.facebook.com^$all
 
 ! Amazon
 ||aan.amazon.com^$all
