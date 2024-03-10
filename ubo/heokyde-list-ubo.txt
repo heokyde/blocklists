@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 8 March 2024
+! Last modified: 10 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -639,6 +639,7 @@ chromewebstore.google.com##.DKwHHf
 ||consent.cookiebot.com^$3p
 ||cookieyes.com^$3p
 ||customer.io^$3p
+||d3c.life^$all
 ||d3vk40ihlliju7.cloudfront.net^$3p
 ||datacollector-drru.dt.hicloud.com^$3p
 ||deff.nelreports.net^$3p
@@ -671,6 +672,7 @@ chromewebstore.google.com##.DKwHHf
 ||jsn.24smi.net^$3p
 ||kimberlite.io^$3p
 ||live2support.com^$3p
+||magsrv.com^$3p
 ||marketo.net^$3p
 ||mcs-va.tiktokv.com^$3p
 ||metrics.data.hicloud.com^$3p
@@ -682,6 +684,7 @@ chromewebstore.google.com##.DKwHHf
 ||new-programmatic.com^$3p
 ||notifications-pusher.gog.com^$3p
 ||otm-r.com^$3p
+||pemsrv.com^$3p
 ||picreel.com^$3p
 ||prod-telemetry.paradox-interactive.com^$3p
 ||profitwell.com^$3p
@@ -806,18 +809,14 @@ adguard.info,adguard.com##.footer__bottom
 adguard.info,adguard.com##.footer
 reports.adguard.info###header
 
-! kaspersky.com
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.Analysis_titleWrapper_oFDqwpKL
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.CookieBanner_bottom__kmd4O.CookieBanner_dark__NOlwJ.CookieBanner_transparent__A7PB1.CookieBanner_notificationBar__nn49h
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.CookiesAccept_container_yATSJZap.eTtOqm.sc-crHmcD
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.CookiesAccept_container_yATSJZap.gnryLs.sc-crHmcD
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.CookiesAccept_content_mmzjXKgI
-kaspersky.ru,kaspersky.com,opentip.kaspersky.com##.CookiesAccept_text_XPlLNuBR.wGiDW.sc-eCImPb
+! kaspersky | opentip.kaspersky.com
+kaspersky.*##.Analysis_titleWrapper_oFDqwpKL
+kaspersky.*##.CookieBanner_transparent__A7PB1
+kaspersky.*##.CookiesAccept_container_yATSJZap
 
 ! glasswire.com
 ||glasswire.com/pi/?action*cookie
 www.glasswire.com###CybotCookiebotDialogTabContent
-www.glasswire.com###popupSale
 www.glasswire.com##.CybotCookiebotDialogActive.CybotCloseButtonEnabled.CybotEdge
 www.glasswire.com##.CybotCookiebotDialogContentWrapper
 www.glasswire.com##.window
@@ -862,20 +861,23 @@ tatarstan.ru#@#.popup
 
 ! adult sites
 ||hubt.pornhub.com^
+pornhub.com###age-verification-container
+pornhub.com###age-verification-wrapper
 pornhub.com###welcome
 pornhub.com##.abAlertInner
 pornhub.com##.realsex
 pornhub.com##.socialIconsWrapper
-pornhub.com##div[id^="age-verification"]
 brick.xhamster.com/api$xhr
-collector.xhamster.com/?log
-xhamster.com##.wrapper-886ab.desktop-886ab
+collector.xhamster*$all
+xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
+xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab
 xhcdn.com/promo$image
 
 ! Generic Filters
 
 ! Analytics | Annoyances
 /*lms-analytics$script
+/?log=experiment
 /?sentry_key
 /PopupCookie
 /ad-event
@@ -973,6 +975,7 @@ xhcdn.com/promo$image
 ###popup-facebook
 ###popup-wrapper
 ###popupOverlay
+###popupSale
 ###popupTool
 ###privacy-consent
 ###pso-widget-container
@@ -982,6 +985,10 @@ xhcdn.com/promo$image
 ##.Cookie--base.Cookie--bottom.Cookie
 ##.CookieAcceptance
 ##.CookieBanner
+##.CookieBanner_bottom
+##.CookieBanner_dark
+##.CookieBanner_notificationBar
+##.CookieBanner_transparent
 ##.CookieNotification
 ##.CookieNotifyWidget
 ##.CookieNotifyWidget__content
