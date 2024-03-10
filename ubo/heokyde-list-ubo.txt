@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 10 March 2024
+! Last modified: 11 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -24,7 +24,8 @@
 ||yandex.*/id/business$3p
 ||yandex.*/log
 ||yandex.*/metrika
-||yandex.*/ping$xhr,ping
+||yandex.*/monitoring_liza.txt
+||yandex.*/ping
 ||yandex.*/uxfeedback
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
@@ -32,7 +33,7 @@
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
 ||ya.ru/clck
-||dzen.ru/*counter$xhr,ping
+||dzen.ru/*counter
 ||dzen.ru/clck
 ||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
@@ -176,6 +177,10 @@ ya.ru,dzen.ru,yandex.*##.overlay__panel
 ya.ru,dzen.ru,yandex.*##.overlay__panel-inner
 ya.ru,dzen.ru,yandex.*##.search3__doodle
 ya.ru,dzen.ru##.market-feed
+mail.yandex.*#@#.Modal-Content
+mail.yandex.*#@#.Modal-Overlay
+mail.yandex.*#@#.Modal-Table
+mail.yandex.*#@#.Modal-Wrapper
 
 ! vk.com | mail.ru
 ||vk.com^$from=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
@@ -353,15 +358,15 @@ transparencyreport.google.com##social-action
 chromewebstore.google.com##.DKwHHf
 
 ! Meta
-||facebook.com^$domain=cloud.yandex.ru
-||facebook.net^$domain=kaspersky.ru|kaspersky.com
-||ads.facebook.com^$3p
-||an.facebook.com^$3p
-||analytics.facebook.com^$3p
-||badge.facebook.com^$3p
-||crashlogs.whatsapp.net^$3p
-||graph.facebook-hardware.com^$3p
-||pixel.facebook.com^$3p
+||facebook.com^$domain=yandex.*
+||facebook.net^$domain=kaspersky.*
+||ads.facebook.com^$all
+||an.facebook.com^$all
+||analytics.facebook.com^$$all
+||badge.facebook.com^$$all
+||crashlogs.whatsapp.net^$$all
+||graph.facebook-hardware.com^$$all
+||pixel.facebook.com^$$all
 
 ! Amazon
 ||aan.amazon.com^$all
@@ -398,19 +403,18 @@ chromewebstore.google.com##.DKwHHf
 ||ads.twitter.com^$3p
 ||ads-api.twitter.com^$all
 ||ads-bidder-api.twitter.com^$all
-||ads-twitter.com^$3p
-||analytics.twitter.com^$3p
-||syndication.twitter.com^$3p
+||ads-twitter.com^$all
+||analytics.twitter.com^$all
+||syndication.twitter.com^$all
 
 ! Microsoft
 ||bing.com^$domain=office.com
 ||skyapi.onedrive.live.com^$domain=onedrive.live.com
 ||wcpstatic.microsoft.com^$domain=microsoft.com|skype.com
-||pipe.aria.microsoft.com^$from=outlook.live.com|office.com
-||appsforoffice.microsoft.com/lib/1.1/hosted/telemetry/oteljs_agave.js^$script
 /CommonDiagnostics.js^$script
 /ExternalResources/js-cookie.js^$script
 /aria-web-telemetry-2.9.0.min.js^$script
+/hosted/telemetry^$script
 @@||a-0001.a-msedge.net^
 ||adnxs.com^$all
 ||az725175.vo.msecnd.net^$all
@@ -880,15 +884,21 @@ xhcdn.com/promo$image
 /?log=experiment
 /?sentry_key
 /PopupCookie
+/acceptCookies
 /ad-event
 /adfox
+/banner-cookies
+/banner_cookie
 /contact-popup-form.js$script
 /cookie-info
 /cookie-overlay
 /cookie-popup
 /cookie-privacy
+/cookie_banner
 /cookie_disclaimer$xhr
+/cookie_notification
 /cookieconsentpub$xhr
+/cookiepolicy
 /cookies-popup
 /cookiesPopup
 /cookiespopup.js$script
@@ -905,9 +915,12 @@ xhcdn.com/promo$image
 /popup_new_banner
 /privacy-policy.js
 /privacy_popup
+/push-notification
 /s3/client-metrics
 /sovetnik/popup$all
 /type=analytics$xhr
+/web-push
+/webpush
 /wp-popup-scheduler
 /yandex-metrica-watch$xhr,script
 
@@ -1003,6 +1016,7 @@ xhcdn.com/promo$image
 ##.Popup-telegram__content
 ##.Popup_root
 ##.Popup_root_sl2fL
+##.PushNotification
 ##.StyledCookiesConsent
 ##._banner_1jn84_89
 ##._intro
@@ -1157,6 +1171,8 @@ xhcdn.com/promo$image
 ##.vpn-geo-picker-container
 ##.warning-cookie
 ##.warning-cookie-inner
+##.web-notification
+##.web-push
 ##CookieNotification
 ##[id^="googleAd"]
 ##[id^="google_ads_iframe"]
