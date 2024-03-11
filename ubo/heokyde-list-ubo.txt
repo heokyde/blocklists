@@ -34,14 +34,14 @@
 ||yastatic.net/*audience$3p,script
 ||ya.ru/clck
 ||dzen.ru/*counter
-||dzen.ru/clck
+||dzen.ru/clck$ping
 ||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
 @@||adfstat.yandex.ru/captcha$image,1p
 @@||captcha-api.yandex.ru^$3p
 @@||captcha.yandex.net^$3p
 @@||passport.yandex.ru^$domain=kinopoisk.ru
-@@||redirect.appmetrica.yandex.com^$domain=yandex.ru|ya.ru
+@@||redirect.appmetrica.yandex.com^$domain=yandex.*|ya.ru
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket,1p
 @@||widevine-proxy.ott.yandex.ru^
@@ -266,22 +266,8 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||trafffgen.rambler.ru^$all
 ||xc3.services.livejournal.com$all
 !||zoomdecorate.rambler.ru^
-www.rambler.ru##.r-ll68yvTX
-www.rambler.ru##.r-phyRqcrl
-www.rambler.ru##.r-L5023-hr
-www.rambler.ru##.ad_branding_footer.r-tRA0TUfy
-news.rambler.ru##._1b-Ac._15Z6f._1ErId
-autorambler.ru##._1b-Ac._15Z6f._1ErId
-lenta.ru##.js-yandex-games-btn.yandex-games__btn
-lenta.ru##.ob62v4cp0k9.js-banner.banner
-lenta.ru##.fo6q8tqbpn7.js-banner.banner.sidebar__okko
-lenta.ru##.carousel-banner-place
-lenta.ru##.main-page > .js-banner.banner
-lenta.ru##.js-layout-footer.layout__footer
-www.championat.com##.js-bp-billboard.banner-billboard.banner-placeholder.banner
-secretmag.ru##.ad-site-billboard > .lb-ad-visible.xJUtYNaK
-www.livejournal.com##.cat-widget__card-wrap--selfpromo.cat-widget__card-wrap--promo.cat-widget__card-wrap--small.cat-widget__card-wrap
-www.livejournal.com##.b-discoverytimes-container
+###ramblerCounter
+###top100counter
 
 ! Marketplaces ozon.ru | wildberries | price.ru
 ||ozon.ru/*csp-log/
@@ -450,6 +436,7 @@ chromewebstore.google.com##.DKwHHf
 ||2xclick.ru^$3p
 ||abtasty.com^$3p
 ||acint.net^$3p
+||ad-shield.io^
 ||adcolony.com^$3p
 ||adcolony.xyz^$3p
 ||addthis.com^$3p
@@ -621,7 +608,10 @@ chromewebstore.google.com##.DKwHHf
 ||adsrvr.org^$3p
 ||aidata.io^$3p
 ||aidata.me^$3p
+||amp.cloudflare.com^$3p
+||amp.dev^$3p
 ||amplitude.com^$3p
+||ampproject.net^$3p
 ||analytics.dns-shop.ru^$all
 ||analytics.tiktok.com.edgekey.net^$all
 ||analytics.tiktok.com.ttdns2.com^$all
@@ -648,6 +638,7 @@ chromewebstore.google.com##.DKwHHf
 ||datacollector-drru.dt.hicloud.com^$3p
 ||deff.nelreports.net^$3p
 ||dnn506yrbagrg.cloudfront.net^$3p
+||dsspn.com^3p
 ||experience.ninetailed.co^$3p
 ||failover-telemetry-us.tradingview.com^$3p
 ||gbqofs.com^$3p
@@ -690,6 +681,7 @@ chromewebstore.google.com##.DKwHHf
 ||otm-r.com^$3p
 ||pemsrv.com^$3p
 ||picreel.com^$3p
+||poqup.com^$3p
 ||prod-telemetry.paradox-interactive.com^$3p
 ||profitwell.com^$3p
 ||proprofschat.com^$3p
@@ -835,12 +827,8 @@ hoster.ru##.footer__top
 hoster.ru##.header
 
 ! cp.wowcircle.net
-||dscord.com^$domain=cp.wowcircle.net
+||dscord.com^$domain=wowcircle.net
 ||discord.com/api/*widget.json$xhr,domain=wowcircle.net
-cp.wowcircle.net##.flex-cc.head-navigation
-cp.wowcircle.net##div.title:nth-of-type(2)
-cp.wowcircle.net##.right-column > nav
-cp.wowcircle.net##.flex-sbc.footer
 cp.wowcircle.net##[src="https://wowcircle.net/images/corner_tbc.png"]
 
 ! funpay.com
@@ -871,11 +859,11 @@ pornhub.com###welcome
 pornhub.com##.abAlertInner
 pornhub.com##.realsex
 pornhub.com##.socialIconsWrapper
-brick.xhamster.com/api$xhr
-collector.xhamster*$all
+||brick.xhamster.com/api$xhr
+||collector.xhamster$all
+||xhcdn.com/promo$image
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab
-xhcdn.com/promo$image
 
 ! Generic Filters
 
@@ -887,6 +875,13 @@ xhcdn.com/promo$image
 /acceptCookies
 /ad-event
 /adfox
+/amp-analytics
+/amp-consent
+/amp-geo
+/analysis-counter
+/analytics/stat.js
+/api/counters
+/api/tracker
 /banner-cookies
 /banner_cookie
 /contact-popup-form.js$script
@@ -902,7 +897,8 @@ xhcdn.com/promo$image
 /cookies-popup
 /cookiesPopup
 /cookiespopup.js$script
-/facebook-popup
+/cycounter$3p
+/data/counter.html
 /get-zen-logos$all
 /gtag/js$script
 /logos/static
@@ -918,6 +914,7 @@ xhcdn.com/promo$image
 /push-notification
 /s3/client-metrics
 /sovetnik/popup$all
+/target/tracking
 /type=analytics$xhr
 /web-push
 /webpush
@@ -934,6 +931,7 @@ xhcdn.com/promo$image
 ###catapult-cookie-bar
 ###ccpaCookieBanner
 ###clearfy-cookie
+###consent-popup
 ###cookie
 ###cookie-banner
 ###cookie-bar
@@ -993,6 +991,7 @@ xhcdn.com/promo$image
 ###privacy-consent
 ###pso-widget-container
 ###shortpixel-cookies
+
 ##.-cookies.popup-box
 ##.-pro.popup-box
 ##.Cookie--base.Cookie--bottom.Cookie
@@ -1043,6 +1042,7 @@ xhcdn.com/promo$image
 ##.c-cookies
 ##.c-cookies__frame
 ##.confirm-popup
+##.consent-popup
 ##.cookie
 ##.cookie--showed.cookie
 ##.cookie-agree-with-use
@@ -1176,6 +1176,7 @@ xhcdn.com/promo$image
 ##CookieNotification
 ##[id^="googleAd"]
 ##[id^="google_ads_iframe"]
+##amp-consent
 ##app-use-cookie
 ##app-use-cookie-banner
 ##div.-cookies
