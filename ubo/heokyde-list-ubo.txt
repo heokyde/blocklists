@@ -4,7 +4,7 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 13 March 2024
+! Last modified: 14 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -37,6 +37,7 @@
 ||dzen.ru/clck$ping
 ||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
+||yandex.ru^$3p,badfilter,domain=~dzen.ru
 @@||adfstat.yandex.ru/captcha$image,1p
 @@||captcha-api.yandex.ru^$3p
 @@||captcha.yandex.net^$3p
@@ -157,12 +158,11 @@
 ||yandexapi.net^$all
 !||browser-updater.yandex.net^
 !||clck.yandex.ru^
-mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
 ya.ru,market.yandex.ru#@#.i-mini-bem.alice-fab
 ya.ru,market.yandex.ru#@#[class^="alice-fab"]
 ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+ya.ru##.market-feed
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
-ya.ru,dzen.ru##.market-feed
 ya.ru,dzen.ru,yandex.*##.DistrNav
 ya.ru,dzen.ru,yandex.*##.DistrNav-Link
 ya.ru,dzen.ru,yandex.*##.ImagesViewer-SidebarAdv
@@ -185,10 +185,11 @@ ya.ru,dzen.ru,yandex.*##div[class^="market-feed"]
 ya.ru,dzen.ru,yandex.*##div[class^="simple-popup__content"]
 ya.ru,dzen.ru,yandex.*##div[class^="vc2f24aec eff99312f"]
 yandex.*##div[id^="rsya-guarantee"]
+mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
 dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 
 ! vk.com | mail.ru
-||vk.com^$from=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
+||vk.com^$domain=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
 ||mail.ru^$domain=livejournal.com
 ||bar.love.mail.ru^$domain=mail.ru
 ||vkplay.ru^$domain=mail.ru
@@ -774,7 +775,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 
 ! General blocking filters
-/*lms-analytics/
+/*lms-analytics
 /*log*experiment=
 /*type=analytics&
 /?log=experiment&
@@ -783,80 +784,65 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 /PopupCookie.js^$script
 /acceptCookies.js^$script
 /ad-event
-/adfox/
-/amp-analytics-
-/amp-geo-
+/adfox
+/amp-analytics$3p
+/amp-geo$3p
 /analysis-counter.
 /analytics/stat.js
-/api/counters/
-/api/tracker/
+/api/counters$all
+/api/tracker$all
 /aria-web-telemetry-^$script
 /banner-cookies
 /banner-cookies.js^$script
 /banner_cookie
 /cdn-cgi/apps
 /contact-popup-form.js$script
-/cookie-disclaimer-
-/cookie-disclaimer/
+/cookie-disclaimer$all
 /cookie-info
 /cookie-overlay
 /cookie-popup
 /cookie-privacy
 /cookie_notification-
+/cookiepolicy$script
 /cookiepolicy.js$script
-/cookiepolicy/
+/cookies-popup$script
 /cookies-popup.js$script
-/cookies-popup/
 /cookiespopup.js$script
 /cycounter$3p
 /data/counter.
 /get-zen-logos$all
-/gtag.
-/gtag/
+/gtag$all
 /hosted/telemetry.^$script
+/newsletter-popup-
 /newsletter-popup.
-/newsletter-popup/
 /newsletterpopup.
-/newsletterpopup/
 /overlay-
 /overlay.
-/overlay/
+/overlay.
 /overlays-
-/overlays/
 /pi/?action*cookie=
 /pixel/events.js$script
-/popup_new_banner/
-/popup_new_banner_
+/popup_new_banner$all
+/privacy-policy-
 /privacy-policy.
-/privacy-policy/
-/privacy_popup/
 /privacy_popup?
-/push-notification-
-/push-notification.
-/push-notification/
-/push-notifications/
-/s3/client-metrics.
-/s3/client-metrics/
+/privacy_popup_
+/push-notification$all
+/s3/client-metrics$all
 /sovetnik/popup-$all
 /sovetnik/popup.$all
-/sovetnik/popup/$all
-/target/tracking.
-/target/tracking/
+/target/tracking$all
 /telemetry-
 /telemetry.
-/telemetry/
 /telemetry_
 /type=analytics&
 /type=analytics?
 /web-push-
 /web-push.
-/web-push/
 /webpush-
 /webpush.
-/wp-popup-scheduler-
-/wp-popup-scheduler.
-/wp-popup-scheduler/
-/yandex-metrica-watch/$xhr,script
+/wp-popup-scheduler$all
+/yandex-metrica-watch$xhr,script
 
 ! Generic cosmetic filters
 ###acceptCookies
