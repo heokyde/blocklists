@@ -32,10 +32,8 @@
 ||yastatic.net/*adfox$script
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
+||avatars.mds.yandex.net/get-direct-picture$image
 ||ya.ru/clck
-||dzen.ru/*counter
-||dzen.ru/clck$ping
-||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
 @@yandex.ru/search$generichide
@@ -88,7 +86,6 @@
 ||bs-metadsp.yandex.$all
 ||bs.yandex.$all
 ||business.yandex.ru^$doc,3p
-||clck.dzen.ru^$all
 ||clck.yandex.com^$all
 ||clck.yandex.net^$all
 ||content.adfox.net^$all
@@ -103,12 +100,12 @@
 ||feedback.send.yandex.ru^$all
 ||grade.market.yandex.ru^$all
 ||help.yandex.ru^$3p
+||http-check-headers.yandex.ru^$all
 ||httpsyandex.com^$xhr,3p
 ||informer.yandex.$all
 ||jstracer.yandex.$all
 ||kiks.yandex.$all
 ||lbs-slb.mobile.yandex.net^$all
-||log.dzen.ru^$all
 ||log.strm.yandex.ru^$all
 ||market-click2.yandex.^$xhr,ping,3p
 ||mc-ya.ru^$all
@@ -120,7 +117,6 @@
 ||metrika.yandex.$all
 ||mobile-ads-beta.yandex.^$all
 ||mobile-ads.yandex.$all
-||ms.dzen.ru^$all
 ||offerwall.yandex.^$all
 ||partner.yandex.ru^$doc,3p
 ||payment-widget.plus.kinopoisk.ru^$all
@@ -159,43 +155,38 @@
 ||yandexapi.net^$all
 !||browser-updater.yandex.net^
 !||clck.yandex.ru^
-ya.ru,yandex.*#@#div[class^="Modal-Content"]
-ya.ru,yandex.*#@#div[class^="VanillaReact AlicePopup"]
-ya.ru,market.yandex.ru#@#.i-mini-bem.alice-fab
-ya.ru,market.yandex.ru#@#[class^="alice-fab"]
-ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
-mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
-ya.ru##.market-feed
+
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
+ya.ru##[class^="market-feed"]
 ya.ru,yandex.*##.DistrNav,.DistrNav-Link
 ya.ru,yandex.*##.ImagesViewer-SidebarAdv
-ya.ru,yandex.*##.Modal-Overlay,.Modal-Wrapper,.Modal-Table,.Modal-Content
 ya.ru,yandex.*##.alert
+ya.ru,yandex.*##.dist-overlay__popup
+ya.ru,yandex.*##.dist-popup
 ya.ru,yandex.*##.i-mini-bem.banner
 ya.ru,yandex.*##.link-bro
 ya.ru,yandex.*##.market-banner
 ya.ru,yandex.*##.message-promo
-ya.ru,yandex.*##.overlay__panel
-ya.ru,yandex.*##.overlay__panel-inner
 ya.ru,yandex.*##.search3__doodle
-ya.ru,yandex.*##div[class^="Modal Modal_visible Modal_hasAnimation DistributionSplashScreenModal DistributionSplashScreenModal_outerCross SplashscreenDefault"]
-ya.ru,yandex.*##div[class^="PopupDesktop-Content"]
-ya.ru,yandex.*##div[class^="banner-media banner__content"]
-ya.ru,yandex.*##div[class^="link-bro i-mini-bem"]
-ya.ru,yandex.*##div[class^="market-feed"]
-ya.ru,yandex.*##div[class^="simple-popup__content"]
-ya.ru,yandex.*##div[class^="vc2f24aec eff99312f"]
-ya.ru,yandex.*##div[class^="verified-tooltip verified-tooltip_view_default light-popup light-popup_animated_yes i-bem"]
-yandex.*##div[id^="rsya-guarantee"]
-dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
+ya.ru,yandex.*##.simple-popup
+ya.ru,yandex.*##[class^="PopupDesktop-Content"]
+ya.ru,yandex.*##[class^="banner-media banner__content"]
+ya.ru,yandex.*##[class^="simple-popup__overlay"]
+ya.ru,yandex.*##[id^="rsya-guarantee"]
+ya.ru,market.yandex.ru#@#[class^="alice-fab"]
+ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
 
 ! vk.com | mail.ru
 ||vk.com^$domain=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
 ||mail.ru^$domain=livejournal.com
 ||bar.love.mail.ru^$domain=mail.ru
 ||vkplay.ru^$domain=mail.ru
-||vk.com/*ads
+||dzen.ru/*counter
+||dzen.ru/clck$ping
+||dzen.ru/pingx
 ||mail.ru/*counter
+||vk.com/*ads
 ||ad.mail.ru^$all
 ||ads.vk.com^$all
 ||adtech.vk.team^$all
@@ -204,12 +195,14 @@ dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 ||an.mail.ru^$all
 ||auth.vkpns.rustore.ru^$all
 ||b2.mail.ru^$all
+||clck.dzen.ru^$all
 ||connect.ok.ru^$3p
 ||cspreport.mail.ru^$all
-||http-check-headers.yandex.ru^$xhr,ping
 ||likemore-go.imgsmail.ru^$all
 ||list.ru^$all
+||log.dzen.ru^$all
 ||mradx.net^$all
+||ms.dzen.ru^$all
 ||qmaacxajsovk.com^$all
 ||queuev4.vk.com^$all
 ||r.mail.ru^$all
@@ -225,6 +218,7 @@ dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 ||trk.mail.ru^$all
 ||vkpns.rustore.ru^$3p
 ||xray.mail.ru^$1p,third-party
+dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 mail.ru##div[class^="geomap-tooltip qaodnia__bgus4g"]
 mail.ru##div[class^="tgb-wrapper qaodnia__1pidajk"]
 vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout--vertical-bottom.vkuiFixedLayout--vertical-bottom.vkuiFixedLayout
@@ -1042,9 +1036,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 ##.direct-close-block__confirm-popup-content
 ##.direct-view
 ##.disclaimer
-##.dist-overlay__popup
-##.dist-popup
-##.dist-popup__content.popup__content
 ##.ebpa-inner
 ##.ebpa-message
 ##.footer-promo-place
@@ -1085,12 +1076,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 ##.rtterms-banner_txt
 ##.seers-cmp-banner-bar
 ##.show.cookie-snack
-##.simple-popup
-##.simple-popup__content
-##.simple-popup__html
-##.simple-popup__inner
-##.simple-popup__overlay
-##.simple-popup__title
 ##.sites-cookie
 ##.sites-cookie-notice
 ##.sites-cookie-notice-fit
