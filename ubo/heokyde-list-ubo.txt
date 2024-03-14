@@ -159,6 +159,7 @@
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
 ya.ru,yandex.*##.DistrNav,.DistrNav-Link
+ya.ru,yandex.*##.DistrNav,.DistrNav-Link
 ya.ru,yandex.*##.ImagesViewer-SidebarAdv
 ya.ru,yandex.*##.alert
 ya.ru,yandex.*##.dist-overlay__popup
@@ -172,6 +173,7 @@ ya.ru,yandex.*##.simple-popup
 ya.ru,yandex.*##[class^="PopupDesktop-Content"]
 ya.ru,yandex.*##[class^="banner-media banner__content"]
 ya.ru,yandex.*##[class^="simple-popup__overlay"]
+ya.ru,yandex.*##[class^="verified-tooltip__popup"]
 ya.ru,yandex.*##[id^="rsya-guarantee"]
 ya.ru,market.yandex.ru#@#[class^="alice-fab"]
 ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
@@ -837,6 +839,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 /webpush-
 /webpush.
 /wp-popup-scheduler$all
+/ya-paranja/client.js^$script,domain=ya.ru|yandex.*
 /yandex-metrica-watch$xhr,script
 
 ! Generic cosmetic filters
