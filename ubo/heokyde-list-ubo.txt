@@ -38,6 +38,7 @@
 ||dzen.ru/pingx
 ||ipv6-internet.yandex.net^
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
+@@yandex.ru/search$generichide
 @@||adfstat.yandex.ru/captcha$image,1p
 @@||captcha-api.yandex.ru^$3p
 @@||captcha.yandex.net^$3p
@@ -158,34 +159,34 @@
 ||yandexapi.net^$all
 !||browser-updater.yandex.net^
 !||clck.yandex.ru^
-ya.ru,dzen.ru,yandex.*#@#div[class^="Modal-Content"]
+ya.ru,yandex.*#@#div[class^="Modal-Content"]
+ya.ru,yandex.*#@#div[class^="VanillaReact AlicePopup"]
 ya.ru,market.yandex.ru#@#.i-mini-bem.alice-fab
 ya.ru,market.yandex.ru#@#[class^="alice-fab"]
 ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
 ya.ru##.market-feed
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
-ya.ru,dzen.ru,yandex.*##.DistrNav
-ya.ru,dzen.ru,yandex.*##.DistrNav-Link
-ya.ru,dzen.ru,yandex.*##.ImagesViewer-SidebarAdv
-ya.ru,dzen.ru,yandex.*##.Modal-Content
-ya.ru,dzen.ru,yandex.*##.Modal-Overlay
-ya.ru,dzen.ru,yandex.*##.Modal-Table
-ya.ru,dzen.ru,yandex.*##.Modal-Wrapper
-ya.ru,dzen.ru,yandex.*##.alert
-ya.ru,dzen.ru,yandex.*##.i-mini-bem.banner
-ya.ru,dzen.ru,yandex.*##.link-bro
-ya.ru,dzen.ru,yandex.*##.market-banner
-ya.ru,dzen.ru,yandex.*##.overlay__panel
-ya.ru,dzen.ru,yandex.*##.overlay__panel-inner
-ya.ru,dzen.ru,yandex.*##.search3__doodle
-ya.ru,dzen.ru,yandex.*##div[class^="PopupDesktop-Content"]
-ya.ru,dzen.ru,yandex.*##div[class^="banner-media banner__content"]
-ya.ru,dzen.ru,yandex.*##div[class^="link-bro i-mini-bem"]
-ya.ru,dzen.ru,yandex.*##div[class^="market-feed"]
-ya.ru,dzen.ru,yandex.*##div[class^="simple-popup__content"]
-ya.ru,dzen.ru,yandex.*##div[class^="vc2f24aec eff99312f"]
+ya.ru,yandex.*##.DistrNav,.DistrNav-Link
+ya.ru,yandex.*##.ImagesViewer-SidebarAdv
+ya.ru,yandex.*##.Modal-Overlay,.Modal-Wrapper,.Modal-Table,.Modal-Content
+ya.ru,yandex.*##.alert
+ya.ru,yandex.*##.i-mini-bem.banner
+ya.ru,yandex.*##.link-bro
+ya.ru,yandex.*##.market-banner
+ya.ru,yandex.*##.message-promo
+ya.ru,yandex.*##.overlay__panel
+ya.ru,yandex.*##.overlay__panel-inner
+ya.ru,yandex.*##.search3__doodle
+ya.ru,yandex.*##div[class^="Modal Modal_visible Modal_hasAnimation DistributionSplashScreenModal DistributionSplashScreenModal_outerCross SplashscreenDefault"]
+ya.ru,yandex.*##div[class^="PopupDesktop-Content"]
+ya.ru,yandex.*##div[class^="banner-media banner__content"]
+ya.ru,yandex.*##div[class^="link-bro i-mini-bem"]
+ya.ru,yandex.*##div[class^="market-feed"]
+ya.ru,yandex.*##div[class^="simple-popup__content"]
+ya.ru,yandex.*##div[class^="vc2f24aec eff99312f"]
+ya.ru,yandex.*##div[class^="verified-tooltip verified-tooltip_view_default light-popup light-popup_animated_yes i-bem"]
 yandex.*##div[id^="rsya-guarantee"]
-mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
 dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 
 ! vk.com | mail.ru
@@ -921,6 +922,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.cookiesAnnounce-30a9a
 ###privacy_popup
 ###pso-widget-container
 ###shortpixel-cookies
+###yandex_ad
 ##.-cookies.popup-box
 ##.-pro.popup-box
 ##.Cookie--base
