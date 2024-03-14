@@ -158,6 +158,7 @@
 ||yandexapi.net^$all
 !||browser-updater.yandex.net^
 !||clck.yandex.ru^
+ya.ru,dzen.ru,yandex.*#@#div[class^="Modal-Content"]
 ya.ru,market.yandex.ru#@#.i-mini-bem.alice-fab
 ya.ru,market.yandex.ru#@#[class^="alice-fab"]
 ya.ru,market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
@@ -177,7 +178,6 @@ ya.ru,dzen.ru,yandex.*##.market-banner
 ya.ru,dzen.ru,yandex.*##.overlay__panel
 ya.ru,dzen.ru,yandex.*##.overlay__panel-inner
 ya.ru,dzen.ru,yandex.*##.search3__doodle
-ya.ru,dzen.ru,yandex.*##div[class^="Modal-Content"]
 ya.ru,dzen.ru,yandex.*##div[class^="PopupDesktop-Content"]
 ya.ru,dzen.ru,yandex.*##div[class^="banner-media banner__content"]
 ya.ru,dzen.ru,yandex.*##div[class^="link-bro i-mini-bem"]
