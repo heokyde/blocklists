@@ -177,8 +177,8 @@ ya.ru,yandex.*##[id^="rsya-guarantee"]
 ya.ru,yandex.*#@#.popup
 ya.ru,market.yandex.ru#@#[class^="alice-fab"],[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
 mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
-mail.yandex.ru##.MessageBox-Content
 music.yandex.ru##.notify_shown
+mail.yandex.ru##.MessageBox-Content
 
 ! vk.com | mail.ru
 ||vk.com^$3p,domain=tinkoff.ru|pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
@@ -219,7 +219,7 @@ music.yandex.ru##.notify_shown
 ||target.my.com^$3p
 ||top-fwz1.mail.ru^$all
 ||top.mail.ru^$all
-||trk.mail.ru^$image,popup
+||trk.mail.ru^$image
 ||vkpns.rustore.ru^$all
 ||xray.mail.ru^$all
 $removeparam=?yredirect=,domain=dzen.ru
@@ -239,6 +239,7 @@ vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout
 ||static.rutube.ru/static/lotties/gazprom.json$script
 rutube.ru##div[class^="app-download-default-banner-module__appDownloadPopupOverlay"]
 rutube.ru##div[class^="cookie-consent__content"]
+rutube.ru##.wdp-carousel-module__carousel
 
 ! Sber | Gitverse
 ||api.eapteka.ru^$3p
