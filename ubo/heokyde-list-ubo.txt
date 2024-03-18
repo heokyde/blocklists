@@ -11,7 +11,7 @@
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
 
 ! Yandex LLC
-||yandex.ru^3p,$domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
+||yandex.ru^$3p,domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
 ||yastatic.net^$domain=dzen.ru|yandex.by|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
 ||yandex.*/ads
 ||yandex.*/adv$3p
