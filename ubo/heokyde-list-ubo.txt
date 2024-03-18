@@ -4,14 +4,14 @@
 ! List is focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 15 March 2024
+! Last modified: 19 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
 
 ! Yandex LLC
-||yandex.ru^$domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru
+||yandex.ru^3p,$domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
 ||yastatic.net^$domain=dzen.ru|yandex.by|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
 ||yandex.*/ads
 ||yandex.*/adv$3p
@@ -174,13 +174,14 @@ ya.ru,yandex.*##[class^="banner-media banner__content"]
 ya.ru,yandex.*##[class^="simple-popup__overlay"]
 ya.ru,yandex.*##[class^="verified-tooltip__popup"]
 ya.ru,yandex.*##[id^="rsya-guarantee"]
+ya.ru,yandex.*#@#.popup
 ya.ru,market.yandex.ru#@#[class^="alice-fab"],[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
 mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
+mail.yandex.ru##.MessageBox-Content
 music.yandex.ru##.notify_shown
-music.yandex.ru#@#.popup
 
 ! vk.com | mail.ru
-||vk.com^$domain=pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru
+||vk.com^$3p,domain=tinkoff.ru|pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
 ||mail.ru^$domain=livejournal.com
 ||bar.love.mail.ru^$domain=mail.ru
 ||vkplay.ru^$domain=mail.ru
@@ -218,11 +219,15 @@ music.yandex.ru#@#.popup
 ||target.my.com^$3p
 ||top-fwz1.mail.ru^$all
 ||top.mail.ru^$all
-||trk.mail.ru^$all
+||trk.mail.ru^$image,popup
 ||vkpns.rustore.ru^$all
 ||xray.mail.ru^$all
+$removeparam=?yredirect=,domain=dzen.ru
+$removeparam=?utm_referrer=,domain=dzen.ru
+
 vk.com##[class^="box_layout"]
 dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
+dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
 mail.ru##div[class^="geomap-tooltip qaodnia__bgus4g"]
 mail.ru##div[class^="tgb-wrapper qaodnia__1pidajk"]
 vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout--vertical-bottom.vkuiFixedLayout--vertical-bottom.vkuiFixedLayout
@@ -244,11 +249,13 @@ rutube.ru##div[class^="cookie-consent__content"]
 ||sve.online.sberbank.ru^$domain=2gis.ru
 ||svi.online.sberbank.ru^$all
 ||visor.sberbank.ru^$all
+sbermarket.ru##.styles_b2bBanner__qoHGd
 gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 
 ! Rambler Media Group
-||rambler.ru^$domain=livejournal.com|lenta.ru
+||rambler.ru^$domain=livejournal.com
 ||rambler.ru/*counters
+||atlas.rambler.ru^$all
 ||counter.rambler.ru^$all
 ||csp.rambler-co.ru^$all
 ||dsp-rambler.ru^$all
@@ -265,6 +272,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||top100.ru^$all
 ||trafffgen.rambler.ru^$all
 ||xc3.services.livejournal.com$all
+!||hlsvod.rambler.eaglecdn.com^
 !||zoomdecorate.rambler.ru^
 ###ramblerCounter
 ###top100counter
@@ -777,6 +785,7 @@ chromewebstore.google.com##.DKwHHf
 ! Cosmetic filters
 adguard.*##.reviews,.video--welcome
 adguard.*##div[id^="sticky_bar_fixed"]
+akbars.ru##.black-color.bg-white.important-announcement__container
 browserling.com###tool-fffff2
 browserling.com##div.item
 funpay.com##.cd-container
@@ -799,6 +808,7 @@ pornhub.com###age-verification-container,age-verification-wrapper,welcome
 pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
 reports.adguard.*###header
 skiff.com##.gjdFDt.sc-ezbkAF,.iSjWsA.sc-ezbkAF
+tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wowcircle.net##div[class^="discord"],.flex-sbc.footer,.flex-cc.head-navigation
 wowcircle.net##div[class^="logo"],[src="https://wowcircle.net/images/corner_tbc.png"]
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
@@ -902,6 +912,8 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 ###cookie-box
 ###cookie-dialog-wrapper
 ###cookie-disclaimer
+###cookie-info
+###cookie-info-box
 ###cookie-law
 ###cookie-law-info-bar
 ###cookie-message
@@ -1029,7 +1041,9 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 ##.cookie-consent-wrapper
 ##.cookie-info
 ##.cookie-law
+##.cookie-message
 ##.cookie-message-block
+##.cookie-message_visible
 ##.cookie-notice
 ##.cookie-notice-container
 ##.cookie-notification
@@ -1083,11 +1097,14 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 ##.ebpa-inner
 ##.ebpa-message
 ##.footer-promo-place
+##.footer-social
 ##.fr.cookies-allow
 ##.fs-cc-banner_component
 ##.header-promo-place
 ##.hs-cookie-notification-position-bottom
+##.is-showing
 ##.js-cookie
+##.js-cookie-message
 ##.js-cookies-banner.cookies
 ##.js-notif-cookies.notification--cookies.notification
 ##.js-submit
