@@ -27,18 +27,20 @@
 ||yandex.*/monitoring_liza.txt
 ||yandex.*/ping
 ||yandex.*/uxfeedback
+||ya.ru/clck
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
 ||yastatic.net/*adfox$script
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
-||ya.ru/clck
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
 ||music.yandex.ru/promo/$doc,3p
-||ipv6-internet.yandex.net^
+||offers-comparison.yandex.ru$doc,3p
 @@||adfstat.yandex.ru/captcha$image,1p
+@@||browser-updater.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
+@@||enterprise.api-maps.yandex.ru$domain=avito.ru
 @@||passport.yandex.ru^$domain=kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^$domain=yandex.*|ya.ru
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
@@ -102,6 +104,7 @@
 ||http-check-headers.yandex.ru^$all
 ||httpsyandex.com^$xhr,3p
 ||informer.yandex.$all
+||ipv6-internet.yandex.net^$all
 ||jstracer.yandex.$all
 ||kiks.yandex.$all
 ||lbs-slb.mobile.yandex.net^$all
@@ -152,7 +155,6 @@
 ||yabs.yandex.$all
 ||yandexadexchange.net^$all
 ||yandexapi.net^$all
-!||browser-updater.yandex.net^
 !||clck.yandex.ru^
 
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
@@ -261,7 +263,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||csp.rambler-co.ru^$all
 ||dsp-rambler.ru^$all
 ||err.rambler.ru^$all
-||hlsvod.rambler.eaglecdn.com^$all
+||hlsvod.rambler.eaglecdn.com^$badfilter
 ||kraken.rambler.ru^$all
 ||loyalty.rambler-co.ru^$all
 ||rcmjs.rambler.ru^$all
@@ -273,28 +275,31 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||top100.ru^$all
 ||trafffgen.rambler.ru^$all
 ||xc3.services.livejournal.com$all
-!||hlsvod.rambler.eaglecdn.com^
-!||zoomdecorate.rambler.ru^
+||zoomdecorate.rambler.ru^$badfilter
 ###ramblerCounter
 ###top100counter
 
-! Marketplaces ozon.ru | wildberries | price.ru
+! Marketplaces ozon.ru | Wildberries | Avito
+||avito.ru/*px.js?ch=2$script
+||avito.ru/stat/radar?$xhr,image
+||banners-website.wildberries.ru^$xhr
+||main-page.wildberries.ru/*site-recommendation$xhr
 ||ozon.ru/*csp-log/
 ||ozon.ru/*logs-gateway/
 ||ozon.ru/*perf-metrics-collector/
-||ozone.ru/*client-metrics/
 ||ozone.ru/*banner-list.js$script
+||ozone.ru/*client-metrics/
 ||ozone.ru/*notification-service.js$script
+||price.ru/*ConfirmationCookie*$stylesheet
 ||edge-lb-g1.ozon.ru^$all
 ||p.ozon.ru^$all
 ||sentry.ozon.ru^$all
+||sentry.price-co.ru^$all
+||sntr.avito.ru^$all
+||track.price.ru^$all
 ||wstat.ozon.ru^$all
 ||xapi.ozon.ru$all
-||track.price.ru^$all
-||sentry.price-co.ru^$all
-||banners-website.wildberries.ru^$xhr
-||main-page.wildberries.ru/*site-recommendation$xhr
-||price.ru/*ConfirmationCookie*$stylesheet
+||yefktd.avito.ru^$all
 
 ! Ru Mass Media
 ||bihunekus.com/87018.js$script
@@ -350,6 +355,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||semanticlocation-pa.googleapis.com^$all
 @@||suggestqueries.google.com^
 @@||s.youtube.com^
+youtube.com#@##logo:style(pointer-events: none !important; cursor: default !important)
 youtube.com#@#ytd-shelf-renderer[thumbnail-style]
 transparencyreport.google.com##.hercules
 transparencyreport.google.com##social-action
@@ -457,6 +463,7 @@ chromewebstore.google.com##.DKwHHf
 ||adobedtm.com^$3p
 ||adplay.ru^$3p
 ||adriver.ru^$3p
+||ads.imgur.com^$all
 ||ads.imovideo.ru^$3p
 ||ads.tatar.ru^$all
 ||adspend.space^$3p
@@ -490,6 +497,8 @@ chromewebstore.google.com##.DKwHHf
 ||appsflyer.com^$all
 ||appsflyersdk.com^$3p
 ||artfut.com^$3p
+||assemblyexchange.com^$3p
+||assemblyfour.com^$3p
 ||begun.ru^$all
 ||betsonsport.ru^$all
 ||betweendigital.com^$3p
@@ -501,6 +510,7 @@ chromewebstore.google.com##.DKwHHf
 ||branch.io^$3p
 ||brandanalytics.ru^$3p
 ||bs-dante.ru^$3p
+||btloader.com^$3p
 ||bugsnag.co^$3p
 ||bugsnag.com^$3p
 ||bumlam.com^$3p
@@ -513,6 +523,8 @@ chromewebstore.google.com##.DKwHHf
 ||cdn.carrotquest.app^$3p
 ||cdn.cookielaw.org^$3p
 ||cdn.retailrocket.ru^$3p
+||ced-ns.sascdn.com^$3p
+||ced.sascdn.com^$3p
 ||chatbase.co^$3p
 ||cityadstrack.com^$3p
 ||cl-5bf28185.edgecdn.world^$3p
@@ -636,6 +648,7 @@ chromewebstore.google.com##.DKwHHf
 ||onesignal.com^$3p
 ||optimizely.com^$3p
 ||otm-r.com^$3p
+||p.imgur.com^$all
 ||p.typekit.net-stls-v3.edgesuite.net^$all
 ||p.typekit.net^$3p
 ||paradocs.ru^$3p
@@ -693,7 +706,9 @@ chromewebstore.google.com##.DKwHHf
 ||static.terratraf.io^$all
 ||stats.avito.ru^$3p
 ||stats.wp.com^$3p
+||stretchsquirrel.com^$3p
 ||svk-native.ru^$3p
+||t.imgur.com^$all
 ||t.nc0.co^$3p
 ||tagline.ru^$3p
 ||targetman.ru^$3p
@@ -736,6 +751,7 @@ chromewebstore.google.com##.DKwHHf
 ||wingify.imagekit.io^$3p
 ||wingify.mktoweb.com^$3p
 ||wisepops.com^$3p
+||wl-analytics.tsp.li^$3p
 ||wm-ya.jivosite.com^$3p
 ||wowblogger.ru^$3p
 ||wowcircle.net/*bg/bg_winter.jpg$image
@@ -789,6 +805,9 @@ adguard.*##div[id^="sticky_bar_fixed"]
 akbars.ru##.black-color.bg-white.important-announcement__container
 browserling.com###tool-fffff2
 browserling.com##div.item
+duckduckgo.com##.button_size-md__dS3Yr,.center_andText__ejUnC
+duckduckgo.com##.legacy-homepage-variants_belowTheFoldWrapper__7_DL2
+duckduckgo.com##legacy-homepage_ctaSection__5siuM
 funpay.com##.cd-container
 fusionbrain.ai##div[class="styles_wrap__erzrS styles_visible__5L2Yv"]
 gigacode.ru##div[class="_banner_10dxo_1"]
@@ -804,6 +823,9 @@ mxtoolbox.com##div[id^="supertool_ad_variation"]
 nicehash.com##.report-button,.grecaptcha-badge,.shop
 nicehash.com##div[class^="Cookie Cookie--bottom Cookie--base"]
 nicehash.com##div[class^="banner banner-blue"]
+nslookup.io###n-dns-records-sidebar-default-wrapper,#n-search-page-sm-wrapper
+nslookup.io##.text-white.bg-\[\#390261\]
+ntv.ru##.loader--active
 pastebin.com##div[class^="popup-container"],.header__logo
 pornhub.com###age-verification-container,age-verification-wrapper,welcome
 pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
@@ -828,6 +850,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 /adfox
 /amp-analytics$3p
 /amp-geo$3p
+/ana-sentry.js$script
 /analysis-counter.
 /analytics/stat.js
 /api/counters$all
@@ -857,10 +880,15 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 /hosted/telemetry.^$script
 /js/cookielaw.js$script
 /js/sourcebuster.min.js$script
+/log$xhr,script
 /log_event?
+/metric-collector$xhr,script
+/metrics$xhr,script,ping
+/metrics/partners$xhr,script
 /newsletter-popup-
 /newsletter-popup.
 /newsletterpopup.
+/notify-count.php
 /overlay-
 /overlay.
 /overlay.
