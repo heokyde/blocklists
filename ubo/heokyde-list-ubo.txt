@@ -28,6 +28,7 @@
 ||yandex.*/ping
 ||yandex.*/uxfeedback
 ||ya.ru/clck
+||ya.ru/project/vygoda/$3p,doc
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
 ||yastatic.net/*adfox$script
