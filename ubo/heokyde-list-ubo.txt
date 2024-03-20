@@ -1,11 +1,11 @@
 ! Title: 📛 Heokyde List
 ! Homepage: github.com/heokyde/blocklists
-! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs (IDN). Annoyances elements, such as pop-up ads, cookie notifications, etc.
-! List is focused on the Russian Internet.
+! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs (IDN). Annoyances elements, such as pop-up ads, cookie notifications, etc. Focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Last modified: 19 March 2024
+! Syntax: uBlock
 ! Expires: 1 days
+! Last modified: 20 March 2024
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -228,12 +228,13 @@ mail.yandex.ru##.MessageBox-Content
 $removeparam=?yredirect=,domain=dzen.ru
 $removeparam=?utm_referrer=,domain=dzen.ru
 
-vk.com##[class^="box_layout"]
-dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
 dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
+dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
+m.vk.com##.Pad_theme_gray.Pad
 mail.ru##div[class^="geomap-tooltip qaodnia__bgus4g"]
 mail.ru##div[class^="tgb-wrapper qaodnia__1pidajk"]
 vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout--vertical-bottom.vkuiFixedLayout--vertical-bottom.vkuiFixedLayout
+vk.com##[class^="box_layout"]
 
 ! Gazprom Media
 ||rutube.ru/play/embed*$3p,frame,redirect=click2load.html
@@ -250,6 +251,7 @@ rutube.ru##.wdp-carousel-module__carousel
 ||counter.sbermarket.ru^$all
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
+||sentry-api.sberdevices.ru^$all
 ||sve.online.sberbank.ru^$domain=2gis.ru
 ||svi.online.sberbank.ru^$all
 ||visor.sberbank.ru^$all
@@ -393,16 +395,10 @@ chromewebstore.google.com##.DKwHHf
 
 ! Yahoo
 ||ads.yahoo.com^$all
-||adtech.yahooinc.com^$all
-||advertising.yahoo.com^$all
 ||analytics.query.yahoo.com^$all
 ||analytics.yahoo.com^$all
 ||geo.query.yahoo.com^$all
 ||geo.yahoo.com^$all
-||log.fc.yahoo.com^$all
-||partnerads.ysm.yahoo.com^$all
-||udc.yahoo.com^$all
-||udcm.yahoo.com^$all
 
 ! Twitter
 ||ads.twitter.com^$3p
@@ -418,28 +414,30 @@ chromewebstore.google.com##.DKwHHf
 ||wcpstatic.microsoft.com^$domain=microsoft.com|skype.com
 ||dscord.com^$domain=wowcircle.net
 ||adnxs.com^$all
+||analytics.msnbc.msn.com^$all
 ||az725175.vo.msecnd.net^$all
-||azurefd-t-prod.trafficmanager.net^$all
 ||bat-bing-com.a-0001.a-msedge.net^$all
 ||bat.bing.com^$all
-||c.microsoft.com^$all
+||browser.events.data.msn.com^$all
+||browser.pipe.aria.microsoft.com^$all
 ||collector.github.com^$all
-||config.edge.skype.com^$all
-||contentstorage.osi.office.net^$all
-||cosmic-westeurope-ns-0bf56c72df3e.trafficmanager.net^$all
-||e13478.dscd.akamaiedge.net^$all
-||e86303.dscx.akamaiedge.net^$all
-||events.data.microsoft.com^$all
-||firstparty-azurefd-prod.trafficmanager.net^$all
+||dc.services.visualstudio.com^$all
+||flex.msn.com^$all
+||fp.measure.office.com^$all
 ||fpt.microsoft.com^$all
 ||js.monitor.azure.com^$all
-||monitor.azure.com^$all
+||o.xbox.com^$all
+||o365diagtelemetry.trafficmanager.net^$all
+||srtb.msn.com^$all
+||vortex.data.microsoft.com^$all
+
 ||odwebp.trafficmanager.net^$all
 ||p-static.bing.trafficmanager.net^$all
 ||pipe.aria.microsoft.com^$all
 ||r.bing.com.edgekey.net^$all
 ||uhf.microsoft.com^$all
 @@||a-0001.a-msedge.net^
+@@||copilot.microsoft.com^
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
 ||1rx.io^$3p
@@ -645,6 +643,7 @@ chromewebstore.google.com##.DKwHHf
 ||nitropay.com^$3p
 ||nitroscripts.com^$3p
 ||notifications-pusher.gog.com^$3p
+||nvidia.tt.omtrdc.net^$all
 ||omtrdc.net^$3p
 ||onesignal.com^$3p
 ||optimizely.com^$3p
@@ -697,6 +696,7 @@ chromewebstore.google.com##.DKwHHf
 ||sitereview.zscaler.com^$all
 ||skai.io^$3p
 ||skcrtxr.com^$all
+||smetrics.nvidia.com^$all
 ||soloway.ru^$3p
 ||solta.io^$3p
 ||sparrow.ru$all
@@ -708,6 +708,7 @@ chromewebstore.google.com##.DKwHHf
 ||stats.avito.ru^$3p
 ||stats.wp.com^$3p
 ||stretchsquirrel.com^$3p
+||stt.nvidia.com^$all
 ||svk-native.ru^$3p
 ||t.imgur.com^$all
 ||t.nc0.co^$3p
@@ -801,6 +802,7 @@ chromewebstore.google.com##.DKwHHf
 ||v9xq2.shop^$all
 
 ! Cosmetic filters
+addons.opera.com##.light
 adguard.*##.reviews,.video--welcome
 adguard.*##div[id^="sticky_bar_fixed"]
 akbars.ru##.black-color.bg-white.important-announcement__container
@@ -824,14 +826,17 @@ mxtoolbox.com##div[id^="supertool_ad_variation"]
 nicehash.com##.report-button,.grecaptcha-badge,.shop
 nicehash.com##div[class^="Cookie Cookie--bottom Cookie--base"]
 nicehash.com##div[class^="banner banner-blue"]
-nslookup.io###n-dns-records-sidebar-default-wrapper,#n-search-page-sm-wrapper
+nslookup.io###n-dns-records-sidebar-default-wrapper,#n-search-page-sm-wrapper,#n-dns-records-txt-lg-wrapper
 nslookup.io##.text-white.bg-\[\#390261\]
 ntv.ru##.loader--active
 pastebin.com##div[class^="popup-container"],.header__logo
 pornhub.com###age-verification-container,age-verification-wrapper,welcome
 pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
 reports.adguard.*###header
+search.brave.com##.type.theme--default,.svelte-156mu3h.desktop-small-regular
 skiff.com##.gjdFDt.sc-ezbkAF,.iSjWsA.sc-ezbkAF
+startpage.com##.css-16xsqfc,.css-1qcfwib,.css-hi3728
+startpage.com##.hide-promo,.below-the-fold,.eu3pp1u0
 tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wowcircle.net##div[class^="discord"],.flex-sbc.footer,.flex-cc.head-navigation
 wowcircle.net##div[class^="logo"],[src="https://wowcircle.net/images/corner_tbc.png"]
@@ -879,10 +884,12 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 /get-zen-logos$all
 /gtag$all
 /hosted/telemetry.^$script
+/js/analysis.js$script
 /js/cookielaw.js$script
 /js/sourcebuster.min.js$script
 /log$xhr,script
 /log_event?
+/mail?load=experiment$xhr,script
 /metric-collector$xhr,script
 /metrics$xhr,script,ping
 /metrics/partners$xhr,script
