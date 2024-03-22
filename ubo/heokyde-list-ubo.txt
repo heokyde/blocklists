@@ -5,7 +5,7 @@
 ! License: MIT
 ! Syntax: uBlock
 ! Expires: 1 days
-! Last modified: 20 March 2024
+! Last modified: 22 March 2024
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -43,7 +43,7 @@
 @@||captcha.yandex.net^
 @@||enterprise.api-maps.yandex.ru$domain=avito.ru
 @@||passport.yandex.ru^$domain=kinopoisk.ru
-@@||redirect.appmetrica.yandex.com^$domain=yandex.*|ya.ru
+@@||redirect.appmetrica.yandex.com^$all,~ping,domain=ya.ru|yandex.*
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket,1p
 @@||widevine-proxy.ott.yandex.ru^
@@ -249,6 +249,7 @@ rutube.ru##.wdp-carousel-module__carousel
 ||api.eapteka.ru^$3p
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
+||metrics.prom.third-party-app.sberdevices.ru^$all
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
 ||sentry-api.sberdevices.ru^$all
@@ -430,7 +431,6 @@ chromewebstore.google.com##.DKwHHf
 ||o365diagtelemetry.trafficmanager.net^$all
 ||srtb.msn.com^$all
 ||vortex.data.microsoft.com^$all
-
 ||odwebp.trafficmanager.net^$all
 ||p-static.bing.trafficmanager.net^$all
 ||pipe.aria.microsoft.com^$all
@@ -679,6 +679,7 @@ chromewebstore.google.com##.DKwHHf
 ||rutarget.ru^$all
 ||rutrk.org^$all
 ||s.clickiocdn.com^$all
+||s.deepl.com^$all
 ||s.tradingview.com^$3p
 ||s3.wi-fi.ru^$3p
 ||sape.ru^$3p
@@ -838,8 +839,10 @@ skiff.com##.gjdFDt.sc-ezbkAF,.iSjWsA.sc-ezbkAF
 startpage.com##.css-16xsqfc,.css-1qcfwib,.css-hi3728
 startpage.com##.hide-promo,.below-the-fold,.eu3pp1u0
 tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
+wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##div[class^="discord"],.flex-sbc.footer,.flex-cc.head-navigation
 wowcircle.net##div[class^="logo"],[src="https://wowcircle.net/images/corner_tbc.png"]
+xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
@@ -853,6 +856,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 /PopupCookie.js^$script
 /acceptCookies.js^$script
 /ad-event
+/ad-provider.js
 /adfox
 /amp-analytics$3p
 /amp-geo$3p
