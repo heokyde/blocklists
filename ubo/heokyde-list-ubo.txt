@@ -617,6 +617,7 @@ chromewebstore.google.com##.DKwHHf
 ||k50.ru^$3p
 ||kenshoo.com^$3p
 ||kimberlite.io^$3p
+||lenmit.com^$all
 ||live2support.com^$3p
 ||livetex.ru^$3p
 ||logger.moviead55.ru^$all
@@ -684,7 +685,6 @@ chromewebstore.google.com##.DKwHHf
 ||s.deepl.com^$all
 ||s.tradingview.com^$3p
 ||s3.wi-fi.ru^$3p
-||sape.ru^$3p
 ||sape.ru^$3p
 ||scorecardresearch.com^$all
 ||scripts.witstroom.com^$3p
@@ -781,6 +781,7 @@ chromewebstore.google.com##.DKwHHf
 ||smartround.ru^$all
 ||starrater.pp.ru^$all
 ||steamcommunutty.com^$all
+||website.org^$all
 ||xosr.ru^$all
 ||1wrcna.life^$all
 ||apart.doorhousebigleft.motorcycles^$all
@@ -812,9 +813,14 @@ chromewebstore.google.com##.DKwHHf
 ||wireryzeni.top^$all
 ||ww7777.info^$all
 
-||telegra.ph/Aktivaciya-polzovatelya-525476-07-25?z9h^$doc
-||telegra.ph/VNIMANIE-03-22-338^$doc
-||telegra.ph/Verifikaciya-projdena-03-22^$doc
+||telegra.ph/aktivaciya-polzovatelya-525476-07-25?z9h^$doc
+||telegra.ph/verifikaciya-projdena-03-22^$doc
+||telegra.ph/vnimanie-03-22-338^$doc
+
+||narod.ru^$doc
+||ucoz.ru^$doc
+||wallst.ru^$doc
+||webservis.ru^$doc
 
 ! Cosmetic filters
 addons.opera.com##.light
@@ -1294,17 +1300,21 @@ $ping
 ||marine.ru^$doc
 ||mordovia.ru^$doc
 ||mordovia.su^$doc
-||moscow^doc
+||moscow^$doc
+||msk.su^$doc
 ||murmansk.su^$doc
 ||mytis.ru^$doc
 ||nalchik.ru^$doc
 ||nalchik.su^$doc
 ||navoi.su^$doc
+||nov.ru^$doc
+||nov.su^$doc
 ||obninsk.su^$doc
 ||penza.su^$doc
 ||pokrovsk.su^$doc
 ||pp.ru^$doc
 ||pyatigorsk.ru^$doc
+||spb.su^$doc
 ||tashkent.su^$doc
 ||termez.su^$doc
 ||togliatti.su^$doc
