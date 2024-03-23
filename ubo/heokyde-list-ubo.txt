@@ -5,7 +5,7 @@
 ! License: MIT
 ! Syntax: uBlock
 ! Expires: 1 days
-! Last modified: 22 March 2024
+! Last modified: 23 March 2024
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -28,7 +28,7 @@
 ||yandex.*/ping
 ||yandex.*/uxfeedback
 ||ya.ru/clck
-||ya.ru/project/vygoda/$3p,doc
+||ya.ru/project/vygoda/$doc,3p
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
 ||yastatic.net/*adfox$script
@@ -37,7 +37,7 @@
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
 ||music.yandex.ru/promo/$doc,3p
 ||offers-comparison.yandex.ru$doc,3p
-@@||adfstat.yandex.ru/captcha$image,1p
+@@||adfstat.yandex.ru/captcha$image
 @@||browser-updater.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
@@ -45,7 +45,7 @@
 @@||passport.yandex.ru^$domain=kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^$all,~ping,domain=ya.ru|yandex.*
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
-@@||uniproxy.alice.ya.ru/uni.ws$websocket,1p
+@@||uniproxy.alice.ya.ru/uni.ws$websocket
 @@||widevine-proxy.ott.yandex.ru^
 @@||ya.ru/alisa_davay_pridumaem
 @@||yandex./portal/searchframe$subdocument
@@ -249,6 +249,7 @@ rutube.ru##.wdp-carousel-module__carousel
 ||api.eapteka.ru^$3p
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
+||sbermarket.ru/v2/vendo/track/
 ||metrics.prom.third-party-app.sberdevices.ru^$all
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
@@ -540,6 +541,7 @@ chromewebstore.google.com##.DKwHHf
 ||comagic.ru^$3p
 ||consent.cookiebot.com^$3p
 ||const.uno^$3p
+||convertize.io^$3p
 ||cookieyes.com^$3p
 ||counter.any.run^$all
 ||counter.log24.ru^$3p
@@ -780,15 +782,19 @@ chromewebstore.google.com##.DKwHHf
 ||starrater.pp.ru^$all
 ||steamcommunutty.com^$all
 ||xosr.ru^$all
+||1wrcna.life^$all
 ||apart.doorhousebigleft.motorcycles^$all
 ||bysoos.online^$all
+||casb2h.xyz^$all
 ||dlnhighpressurecleaningservicesltd.co.uk^$all
 ||eglob.vontos.buzz^$all
 ||fenarqwi.buzz^$all
+||guryfuytu.top^$all
 ||heytrhrerght.buzz^$all
 ||hotoffers.info^$all
 ||kbyqnjjv.shop^$all
 ||meryruytss.buzz^$all
+||numythrhrt.buzz^$all
 ||obrtga.buzz^$all
 ||ofdakk.top^$all
 ||otnsos.buzz^$all
@@ -798,9 +804,17 @@ chromewebstore.google.com##.DKwHHf
 ||razupolre.info^$all
 ||redakt.top^$all
 ||removalsinrotherham.co.uk^$all
-||telegra.ph/Aktivaciya-polzovatelya-525476-07-25?z9h^$doc
+||trayjyuj.buzz^$all
 ||tutyutyutyu.buzz^$all
+||tutyutyutyu.buzz^$all
+||uyiytyjuykyu.buzz^$all
 ||v9xq2.shop^$all
+||wireryzeni.top^$all
+||ww7777.info^$all
+
+||telegra.ph/Aktivaciya-polzovatelya-525476-07-25?z9h^$doc
+||telegra.ph/VNIMANIE-03-22-338^$doc
+||telegra.ph/Verifikaciya-projdena-03-22^$doc
 
 ! Cosmetic filters
 addons.opera.com##.light
@@ -847,6 +861,7 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnno
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
 ! General blocking filters
+$ping
 /*lms-analytics
 /*log*experiment=
 /*type=analytics&
@@ -902,7 +917,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 /newsletterpopup.
 /notify-count.php
 /overlay-
-/overlay.
 /overlay.
 /overlays-
 /pi/?action*cookie=
