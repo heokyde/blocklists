@@ -5,7 +5,7 @@
 ! License: MIT
 ! Syntax: uBlock
 ! Expires: 1 days
-! Last modified: 23 March 2024
+! Last modified: 25 March 2024
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -39,6 +39,7 @@
 ||offers-comparison.yandex.ru$doc,3p
 @@||adfstat.yandex.ru/captcha$image
 @@||browser-updater.yandex.net^
+@@||browser.translate.yandex.net
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
 @@||enterprise.api-maps.yandex.ru$domain=avito.ru
@@ -328,7 +329,6 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||cdn.rt.com/spprojects/domrt/DOM_RT_COM_1240x90_txt2.mp4
 
 ! Google
-||tagmanager.google.com^$all
 ||admob.google.com^$all
 ||ads.youtube.com^$all
 ||adservice.google.com^$all
@@ -357,7 +357,9 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||imasdk.googleapis.com^$all
 ||mail-ads.google.com^$all
 ||optimizationguide-pa.googleapis.com^$all
+||play.google.com^$3p
 ||semanticlocation-pa.googleapis.com^$all
+||tagmanager.google.com^$all
 @@||suggestqueries.google.com^
 @@||s.youtube.com^
 youtube.com#@##logo:style(pointer-events: none !important; cursor: default !important)
@@ -775,25 +777,21 @@ chromewebstore.google.com##.DKwHHf
 ||code-portal.ru^$all
 ||genoagroup.com^$all
 ||go.1oleads.net^$all
-||phalangette.in.net^$all
 ||profetrans.ru^$all
 ||shell.ams.ichilton.net^$all
 ||smartround.ru^$all
 ||starrater.pp.ru^$all
 ||steamcommunutty.com^$all
-||website.org^$all
 ||xosr.ru^$all
 ||1wrcna.life^$all
 ||apart.doorhousebigleft.motorcycles^$all
 ||bysoos.online^$all
 ||casb2h.xyz^$all
-||dlnhighpressurecleaningservicesltd.co.uk^$all
 ||eglob.vontos.buzz^$all
 ||fenarqwi.buzz^$all
 ||guryfuytu.top^$all
 ||heytrhrerght.buzz^$all
 ||hotoffers.info^$all
-||kbyqnjjv.shop^$all
 ||meryruytss.buzz^$all
 ||numythrhrt.buzz^$all
 ||obrtga.buzz^$all
@@ -801,12 +799,9 @@ chromewebstore.google.com##.DKwHHf
 ||otnsos.buzz^$all
 ||pigurde.buzz^$all
 ||pithjtnty.buzz^$all
-||premium-gifts-2024.xyz^$all
 ||razupolre.info^$all
 ||redakt.top^$all
-||removalsinrotherham.co.uk^$all
 ||trayjyuj.buzz^$all
-||tutyutyutyu.buzz^$all
 ||tutyutyutyu.buzz^$all
 ||uyiytyjuykyu.buzz^$all
 ||v9xq2.shop^$all
