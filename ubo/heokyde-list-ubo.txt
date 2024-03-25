@@ -3,7 +3,7 @@
 ! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs (IDN). Annoyances elements, such as pop-up ads, cookie notifications, etc. Focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! License: MIT
-! Syntax: uBlock
+! Syntax: AdBlock
 ! Expires: 1 days
 ! Last modified: 25 March 2024
 
@@ -238,6 +238,7 @@ vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout
 vk.com##[class^="box_layout"]
 
 ! Gazprom Media
+||rutube.ru/play/embed*$3p,frame,redirect=click2load.html
 ||rutube.ru^$domain=2ch.hk|2ch.life
 ||log.rutube.ru^$all
 ||static.rutube.ru/static/lotties/gazprom.json$script
@@ -767,10 +768,6 @@ chromewebstore.google.com##.DKwHHf
 ||xoalt.com^$3p
 ||yadro.ru^$important,all
 ||zoominfo.com^$3p
-
-!#if ext_ublock
-||rutube.ru/play/embed*$3p,frame,redirect=click2load.html
-!#endif
 
 !#if adguard
 ||api-stories.tinkoff.ru^$app=com.idamob.tinkoff.android
