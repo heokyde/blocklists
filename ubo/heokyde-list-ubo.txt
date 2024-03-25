@@ -769,7 +769,7 @@ chromewebstore.google.com##.DKwHHf
 ||yadro.ru^$important,all
 ||zoominfo.com^$3p
 
-!#if adguard
+!#if !adguard_app_android
 ||api-stories.tinkoff.ru^$app=com.idamob.tinkoff.android
 !#endif
 
