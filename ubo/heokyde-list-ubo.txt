@@ -34,9 +34,6 @@
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
-||datalens.yandex.ru^$doc,3p
-||music.yandex.ru/promo/$doc,3p
-||offers-comparison.yandex.ru$doc,3p
 @@||adfstat.yandex.ru/captcha$image
 @@||browser-updater.yandex.net^
 @@||browser.translate.yandex.net
@@ -79,7 +76,6 @@
 ||api.uxfeedback.yandex.$all
 ||appmetrica.yandex.$all
 ||appmetrika.yandex.$all
-||audience.yandex.ru^$3p
 ||awaps.yandex.$all
 ||awsync.yandex.$all
 ||ba.yandex.$all
@@ -88,7 +84,6 @@
 ||bs-meta.yandex.$all
 ||bs-metadsp.yandex.$all
 ||bs.yandex.$all
-||business.yandex.ru^$doc,3p
 ||clck.yandex.com^$all
 ||clck.yandex.net^$all
 ||content.adfox.net^$all
@@ -96,13 +91,10 @@
 ||crash-reports.browser.yandex.net^$all
 ||csp.yandex.$all
 ||diagnostic.beru.tst.vs.market.yandex.$all
-||direct.yandex.$doc,3p
-||elama.ru^$3p
 ||external-promo-metrics.yandex.$all
 ||extmaps-api.yandex.$all
 ||feedback.send.yandex.ru^$all
 ||grade.market.yandex.ru^$all
-||help.yandex.ru^$3p
 ||http-check-headers.yandex.ru^$all
 ||httpsyandex.com^$xhr,3p
 ||informer.yandex.$all
@@ -122,10 +114,8 @@
 ||mobile-ads-beta.yandex.^$all
 ||mobile-ads.yandex.$all
 ||offerwall.yandex.^$all
-||partner.yandex.ru^$doc,3p
 ||payment-widget.plus.kinopoisk.ru^$all
 ||portal-xiva.yandex.^$all
-||promopages.yandex.ru^$doc,3p
 ||push.news.yandex.net^$all
 ||push.yandex.$all
 ||qos-api.ott.yandex.net^$all
@@ -143,7 +133,6 @@
 ||statchecker.yandex.$all
 ||static-mon.yandex.$all
 ||static.sovetnik.yandex.$all
-||surveys.yandex.ru^$3p
 ||telemetry.grad.yandex.$all
 ||tracker-www-production.b.tracker.yandex.net^$all
 ||tracker.yandex.$all
@@ -158,6 +147,20 @@
 ||yandexadexchange.net^$all
 ||yandexapi.net^$all
 !||clck.yandex.ru^
+
+! Yandex Marketing | Promo offers | Annoyances
+||audience.yandex.ru^$doc,3p
+||business.yandex.ru^$doc,3p
+||datalens.yandex.ru^$doc,3p
+||direct.yandex.$doc,3p
+||elama.ru^$doc,3p
+||help.yandex.ru^$doc,3p
+||music.yandex.ru/promo/$doc,3p
+||offers-comparison.yandex.ru$doc,3p
+||partner.yandex.ru^$doc,3p
+||plus.yandex.ru/action/offerwall_part/partners^$doc,3p
+||surveys.yandex.ru^$doc,3p
+||promopages.yandex.ru^$doc,3p
 
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
@@ -494,7 +497,7 @@ chromewebstore.google.com##.DKwHHf
 ||andata.ru^$3p
 ||anon-stats.eff.org^$all
 ||api-hotjar.com^$3p
-!||api-stories.tinkoff.ru^$all
+||api-stories.tinkoff.ru^$all
 ||api.axept.io^$3p
 ||api.hubapi.com^$3p
 ||api.neon.click^$3p
@@ -703,6 +706,7 @@ chromewebstore.google.com##.DKwHHf
 ||sentry.any.run^$all
 ||sentry.myshows.me^$3p
 ||sentry.odysee.tv^$all
+||sentry.tinkoff.ru^$all
 ||sitereview.zscaler.com^$all
 ||skai.io^$3p
 ||skcrtxr.com^$all
@@ -723,11 +727,13 @@ chromewebstore.google.com##.DKwHHf
 ||t.imgur.com^$all
 ||t.nc0.co^$3p
 ||tagline.ru^$3p
+||targetads.io^$3p
 ||targetman.ru^$3p
 ||telega.in^$3p
 ||telemetry.jivo.ru^$3p
 ||telemetry.tradingview.com^$3p
 ||tidio.co^$3p
+||tinkoff.ru*/log/
 ||tns-counter.ru^$all
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
@@ -866,10 +872,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
-!#if adguard_app_android
-||api-stories.tinkoff.ru^$app=com.idamob.tinkoff.android
-!#endif
-
 ! General blocking filters
 $ping
 /*lms-analytics
@@ -883,6 +885,7 @@ $ping
 /ad-event
 /ad-provider.js
 /adfox
+/adobe-analytics-settings.
 /amp-analytics$3p
 /amp-geo$3p
 /ana-sentry.js$script
