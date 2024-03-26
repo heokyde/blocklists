@@ -23,11 +23,11 @@
 ||yandex.*/id/business$3p
 ||yandex.*/log
 ||yandex.*/metrika
-||yandex.*/monitoring_liza.txt
+||yandex.*/monitoring_liza
 ||yandex.*/ping
+||yandex.*/report
 ||yandex.*/uxfeedback
 ||ya.ru/clck
-||ya.ru/project/vygoda/$doc,3p
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*yango-gdpr-popup
 ||yastatic.net/*adfox$script
@@ -35,8 +35,7 @@
 ||yastatic.net/*audience$3p,script
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
 @@||adfstat.yandex.ru/captcha$image
-@@||browser-updater.yandex.net^
-@@||browser.translate.yandex.net
+@@||browser.translate.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
 @@||enterprise.api-maps.yandex.ru$domain=avito.ru
@@ -73,7 +72,7 @@
 ||api-metrica.yandex.$all
 ||api.ad-fox.yandex.$all
 ||api.lbs.yandex.ru^$all
-||api.uxfeedback.yandex.$all
+||uxfeedback.yandex.$all
 ||appmetrica.yandex.$all
 ||appmetrika.yandex.$all
 ||awaps.yandex.$all
@@ -142,11 +141,11 @@
 ||uxfeedback-cdn.s3.yandex.$all
 ||vygoda.yandex.ru^$all
 ||web-metrica.yandex.$all
-||wordstat.yandex.ru^$doc,3p
 ||yabs.yandex.$all
 ||yandexadexchange.net^$all
 ||yandexapi.net^$all
 !||clck.yandex.ru^
+!||diehard.yandex.net^
 
 ! Yandex Marketing | Promo offers | Annoyances
 ||audience.yandex.ru^$doc,3p
@@ -156,11 +155,12 @@
 ||elama.ru^$doc,3p
 ||help.yandex.ru^$doc,3p
 ||music.yandex.ru/promo/$doc,3p
-||offers-comparison.yandex.ru$doc,3p
+||offers-comparison.yandex.ru^$doc,3p
 ||partner.yandex.ru^$doc,3p
 ||plus.yandex.ru/action/offerwall_part/partners^$doc,3p
-||surveys.yandex.ru^$doc,3p
 ||promopages.yandex.ru^$doc,3p
+||surveys.yandex.ru^$doc,3p
+||ya.ru/project/vygoda/$doc,3p
 
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
@@ -655,6 +655,7 @@ chromewebstore.google.com##.DKwHHf
 ||nicehash.com/*counter$xhr
 ||nitropay.com^$3p
 ||nitroscripts.com^$3p
+||notification.kazanexpress.ru^$all
 ||notifications-pusher.gog.com^$3p
 ||nvidia.tt.omtrdc.net^$all
 ||omtrdc.net^$3p
@@ -872,6 +873,11 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
+!#if adguard_app_android
+||resolver.msg.global.xiaomi.net^$app=com.mxtech.videoplayer.ad
+||ds.kaspersky.com^$app=ru.vk.store
+!#endif
+
 ! General blocking filters
 $ping
 /*lms-analytics
@@ -886,6 +892,7 @@ $ping
 /ad-provider.js
 /adfox
 /adobe-analytics-settings.
+/adsdk.js
 /amp-analytics$3p
 /amp-geo$3p
 /ana-sentry.js$script
@@ -919,7 +926,7 @@ $ping
 /js/analysis.js$script
 /js/cookielaw.js$script
 /js/sourcebuster.min.js$script
-/log$xhr,script
+/log-user-action/
 /log_event?
 /mail?load=experiment$xhr,script
 /metric-collector$xhr,script
@@ -940,6 +947,9 @@ $ping
 /privacy_popup?
 /privacy_popup_
 /push-notification$all
+/report-
+/report.
+/report?
 /s3/client-metrics$all
 /scripts/v1/tracker.js$script
 /sovetnik/popup-$all
@@ -957,6 +967,7 @@ $ping
 /wp-popup-scheduler$all
 /ya-paranja/client.js^$script,domain=ya.ru|yandex.*
 /yandex-metrica-watch$xhr,script
+_id_tracking^$all
 
 ! Generic cosmetic filters
 ###CookielawBanner
