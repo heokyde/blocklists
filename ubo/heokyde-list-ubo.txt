@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 26 March 2024
+! Last modified: 27 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -72,7 +72,6 @@
 ||api-metrica.yandex.$all
 ||api.ad-fox.yandex.$all
 ||api.lbs.yandex.ru^$all
-||uxfeedback.yandex.$all
 ||appmetrica.yandex.$all
 ||appmetrika.yandex.$all
 ||awaps.yandex.$all
@@ -139,11 +138,13 @@
 ||uaas.yandex.ru^$all
 ||ui-balancer-external.adfox.net^$all
 ||uxfeedback-cdn.s3.yandex.$all
+||uxfeedback.yandex.$all
 ||vygoda.yandex.ru^$all
 ||web-metrica.yandex.$all
 ||yabs.yandex.$all
 ||yandexadexchange.net^$all
 ||yandexapi.net^$all
+||yandexmetrica.com^$all
 !||clck.yandex.ru^
 !||diehard.yandex.net^
 
@@ -452,6 +453,7 @@ chromewebstore.google.com##.DKwHHf
 ||2xclick.ru^$3p
 ||a-ads.com^$3p
 ||aatkit.com^$3p
+||abetterinternet.org^$3p
 ||abtasty.com^$3p
 ||acint.net^$3p
 ||acsbapp.com^$3p
@@ -548,6 +550,7 @@ chromewebstore.google.com##.DKwHHf
 ||clickfrog.ru^$3p
 ||clickiocdn.com$3p
 ||cllctr.any.run^$all
+||cloudflareinsights.com^$3p
 ||comagic.ru^$3p
 ||consent.cookiebot.com^$3p
 ||const.uno^$3p
@@ -596,7 +599,6 @@ chromewebstore.google.com##.DKwHHf
 ||hotjar.dualsidedapp.com^$3p
 ||hotjar.io^$3p
 ||hotjar.net^$3p
-||hotoffers.info^$all
 ||hs-analytics.net^$3p
 ||hs-banner.com^$3p
 ||hs-scripts.com^$3p
@@ -666,6 +668,7 @@ chromewebstore.google.com##.DKwHHf
 ||p.typekit.net-stls-v3.edgesuite.net^$all
 ||p.typekit.net^$3p
 ||paradocs.ru^$3p
+||pardot.com^$3p
 ||parklogic.com^$3p
 ||pemsrv.com^$3p
 ||picreel.com^$3p
@@ -875,7 +878,9 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnno
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
 !#if adguard_app_android
+@@||cdn1.ozone.ru^$app=ru.ozon.app.android
 @@||scbh.yandex.net/generate_204$app=com.yandex.iot
+@@||securepay.ozon.ru^$app=ru.ozon.app.android
 ||ds.kaspersky.com^$app=ru.vk.store
 ||resolver.msg.global.xiaomi.net^$app=com.mxtech.videoplayer.ad
 !#endif
