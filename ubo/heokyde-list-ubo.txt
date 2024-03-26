@@ -1,11 +1,10 @@
 ! Title: 📛 Heokyde List
-! Homepage: github.com/heokyde/blocklists
 ! Description: List for uBlock Origin. Blocks Ads, Tracking, Metrics, Phishing, Malicious and non-Latin TLDs (IDN). Annoyances elements, such as pop-up ads, cookie notifications, etc. Focused on the Russian Internet.
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
+! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Syntax: AdBlock
+! Last modified: 26 March 2024
 ! Expires: 1 days
-! Last modified: 25 March 2024
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
 ! Для обеспечения полной функциональности, рекомендуется использовать браузер firefox с включенной опцией "Раскрывать CNAME записи".
@@ -35,6 +34,7 @@
 ||yastatic.net/*PromoTooltip$script
 ||yastatic.net/*audience$3p,script
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
+||datalens.yandex.ru^$doc,3p
 ||music.yandex.ru/promo/$doc,3p
 ||offers-comparison.yandex.ru$doc,3p
 @@||adfstat.yandex.ru/captcha$image
@@ -200,6 +200,7 @@ mail.yandex.ru##.MessageBox-Content
 ||afafevk.com^$all
 ||alt-ad.mail.ru^$all
 ||an.mail.ru^$all
+||api-hprof.odkl.ru^$all
 ||auth.vkpns.rustore.ru^$all
 ||b2.mail.ru^$all
 ||clck.dzen.ru^$all
@@ -218,6 +219,8 @@ mail.yandex.ru##.MessageBox-Content
 ||reklama.mail.ru^$all
 ||relap.mail.ru$all
 ||rs.mail.ru^$all
+||sentry.rustore.ru^$all
+||stats.rustore.ru^$all
 ||stats.vk-portal.net^$all
 ||sun9-4.userapi.com^$all
 ||target.my.com^$3p
@@ -226,8 +229,6 @@ mail.yandex.ru##.MessageBox-Content
 ||trk.mail.ru^$image
 ||vkpns.rustore.ru^$all
 ||xray.mail.ru^$all
-$removeparam=?yredirect=,domain=dzen.ru
-$removeparam=?utm_referrer=,domain=dzen.ru
 
 dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
 dzen.ru##div[class^="dzen-desktop__bannerMain-1i dzen-desktop__underWidget-17"]
@@ -423,22 +424,22 @@ chromewebstore.google.com##.DKwHHf
 ||bat-bing-com.a-0001.a-msedge.net^$all
 ||bat.bing.com^$all
 ||browser.events.data.msn.com^$all
-||browser.pipe.aria.microsoft.com^$all
 ||collector.github.com^$all
 ||dc.services.visualstudio.com^$all
 ||flex.msn.com^$all
 ||fp.measure.office.com^$all
 ||fpt.microsoft.com^$all
+||in.appcenter.ms^$all
 ||js.monitor.azure.com^$all
 ||o.xbox.com^$all
 ||o365diagtelemetry.trafficmanager.net^$all
-||srtb.msn.com^$all
-||vortex.data.microsoft.com^$all
 ||odwebp.trafficmanager.net^$all
 ||p-static.bing.trafficmanager.net^$all
 ||pipe.aria.microsoft.com^$all
 ||r.bing.com.edgekey.net^$all
+||srtb.msn.com^$all
 ||uhf.microsoft.com^$all
+||vortex.data.microsoft.com^$all
 @@||a-0001.a-msedge.net^
 @@||copilot.microsoft.com^
 
@@ -446,6 +447,7 @@ chromewebstore.google.com##.DKwHHf
 ||1rx.io^$3p
 ||2o7.net^$3p
 ||2xclick.ru^$3p
+||a-ads.com^$3p
 ||aatkit.com^$3p
 ||abtasty.com^$3p
 ||acint.net^$3p
@@ -460,6 +462,7 @@ chromewebstore.google.com##.DKwHHf
 ||adguard*sentry$xhr
 ||adhigh.net^$3p
 ||adjust.com^$3p
+||adjust.world^$3p
 ||adkernel.com^$3p
 ||adlook.me^$all$3p
 ||adobedtm.com^$3p
@@ -491,7 +494,7 @@ chromewebstore.google.com##.DKwHHf
 ||andata.ru^$3p
 ||anon-stats.eff.org^$all
 ||api-hotjar.com^$3p
-||api-stories.tinkoff.ru^$all
+!||api-stories.tinkoff.ru^$all
 ||api.axept.io^$3p
 ||api.hubapi.com^$3p
 ||api.neon.click^$3p
@@ -509,6 +512,7 @@ chromewebstore.google.com##.DKwHHf
 ||bidvol.com^$3p
 ||bitrix.info^$3p
 ||bizible.com^$3p
+||bobabillydirect.org^$3p
 ||botfaqtor.ru^$3p
 ||branch.io^$3p
 ||brandanalytics.ru^$3p
@@ -605,7 +609,6 @@ chromewebstore.google.com##.DKwHHf
 ||instajet.io^$3p
 ||intake-analytics.wikimedia.org^$3p
 ||ip-api.com^$all
-||ip4.tracker-api.my.com^$all
 ||ipgrabber.ru^$all
 ||ipgraber.ru^$all
 ||iplis.ru^$all
@@ -628,6 +631,7 @@ chromewebstore.google.com##.DKwHHf
 ||luxcdn.com^$3p
 ||magsrv.com^$3p
 ||marketo.net^$3p
+||mbidadm.com^$3p
 ||mcs-va.tiktokv.com^$3p
 ||media.net^$3p
 ||mediascope.net^$3p
@@ -727,7 +731,7 @@ chromewebstore.google.com##.DKwHHf
 ||tns-counter.ru^$all
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
-||tracker-api.my.com^$3p
+||tracker-api.my.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
 ||trafficjunky.com^$3p
@@ -768,10 +772,6 @@ chromewebstore.google.com##.DKwHHf
 ||xoalt.com^$3p
 ||yadro.ru^$important,all
 ||zoominfo.com^$3p
-
-!#if !adguard_app_android
-||api-stories.tinkoff.ru^$app=com.idamob.tinkoff.android
-!#endif
 
 ! Blocks frequently created phishing sites, in Russian
 ||rus-loto*2024^$all
@@ -824,8 +824,7 @@ chromewebstore.google.com##.DKwHHf
 
 ! Cosmetic filters
 addons.opera.com##.light
-adguard.*##.reviews,.video--welcome
-adguard.*##div[id^="sticky_bar_fixed"]
+adguard.*##.reviews,.video--welcome,.annoyance
 akbars.ru##.black-color.bg-white.important-announcement__container
 browserling.com###tool-fffff2
 browserling.com##div.item
@@ -845,6 +844,7 @@ mxtoolbox.com##div[class^="tools_description"],.mx-inline-ad-link
 mxtoolbox.com##div[id^="st-Ad-Section clickable"]
 mxtoolbox.com##div[id^="supertool_ad_variation"]
 nicehash.com##.report-button,.grecaptcha-badge,.shop
+nicehash.com##[href="https://www.nicehash.com/my/easymining"]
 nicehash.com##div[class^="Cookie Cookie--bottom Cookie--base"]
 nicehash.com##div[class^="banner banner-blue"]
 nslookup.io###n-dns-records-sidebar-default-wrapper,#n-search-page-sm-wrapper,#n-dns-records-txt-lg-wrapper
@@ -865,6 +865,10 @@ wowcircle.net##div[class^="logo"],[src="https://wowcircle.net/images/corner_tbc.
 xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
+
+!#if adguard_app_android
+||api-stories.tinkoff.ru^$app=com.idamob.tinkoff.android
+!#endif
 
 ! General blocking filters
 $ping
