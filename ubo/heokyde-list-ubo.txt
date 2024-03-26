@@ -722,6 +722,7 @@ chromewebstore.google.com##.DKwHHf
 ||static.terratraf.io^$all
 ||stats.avito.ru^$3p
 ||stats.wp.com^$3p
+||stories-res.online.sberbank.ru^$all
 ||stretchsquirrel.com^$3p
 ||stt.nvidia.com^$all
 ||svk-native.ru^$3p
@@ -874,8 +875,9 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnno
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
 !#if adguard_app_android
-||resolver.msg.global.xiaomi.net^$app=com.mxtech.videoplayer.ad
+@@||scbh.yandex.net/generate_204$app=com.yandex.iot
 ||ds.kaspersky.com^$app=ru.vk.store
+||resolver.msg.global.xiaomi.net^$app=com.mxtech.videoplayer.ad
 !#endif
 
 ! General blocking filters
