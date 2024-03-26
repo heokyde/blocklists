@@ -11,7 +11,7 @@
 
 ! Yandex LLC
 ||yandex.ru^$3p,domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
-||yastatic.net^$domain=dzen.ru|yandex.by|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
+||yastatic.net^$domain=dzen.ru|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
 ||yandex.*/ads
 ||yandex.*/adv$3p
 ||yandex.*/clck
@@ -128,11 +128,11 @@
 ||slave-v4-analytics.eda.yandex.net^$all
 ||sovetnik.market.http.yandex.$all
 ||sovetnik.market.yandex.ru^$all
+||sovetnik.yandex.$all
 ||startup-mobile.ap.yandex-net.ru^$all
 ||startup.mobile.yandex.net^$all
 ||statchecker.yandex.$all
 ||static-mon.yandex.$all
-||static.sovetnik.yandex.$all
 ||telemetry.grad.yandex.$all
 ||tracker-www-production.b.tracker.yandex.net^$all
 ||tracker.yandex.$all
