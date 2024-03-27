@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 27 March 2024
+! Last modified: 28 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -245,6 +245,7 @@ vk.com##[class^="box_layout"]
 ! Gazprom Media
 ||rutube.ru/play/embed*$3p,frame,redirect=click2load.html
 ||rutube.ru^$domain=2ch.hk|2ch.life
+||goya.rutube.ru^$all
 ||log.rutube.ru^$all
 ||static.rutube.ru/static/lotties/gazprom.json$script
 rutube.ru##div[class^="app-download-default-banner-module__appDownloadPopupOverlay"]
@@ -497,6 +498,7 @@ chromewebstore.google.com##.DKwHHf
 ||analytics.tiktok.com.ttdns2.com^$all
 ||analytics.tiktok.com^$all
 ||andata.ru^$3p
+||androidc.mxplay.com^$all
 ||anon-stats.eff.org^$all
 ||api-hotjar.com^$3p
 ||api-stories.tinkoff.ru^$all
@@ -570,7 +572,9 @@ chromewebstore.google.com##.DKwHHf
 ||ds-s7.addthis.com.edgekey.net^$all
 ||dsspn.com^3p
 ||easytarget.ru^$3p
+||evt.mxplay.com^$all
 ||experience.ninetailed.co^$3p
+||factors.ai^$3p
 ||failover-telemetry-us.tradingview.com^$3p
 ||fanplayr.com^$3p
 ||flocktory.com^$3p
@@ -605,6 +609,7 @@ chromewebstore.google.com##.DKwHHf
 ||hsadspixel.net^$3p
 ||https-api-eu.bigoapp.ru^$all
 ||hybrid.ai^$3p
+||i.mxplayer.j2inter.com^$all
 ||imgsct.cookiebot.com^$3p
 ||improving.duckduckgo.com^$all
 ||infox.sg^$3p
@@ -651,6 +656,7 @@ chromewebstore.google.com##.DKwHHf
 ||moviead55.ru^$3p
 ||ms-ssp.tinkoff.ru^$3p
 ||mutinycdn.com^$3p
+||mxaserver.mxplay.com^$all
 ||mypopups.com^$all
 ||nc0.co^$3p
 ||new-programmatic.com^$3p
@@ -672,6 +678,7 @@ chromewebstore.google.com##.DKwHHf
 ||parklogic.com^$3p
 ||pemsrv.com^$3p
 ||picreel.com^$3p
+||pingdom.net^$3p
 ||poqup.com^$3p
 ||privacy-center.org^$3p
 ||prod-telemetry.paradox-interactive.com^$3p
@@ -685,6 +692,7 @@ chromewebstore.google.com##.DKwHHf
 ||qualified.com^$3p
 ||relap.io^$3p
 ||report.gbss.io^$3p
+||resolver.msg.global.xiaomi.net^$all
 ||retailrocket.ru^$3p
 ||returnal.pro^$3p
 ||rnet.plus^$3p
@@ -743,6 +751,7 @@ chromewebstore.google.com##.DKwHHf
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
 ||tracker-api.my.com^$all
+||tracking.miui.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
 ||trafficjunky.com^$3p
@@ -764,6 +773,7 @@ chromewebstore.google.com##.DKwHHf
 ||vlitag.com^$3p
 ||voicia.ru^$3p
 ||vwo.com^$3p
+||w3-reporting.reddit.com^$all
 ||wdfl.co^$3p
 ||weborama.$3p
 ||webvisor.$all
@@ -778,6 +788,7 @@ chromewebstore.google.com##.DKwHHf
 ||wm-ya.jivosite.com^$3p
 ||wowblogger.ru^$3p
 ||wowcircle.net/*bg/bg_winter.jpg$image
+||wzrkt.com^$3p
 ||xg4ken.com^$3p
 ||xmetrics.ru^$3p
 ||xoalt.com^$3p
@@ -881,8 +892,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 @@||cdn1.ozone.ru^$app=ru.ozon.app.android
 @@||scbh.yandex.net/generate_204$app=com.yandex.iot
 @@||securepay.ozon.ru^$app=ru.ozon.app.android
-||ds.kaspersky.com^$app=ru.vk.store
-||resolver.msg.global.xiaomi.net^$app=com.mxtech.videoplayer.ad
 !#endif
 
 ! General blocking filters
