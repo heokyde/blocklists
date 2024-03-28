@@ -183,10 +183,11 @@ ya.ru,yandex.*##[class^="simple-popup__overlay"]
 ya.ru,yandex.*##[class^="verified-tooltip__popup"]
 ya.ru,yandex.*##[id^="rsya-guarantee"]
 ya.ru,yandex.*#@#.popup
-ya.ru,market.yandex.ru#@#[class^="alice-fab"],[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
 mail.yandex.*#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
-music.yandex.ru##.notify_shown
 mail.yandex.ru##.MessageBox-Content
+market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+music.yandex.ru##.notify_shown
+#@#[class^="alice-fab"]
 
 ! vk.com | mail.ru
 ||vk.com^$3p,domain=tinkoff.ru|pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
@@ -548,6 +549,7 @@ chromewebstore.google.com##.DKwHHf
 ||clearbitjs.com^$3p
 ||clearbitscripts.com^$3p
 ||cleversite.ru^$3p
+||clevertap.com^$3p
 ||clickagy.com^$3p
 ||clickfrog.ru^$3p
 ||clickiocdn.com$3p
@@ -792,6 +794,7 @@ chromewebstore.google.com##.DKwHHf
 ||xg4ken.com^$3p
 ||xmetrics.ru^$3p
 ||xoalt.com^$3p
+||xtremetop100.com/images$image
 ||yadro.ru^$important,all
 ||zoominfo.com^$3p
 
