@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 28 March 2024
+! Last modified: 29 March 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -190,7 +190,7 @@ music.yandex.ru##.notify_shown
 #@#[class^="alice-fab"]
 
 ! vk.com | mail.ru
-||vk.com^$3p,domain=tinkoff.ru|pikabu.ru|afisha.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
+||vk.com^$3p,domain=tinkoff.ru|pikabu.ru|afisha.ru|livelib.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
 ||mail.ru^$domain=livejournal.com
 ||bar.love.mail.ru^$domain=mail.ru
 ||vkplay.ru^$domain=mail.ru
@@ -461,6 +461,7 @@ chromewebstore.google.com##.DKwHHf
 ||acsbapp.com^$3p
 ||ad-delivery.net^$3p
 ||ad-shield.io^
+||ad.xiaomi.com^$all
 ||adadvisor.net^$3p
 ||adcolony.com^$3p
 ||adcolony.xyz^$3p
@@ -575,6 +576,7 @@ chromewebstore.google.com##.DKwHHf
 ||dsspn.com^3p
 ||easytarget.ru^$3p
 ||evt.mxplay.com^$all
+||exdynsrv.com^$3p
 ||experience.ninetailed.co^$3p
 ||factors.ai^$3p
 ||failover-telemetry-us.tradingview.com^$3p
@@ -600,6 +602,7 @@ chromewebstore.google.com##.DKwHHf
 ||gum.da1.vip.prod.criteo.com^$3p
 ||heap.io^$3p
 ||heapanalytics.com^$3p
+||heytapdl.com^$all
 ||honest-metrics.com^$3p
 ||hotjar.com^$all
 ||hotjar.dualsidedapp.com^$3p
@@ -620,6 +623,8 @@ chromewebstore.google.com##.DKwHHf
 ||instajet.in^$3p
 ||instajet.io^$3p
 ||intake-analytics.wikimedia.org^$3p
+||iot-eu-logser.realme.com^$all
+||iot-logser.realme.com^$all
 ||ip-api.com^$all
 ||ipgrabber.ru^$all
 ||ipgraber.ru^$all
@@ -670,6 +675,7 @@ chromewebstore.google.com##.DKwHHf
 ||nvidia.tt.omtrdc.net^$all
 ||omtrdc.net^$3p
 ||onesignal.com^$3p
+||open.oneplus.net^$all
 ||optimizely.com^$3p
 ||otm-r.com^$3p
 ||p.imgur.com^$all
@@ -682,14 +688,17 @@ chromewebstore.google.com##.DKwHHf
 ||picreel.com^$3p
 ||pingdom.net^$3p
 ||poqup.com^$3p
+||pricelib.ru^$3p
 ||privacy-center.org^$3p
 ||prod-telemetry.paradox-interactive.com^$3p
 ||profitwell.com^$3p
+||promo.livelib.ru^$all
 ||promote.telegram.org^$3p
 ||proprofschat.com^$3p
 ||push4site.com^$3p
 ||pushwoosh.com^$all
 ||pxlsrv.net^$all
+||q.stripe.com^$3p
 ||qualaroo.com^$3p
 ||qualified.com^$3p
 ||relap.io^$3p
@@ -728,6 +737,7 @@ chromewebstore.google.com##.DKwHHf
 ||soloway.ru^$3p
 ||solta.io^$3p
 ||sparrow.ru$all
+||spotscenered.info^$3p
 ||ssp.bestssp.com^$3p
 ||statad.ru^$3p
 ||static.axept.io^$3p
@@ -736,12 +746,14 @@ chromewebstore.google.com##.DKwHHf
 ||stats.avito.ru^$3p
 ||stats.wp.com^$3p
 ||stories-res.online.sberbank.ru^$all
+||streetuptowind.com^$3p
 ||stretchsquirrel.com^$3p
 ||stt.nvidia.com^$all
 ||svk-native.ru^$3p
 ||t.imgur.com^$all
 ||t.nc0.co^$3p
 ||tagline.ru^$3p
+||target-static-images.cdn-tinkoff.ru^$all
 ||targetads.io^$3p
 ||targetman.ru^$3p
 ||telega.in^$3p
@@ -756,6 +768,7 @@ chromewebstore.google.com##.DKwHHf
 ||tracking.miui.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
+||trafficbass.com^$3p
 ||trafficjunky.com^$3p
 ||trafficjunky.net^$all
 ||tribalfusion.com^$3p
@@ -790,6 +803,7 @@ chromewebstore.google.com##.DKwHHf
 ||wm-ya.jivosite.com^$3p
 ||wowblogger.ru^$3p
 ||wowcircle.net/*bg/bg_winter.jpg$image
+||wpadmngr.com^$3p
 ||wzrkt.com^$3p
 ||xg4ken.com^$3p
 ||xmetrics.ru^$3p
@@ -864,7 +878,9 @@ glasswire.com##div[id^="CybotCookiebotDialog"]
 hoster.ru##div[id^="disclaimer"]
 kaspersky.*##.Analysis_titleWrapper_oFDqwpKL
 kaspersky.*##.CookieBanner_transparent__A7PB1,.CookiesAccept_container_yATSJZap
+litres.ru##div[class="MainPromoBanner-module__wrapper"]
 liveinternet.ru##div[class^="viqeo-flyWidget"]
+livelib.ru##.main-slider
 mxtoolbox.com##div[class^="tools_description"],.mx-inline-ad-link
 mxtoolbox.com##div[id^="st-Ad-Section clickable"]
 mxtoolbox.com##div[id^="supertool_ad_variation"]
@@ -971,6 +987,8 @@ $ping
 /report?
 /s3/client-metrics$all
 /scripts/v1/tracker.js$script
+/service/pinger
+/service/traffic
 /sovetnik/popup-$all
 /sovetnik/popup.$all
 /target/tracking$all
