@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 01 April 2024
+! Last modified: 06 April 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -11,7 +11,7 @@
 
 ! Yandex LLC
 ||yandex.ru^$3p,domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
-||yastatic.net^$domain=dzen.ru|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
+||yastatic.net^$3p,domain=dzen.ru|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
 ||yandex.*/ads
 ||yandex.*/adv$3p
 ||yandex.*/clck
@@ -29,10 +29,11 @@
 ||yandex.*/uxfeedback
 ||ya.ru/clck
 ||yastatic.net/*DeliveryPointPopup
-||yastatic.net/*yango-gdpr-popup
-||yastatic.net/*adfox$script
 ||yastatic.net/*PromoTooltip$script
+||yastatic.net/*adfox$script
 ||yastatic.net/*audience$3p,script
+||yastatic.net/*sovetnik
+||yastatic.net/*yango-gdpr-popup
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
 @@||adfstat.yandex.ru/captcha$image
 @@||browser.translate.yandex.net^
@@ -158,10 +159,116 @@
 ||music.yandex.ru/promo/$doc,3p
 ||offers-comparison.yandex.ru^$doc,3p
 ||partner.yandex.ru^$doc,3p
+||partner2.yandex.ru^$doc,3p
 ||plus.yandex.ru/action/offerwall_part/partners^$doc,3p
 ||promopages.yandex.ru^$doc,3p
 ||surveys.yandex.ru^$doc,3p
 ||ya.ru/project/vygoda/$doc,3p
+
+!#if adguard_app_android
+@@||scbh.yandex.net/generate_204$app=com.yandex.iot
+!#endif
+
+! Yandex Advertising Network (YAN) | РСЯ | Resellers
+||152media.info^$3p
+||acd.op.hicloud.com^$3p
+||aceex.io^$3p
+||acexchange.co.kr^$3p
+||adcolony.com^$3p
+||adform.com^$3p
+||adlightning.com^$3p
+||admanmedia.com^$3p
+||admixer.co.kr^$3p
+||admixer.net^$3p
+||adriver.ru^$3p
+||adro.io^$3p
+||adsyield.com^$3p
+||adtarget.me^$3p
+||adtelligent.com^$3p
+||advertising.com^$3p
+||adview.com^$3p
+||adx-dre.op.hicloud.com^$3p
+||adx.opera.com^$3p
+||adyoulike.com^$3p
+||algorix.co^$3p
+||ampliffy.com^$3p
+||appnexus.com^$3p
+||aralego.com^$3p
+||axonix.com^$3p
+||bematterfull.com^$3p
+||betweendigital.com^$3p
+||bidence.com^$3p
+||bizzclick.com^$3p
+||bold-win.com^$3p
+||brightcom.com^$3p
+||buzzoola.com^$3p
+||consumable.com^$3p
+||contextweb.com^$3p
+||conversantmedia.com^$3p
+||criteo.com^$3p
+||display.io^$3p
+||e-planning.net^$3p
+||e-volution.ai^$3p
+||edge226.com^$3p
+||elixirvideo.co^$3p
+||empower.net^$3p
+||emxdgt.com^$3p
+||engagebdr.com^$3p
+||flat-ads.com^$3p
+||freewheel.tv^$3p
+||gamoshi.io^$3p
+||gothamads.com^$3p
+||hyperad.tech^$3p
+||ignitemediatech.com^$3p
+||improvedigital.com^$3p
+||indexexchange.com^$3p
+||inmobi.com^$3p
+||instal.com^$3p
+||lijit.com^$3p
+||loopme.com^$3p
+||lunamedia.io^$3p
+||mangomob.net^$3p
+||marversal.com^$3p
+||mgid.com^$3p
+||mintegral.com^$3p
+||mobfox.com^$3p
+||mobilefuse.com^$3p
+||mobimight.com^$3p
+||motionspots.com^$3p
+||olaex.biz^$3p
+||onetag.com^$3p
+||openx.com^$3p
+||outbrain.com^$3p
+||publiffy.com^$3p
+||pubmatic.com^$3p
+||pubnative.net^$3p
+||readserver.net^$3p
+||rhythmone.com^$3p
+||rixengine.com^$3p
+||rtbsape.com^$3p
+||rubiconproject.com^$3p
+||sharethrough.com^$3p
+||silvermob.com^$3p
+||smaato.com^$3p
+||smartadserver.com^$3p
+||smartyads.com^$3p
+||sonobi.com^$3p
+||sovrn.com^$3p
+||spotx.tv^$3p
+||spotxchange.com^$3p
+||start.io^$3p
+||themediagrid.com^$3p
+||tpmn.io^$3p
+||triplelift.com^$3p
+||ucfunnel.com^$3p
+||unrulymedia.com^$3p
+||ushareit.com^$3p
+||vidoomy.com^$3p
+||visiblemeasures.com^$3p
+||webeyemob.com^$3p
+||xad.com^$3p
+||xapads.com^$3p
+||yeahmobi.com
 
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
@@ -455,6 +562,7 @@ chromewebstore.google.com##.DKwHHf
 ||2xclick.ru^$3p
 ||a-ads.com^$3p
 ||aatkit.com^$3p
+||aaxads.com^$3p
 ||abetterinternet.org^$3p
 ||abtasty.com^$3p
 ||acint.net^$3p
@@ -463,7 +571,6 @@ chromewebstore.google.com##.DKwHHf
 ||ad-shield.io^
 ||ad.xiaomi.com^$all
 ||adadvisor.net^$3p
-||adcolony.com^$3p
 ||adcolony.xyz^$3p
 ||addthis.com^$3p
 ||adfinity.pro^$3p
@@ -475,7 +582,6 @@ chromewebstore.google.com##.DKwHHf
 ||adlook.me^$all$3p
 ||adobedtm.com^$3p
 ||adplay.ru^$3p
-||adriver.ru^$3p
 ||ads.imgur.com^$all
 ||ads.imovideo.ru^$3p
 ||ads.tatar.ru^$all
@@ -514,9 +620,9 @@ chromewebstore.google.com##.DKwHHf
 ||artfut.com^$3p
 ||assemblyexchange.com^$3p
 ||assemblyfour.com^$3p
+||ay.delivery^$3p
 ||begun.ru^$all
 ||betsonsport.ru^$all
-||betweendigital.com^$3p
 ||bidderstack.com^$3p
 ||bidvol.com^$3p
 ||bitrix.info^$3p
@@ -531,7 +637,6 @@ chromewebstore.google.com##.DKwHHf
 ||bugsnag.com^$3p
 ||bumlam.com^$3p
 ||buysellads.net^$3p
-||buzzoola.com^$3p
 ||calltouch.ru^$3p
 ||carbonads.net^$3p
 ||carrotquest.app^$3p
@@ -564,10 +669,12 @@ chromewebstore.google.com##.DKwHHf
 ||cookieyes.com^$3p
 ||counter.any.run^$all
 ||counter.log24.ru^$3p
+||counter.ukr.net^$all
 ||customer.io^$3p
 ||d3c.life^$all
 ||d3vk40ihlliju7.cloudfront.net^$3p
 ||datacollector-drru.dt.hicloud.com^$3p
+||datadoghq-browser-agent.com^$3p
 ||datadoghq.com^$3p
 ||datago.ru^$3p
 ||deff.nelreports.net^$3p
@@ -599,8 +706,6 @@ chromewebstore.google.com##.DKwHHf
 ||gnezdo.online^$3p
 ||gnezdo.ru^$3p
 ||gosmonitor.ru^$all
-||gum.criteo.com^$3p
-||gum.da1.vip.prod.criteo.com^$3p
 ||heap.io^$3p
 ||heapanalytics.com^$3p
 ||heytapdl.com^$all
@@ -618,6 +723,7 @@ chromewebstore.google.com##.DKwHHf
 ||i.mxplayer.j2inter.com^$all
 ||imgsct.cookiebot.com^$3p
 ||improving.duckduckgo.com^$all
+||informers.ukr.net^$all
 ||infox.sg^$3p
 ||insent.ai^$3p
 ||insights-collector.gog.com^$3p
@@ -644,6 +750,7 @@ chromewebstore.google.com##.DKwHHf
 ||lenmit.com^$all
 ||live2support.com^$3p
 ||livetex.ru^$3p
+||log.aliyuncs.com^$3p
 ||logger.moviead55.ru^$all
 ||luckyorange.$3p
 ||luxcdn.com^$3p
@@ -689,6 +796,7 @@ chromewebstore.google.com##.DKwHHf
 ||pemsrv.com^$3p
 ||picreel.com^$3p
 ||pingdom.net^$3p
+||pla.fwdcdn.com^$3p
 ||poqup.com^$3p
 ||pricelib.ru^$3p
 ||privacy-center.org^$3p
@@ -709,6 +817,7 @@ chromewebstore.google.com##.DKwHHf
 ||report.gbss.io^$3p
 ||resolver.msg.global.xiaomi.net^$all
 ||retailrocket.ru^$3p
+||retcode-us-west-1.arms.aliyuncs.com^$3p
 ||returnal.pro^$3p
 ||rnet.plus^$3p
 ||rubiconproject.com^$3p
@@ -759,6 +868,7 @@ chromewebstore.google.com##.DKwHHf
 ||t.nc0.co^$3p
 ||tagline.ru^$3p
 ||target-static-images.cdn-tinkoff.ru^$all
+||target.ukr.net^$all
 ||targetads.io^$3p
 ||targetman.ru^$3p
 ||telega.in^$3p
@@ -809,6 +919,7 @@ chromewebstore.google.com##.DKwHHf
 ||wowblogger.ru^$3p
 ||wowcircle.net/*bg/bg_winter.jpg$image
 ||wpadmngr.com^$3p
+||wx-user-behavior.cn-hongkong.log.aliyuncs.com^$3p
 ||wzrkt.com^$3p
 ||xg4ken.com^$3p
 ||xmetrics.ru^$3p
@@ -912,12 +1023,6 @@ xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
 
-!#if adguard_app_android
-@@||cdn1.ozone.ru^$app=ru.ozon.app.android
-@@||scbh.yandex.net/generate_204$app=com.yandex.iot
-@@||securepay.ozon.ru^$app=ru.ozon.app.android
-!#endif
-
 ! General blocking filters
 $ping
 /*lms-analytics
@@ -949,6 +1054,7 @@ $ping
 /contact-popup-form.js$script
 /cookie-disclaimer$all
 /cookie-info
+/cookie-law-info-public.js$script
 /cookie-overlay
 /cookie-popup
 /cookie-privacy
@@ -1130,6 +1236,7 @@ _id_tracking^$all
 ##.ad-text
 ##.adSense
 ##.ad_banner_example
+##.adlist
 ##.adsbytrafficjunky
 ##.agreement-cookies-wrap
 ##.auth-popup-feed-trigger
@@ -1320,7 +1427,7 @@ _id_tracking^$all
 ||орг^$doc
 
 ! Unreliable Russian Latin generic TLDs
-||tatar$doc,domain=~antat.tatar|~domain.tatar|~kamaz.tatar|~tatar-inform.tatar|~translate.tatar|~vdpo.tatar
+||tatar$doc,domain=~antat.tatar|~domain.tatar|~kamaz.tatar|~tatar-inform.tatar|~translate.tatar|~vdpo.tatar|~ms-edu.tatar.ru|~edu.tatar.ru
 ||abkhazia.su^$doc
 ||adygeya.ru^$doc
 ||adygeya.su^$doc
