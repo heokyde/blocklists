@@ -169,7 +169,7 @@
 @@||scbh.yandex.net/generate_204$app=com.yandex.iot
 !#endif
 
-! Yandex Advertising Network (YAN) | РСЯ | Resellers
+! Yandex Advertising Network (YAN) | Ads Resellers | Partner.yandex.ru
 ||152media.info^$3p
 ||acd.op.hicloud.com^$3p
 ||aceex.io^$3p
@@ -268,7 +268,7 @@
 ||webeyemob.com^$3p
 ||xad.com^$3p
 ||xapads.com^$3p
-||yeahmobi.com
+||yeahmobi.com^$3p
 
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
@@ -557,6 +557,8 @@ chromewebstore.google.com##.DKwHHf
 @@||copilot.microsoft.com^
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
+||dashx4ae.ut.taobao.com^$all
+||abtest.alibaba.com^$all
 ||1rx.io^$3p
 ||2o7.net^$3p
 ||2xclick.ru^$3p
@@ -706,6 +708,7 @@ chromewebstore.google.com##.DKwHHf
 ||gnezdo.online^$3p
 ||gnezdo.ru^$3p
 ||gosmonitor.ru^$all
+||gtm.wise.com^$3p
 ||heap.io^$3p
 ||heapanalytics.com^$3p
 ||heytapdl.com^$all
@@ -820,7 +823,6 @@ chromewebstore.google.com##.DKwHHf
 ||retcode-us-west-1.arms.aliyuncs.com^$3p
 ||returnal.pro^$3p
 ||rnet.plus^$3p
-||rubiconproject.com^$3p
 ||rucounter.ru^$3p
 ||rudderlabs.com^$3p
 ||rum.browser-intake-datadoghq.com^$3p
@@ -867,7 +869,6 @@ chromewebstore.google.com##.DKwHHf
 ||t.imgur.com^$all
 ||t.nc0.co^$3p
 ||tagline.ru^$3p
-||target-static-images.cdn-tinkoff.ru^$all
 ||target.ukr.net^$all
 ||targetads.io^$3p
 ||targetman.ru^$3p
