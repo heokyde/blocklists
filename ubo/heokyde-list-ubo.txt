@@ -313,7 +313,6 @@ music.yandex.ru##.notify_shown
 ||alt-ad.mail.ru^$all
 ||an.mail.ru^$all
 ||api-hprof.odkl.ru^$all
-||auth.vkpns.rustore.ru^$all
 ||b2.mail.ru^$all
 ||clck.dzen.ru^$all
 ||connect.ok.ru^$3p
@@ -332,14 +331,12 @@ music.yandex.ru##.notify_shown
 ||relap.mail.ru$all
 ||rs.mail.ru^$all
 ||sentry.rustore.ru^$all
-||stats.rustore.ru^$all
 ||stats.vk-portal.net^$all
 ||sun9-4.userapi.com^$all
 ||target.my.com^$3p
 ||top-fwz1.mail.ru^$all
 ||top.mail.ru^$all
 ||trk.mail.ru^$image
-||vkpns.rustore.ru^$all
 ||xray.mail.ru^$all
 
 dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
@@ -415,6 +412,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||p.ozon.ru^$all
 ||sentry.ozon.ru^$all
 ||sentry.price-co.ru^$all
+||sentry.wb.ru^$all
 ||sntr.avito.ru^$all
 ||track.price.ru^$all
 ||wstat.ozon.ru^$all
@@ -557,8 +555,6 @@ chromewebstore.google.com##.DKwHHf
 @@||copilot.microsoft.com^
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
-||dashx4ae.ut.taobao.com^$all
-||abtest.alibaba.com^$all
 ||1rx.io^$3p
 ||2o7.net^$3p
 ||2xclick.ru^$3p
@@ -567,6 +563,8 @@ chromewebstore.google.com##.DKwHHf
 ||aaxads.com^$3p
 ||abetterinternet.org^$3p
 ||abtasty.com^$3p
+||abtest-sg.byteoversea.com^$3p
+||abtest.alibaba.com^$all
 ||acint.net^$3p
 ||acsbapp.com^$3p
 ||ad-delivery.net^$3p
@@ -675,19 +673,23 @@ chromewebstore.google.com##.DKwHHf
 ||customer.io^$3p
 ||d3c.life^$all
 ||d3vk40ihlliju7.cloudfront.net^$3p
+||dashx4ae.ut.taobao.com^$all
 ||datacollector-drru.dt.hicloud.com^$3p
 ||datadoghq-browser-agent.com^$3p
 ||datadoghq.com^$3p
 ||datago.ru^$3p
 ||deff.nelreports.net^$3p
 ||digitaltarget.ru^$3p
+||dnkeeper.platform.dbankcloud.cn^$3p
 ||dnn506yrbagrg.cloudfront.net^$3p
 ||ds-s7.addthis.com.edgekey.net^$all
 ||dsspn.com^3p
 ||easytarget.ru^$3p
+||events-drru.op.dbankcloud.ru^$3p
 ||evt.mxplay.com^$all
 ||exdynsrv.com^$3p
 ||experience.ninetailed.co^$3p
+||ezodn.com^$3p
 ||factors.ai^$3p
 ||failover-telemetry-us.tradingview.com^$3p
 ||fanplayr.com^$3p
@@ -707,7 +709,11 @@ chromewebstore.google.com##.DKwHHf
 ||giraff.io^$3p
 ||gnezdo.online^$3p
 ||gnezdo.ru^$3p
+||go-mpulse.net^$3p
 ||gosmonitor.ru^$all
+||growthbook.io^$3p
+||grs.dbankcloud.$3p
+||grs.platform.dbankcloud.ru^$3p
 ||gtm.wise.com^$3p
 ||heap.io^$3p
 ||heapanalytics.com^$3p
@@ -742,6 +748,7 @@ chromewebstore.google.com##.DKwHHf
 ||iplo.ru^$all
 ||iplogger.com^$all
 ||iplogger.ru^$all
+||isnssdk.com^$3p
 ||jivosite.com^$3p
 ||js.go2sdk.com^$3p
 ||js.hubspot.com^$3p
@@ -754,6 +761,7 @@ chromewebstore.google.com##.DKwHHf
 ||live2support.com^$3p
 ||livetex.ru^$3p
 ||log.aliyuncs.com^$3p
+||log.byteoversea.com^$3p
 ||logger.moviead55.ru^$all
 ||luckyorange.$3p
 ||luxcdn.com^$3p
@@ -765,15 +773,18 @@ chromewebstore.google.com##.DKwHHf
 ||mediascope.net^$3p
 ||mediatoday.ru^$3p
 ||metrics.data.hicloud.com^$3p
+||metrics5.dt.dbankcloud.ru^$3p
 ||mindbox.ru^$3p
 ||mixpanel.com^$3p
 ||mktoresp.com^$3p
 ||ml-attr.com^$3p
 ||mobile-data.onetrust.io^$3p
+||mon-va.byteoversea.com$3p
 ||mon.tiktokv.com^$3p
 ||mouseflow.com^$all
 ||moviead55.ru^$3p
 ||ms-ssp.tinkoff.ru^$3p
+||mssdk-sg.byteoversea.com^$3p
 ||mutinycdn.com^$3p
 ||mxaserver.mxplay.com^$all
 ||mypopups.com^$all
