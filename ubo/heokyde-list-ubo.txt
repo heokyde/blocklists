@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 06 April 2024
+! Last modified: 10 April 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -35,6 +35,7 @@
 ||yastatic.net/*sovetnik
 ||yastatic.net/*yango-gdpr-popup
 ||yandex.ru^$3p,badfilter,domain=~dzen.ru
+@@||a.ya.ru^
 @@||adfstat.yandex.ru/captcha$image
 @@||browser.translate.yandex.net^
 @@||captcha-api.yandex.ru^
@@ -826,6 +827,7 @@ chromewebstore.google.com##.DKwHHf
 ||qualaroo.com^$3p
 ||qualified.com^$3p
 ||quantserve.com^$3p
+||r.stripe.com^$ping
 ||radikal.ru^$3p
 ||relap.io^$3p
 ||report.gbss.io^$3p
@@ -1000,6 +1002,7 @@ duckduckgo.com##.legacy-homepage-variants_belowTheFoldWrapper__7_DL2
 duckduckgo.com##legacy-homepage_ctaSection__5siuM
 funpay.com##.cd-container
 fusionbrain.ai##div[class="styles_wrap__erzrS styles_visible__5L2Yv"]
+getliner.com##.css-kox94s,.css-1ftx246
 gigacode.ru##div[class="_banner_10dxo_1"]
 glasswire.com##.window
 glasswire.com##div[id^="CybotCookiebotDialog"]
