@@ -27,6 +27,7 @@
 ||yandex.*/ping
 ||yandex.*/report
 ||yandex.*/uxfeedback
+||yandex.ru/*do-journal-log
 ||ya.ru/clck
 ||yastatic.net/*DeliveryPointPopup
 ||yastatic.net/*PromoTooltip$script
@@ -1012,6 +1013,7 @@ chromewebstore.google.com##.DKwHHf
 addons.opera.com##.light
 adguard.*##.reviews,.video--welcome,.annoyance
 akbars.ru##.black-color.bg-white.important-announcement__container
+app.leonardo.ai##.css-2j71je
 browserling.com###tool-fffff2
 browserling.com##div.item
 duckduckgo.com##.button_size-md__dS3Yr,.center_andText__ejUnC
@@ -1040,6 +1042,7 @@ nslookup.io###n-dns-records-sidebar-default-wrapper,#n-search-page-sm-wrapper,#n
 nslookup.io##.text-white.bg-\[\#390261\]
 ntv.ru##.loader--active
 pastebin.com##div[class^="popup-container"],.header__logo
+poe.com##.Banner_info__OWUd0.Banner_root__p5sUz
 pornhub.com###age-verification-container,age-verification-wrapper,welcome
 pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
 reports.adguard.*###header
@@ -1253,7 +1256,6 @@ _id_tracking^$all
 ##.Popup-telegram__box
 ##.Popup-telegram__content
 ##.Popup_root
-##.Popup_root_sl2fL
 ##.PushNotification
 ##.StyledCookiesConsent
 ##._banner_1jn84_89
@@ -1430,6 +1432,7 @@ _id_tracking^$all
 ##div[id^="adfox_headmain"]
 ##lib-pso
 ##sendsay-subscription-dialog
+!##.Popup_root_sl2fL
 !##.popup
 
 ! Shows a warning before visiting sites using an Internationalized Domain Name (IDN). twitter.com/gorhill/status/1422914791077732352
