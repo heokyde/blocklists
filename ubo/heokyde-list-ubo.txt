@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 12 April 2024
+! Last modified: 22 April 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -939,6 +939,7 @@ chromewebstore.google.com##.DKwHHf
 ||webvisor.$all
 ||whiteboxdigital.ru^$all
 ||widget.replain.cc^$3p
+||widgetbot.io^$3p
 ||wildcard.marketo.net.edgekey.net^$3p
 ||wingify.com^$3p
 ||wingify.imagekit.io^$3p
