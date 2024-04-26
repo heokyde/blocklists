@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 22 April 2024
+! Last modified: 26 April 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -670,6 +670,7 @@ chromewebstore.google.com##.DKwHHf
 ||cllctr.any.run^$all
 ||cloudflareinsights.com^$3p
 ||comagic.ru^$3p
+||connect.facebook.net^$3p
 ||consent.cookiebot.com^$3p
 ||const.uno^$3p
 ||convertize.io^$3p
@@ -703,6 +704,7 @@ chromewebstore.google.com##.DKwHHf
 ||flocktory.com^$3p
 ||freegeoip.app^$3p
 ||freshmarketer.com^$3p
+||gameanalytics.com^$3p
 ||gbqofs.com^$3p
 ||gdeslon.ru^$3p
 ||gemius.pl^$3p
@@ -799,6 +801,8 @@ chromewebstore.google.com##.DKwHHf
 ||mypopups.com^$all
 ||nc0.co^$3p
 ||new-programmatic.com^$3p
+||newrelic.com.cdn.cloudflare.net^$3p
+||newrelic.com^$3p
 ||nextmillmedia.com^$3p
 ||nicehash.com/*counter$xhr
 ||nitropay.com^$3p
@@ -839,6 +843,7 @@ chromewebstore.google.com##.DKwHHf
 ||q.stripe.com^$3p
 ||qualaroo.com^$3p
 ||qualified.com^$3p
+||qualtrics.com^$3p
 ||quantserve.com^$3p
 ||r.stripe.com^$ping
 ||radikal.ru^$3p
