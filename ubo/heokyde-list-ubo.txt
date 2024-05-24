@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 26 April 2024
+! Last modified: 24 May 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -154,6 +154,7 @@
 
 ! Yandex Marketing | Promo offers | Annoyances
 ||audience.yandex.ru^$doc,3p
+||browser.yandex.ru/c/neuroanswer^$doc,3p
 ||business.yandex.ru^$doc,3p
 ||datalens.yandex.ru^$doc,3p
 ||direct.yandex.$doc,3p
@@ -361,11 +362,12 @@ rutube.ru##div[class^="cookie-consent__content"]
 rutube.ru##.wdp-carousel-module__carousel
 
 ! Sber | Gitverse
+||ads.sber.ru^$doc,3p
 ||api.eapteka.ru^$3p
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
-||sbermarket.ru/v2/vendo/track/
 ||metrics.prom.third-party-app.sberdevices.ru^$all
+||sbermarket.ru/v2/vendo/track/
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
 ||sentry-api.sberdevices.ru^$all
@@ -586,6 +588,7 @@ chromewebstore.google.com##.DKwHHf
 ||adjust.world^$3p
 ||adkernel.com^$3p
 ||adlook.me^$all$3p
+||adnitro.pro^$3p
 ||adobedtm.com^$3p
 ||adplay.ru^$3p
 ||ads.imgur.com^$all
@@ -596,6 +599,7 @@ chromewebstore.google.com##.DKwHHf
 ||adsrvr.org^$3p
 ||advg.agency^$3p
 ||adx.com.ru^$3p
+||aemetrics.aliexpress.ru^$3p
 ||afp.ai^$3p
 ||agency2.ru^$3p
 ||aidata.io^$3p
@@ -680,6 +684,7 @@ chromewebstore.google.com##.DKwHHf
 ||counter.ukr.net^$all
 ||customer.io^$3p
 ||d3c.life^$all
+||d3c8j8snkzfr1n.cloudfront.net^$3p
 ||d3vk40ihlliju7.cloudfront.net^$3p
 ||dashx4ae.ut.taobao.com^$all
 ||datacollector-drru.dt.hicloud.com^$3p
@@ -702,6 +707,7 @@ chromewebstore.google.com##.DKwHHf
 ||failover-telemetry-us.tradingview.com^$3p
 ||fanplayr.com^$3p
 ||flocktory.com^$3p
+||fourier.taobao.com^$3p
 ||freegeoip.app^$3p
 ||freshmarketer.com^$3p
 ||gameanalytics.com^$3p
@@ -789,6 +795,7 @@ chromewebstore.google.com##.DKwHHf
 ||mixpanel.com^$3p
 ||mktoresp.com^$3p
 ||ml-attr.com^$3p
+||mmstat.com^$3p
 ||mobile-data.onetrust.io^$3p
 ||mon-va.byteoversea.com$3p
 ||mon.tiktokv.com^$3p
@@ -854,6 +861,7 @@ chromewebstore.google.com##.DKwHHf
 ||retcode-us-west-1.arms.aliyuncs.com^$3p
 ||returnal.pro^$3p
 ||richaudience.com^$3p
+||rlcdn.com^$3p
 ||rnet.plus^$3p
 ||rucounter.ru^$3p
 ||rudderlabs.com^$3p
@@ -906,6 +914,7 @@ chromewebstore.google.com##.DKwHHf
 ||target.ukr.net^$all
 ||targetads.io^$3p
 ||targetman.ru^$3p
+||tdum.alibaba.com^$all
 ||telega.in^$3p
 ||telemetry.jivo.ru^$3p
 ||telemetry.tradingview.com^$3p
@@ -915,6 +924,7 @@ chromewebstore.google.com##.DKwHHf
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
 ||tracker-api.my.com^$all
+||tracker.my.com^$3p
 ||tracking.miui.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
