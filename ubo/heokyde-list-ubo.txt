@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 24 May 2024
+! Last modified: 25 May 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -41,13 +41,12 @@
 @@||browser.translate.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
-@@||enterprise.api-maps.yandex.ru$domain=avito.ru
+@@||enterprise.api-maps.yandex.ru^
 @@||passport.yandex.ru^$domain=kinopoisk.ru
-@@||redirect.appmetrica.yandex.com^$all,~ping,domain=ya.ru|yandex.*
+@@||redirect.appmetrica.yandex.com^
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket
 @@||widevine-proxy.ott.yandex.ru^
-@@||ya.ru/alisa_davay_pridumaem
 @@||yandex./portal/searchframe$subdocument
 @@||yandex.ru/captchapgrd$script
 @@||yandex.ru/search$subdocument
@@ -835,6 +834,7 @@ chromewebstore.google.com##.DKwHHf
 ||picreel.com^$3p
 ||pingdom.net^$3p
 ||pla.fwdcdn.com^$3p
+||plausible.io^$3p
 ||popin.cc^$3p
 ||poqup.com^$3p
 ||pricelib.ru^$3p
