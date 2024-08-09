@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 25 May 2024
+! Last modified: 09 August 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -41,12 +41,13 @@
 @@||browser.translate.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
-@@||enterprise.api-maps.yandex.ru^
+@@||enterprise.api-maps.yandex.ru$domain=avito.ru
 @@||passport.yandex.ru^$domain=kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^
 @@||strm.yandex.ru^$xhr,domain=kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket
 @@||widevine-proxy.ott.yandex.ru^
+@@||ya.ru/alisa_davay_pridumaem
 @@||yandex./portal/searchframe$subdocument
 @@||yandex.ru/captchapgrd$script
 @@||yandex.ru/search$subdocument
@@ -74,7 +75,6 @@
 ||any.yandex.$all
 ||api-metrica.yandex.$all
 ||api.lbs.yandex.ru^$all
-||appmetrica.yandex.$all
 ||appmetrika.yandex.$all
 ||awaps.yandex.$all
 ||awsync.yandex.$all
@@ -122,6 +122,8 @@
 ||report-l3.music.yandex.net^$all
 ||report.appmetrica.test.yandex.net^$all
 ||report.appmetrica.yandex.net.iberostar.com^$all
+||report.appmetrica.yandex.net^$all
+||rosenberg.appmetrica.yandex.net^$all
 ||sba.search.yandex.net^$3p
 ||sba.yandex.net^$all
 ||sentry.telephony.yandex.$all
@@ -361,8 +363,8 @@ rutube.ru##div[class^="cookie-consent__content"]
 rutube.ru##.wdp-carousel-module__carousel
 
 ! Sber | Gitverse
-||ads.sber.ru^$doc,3p
 ||api.eapteka.ru^$3p
+||counter.kuper.ru^$all
 ||counter.sberbank.ru^$all
 ||counter.sbermarket.ru^$all
 ||metrics.prom.third-party-app.sberdevices.ru^$all
@@ -370,10 +372,13 @@ rutube.ru##.wdp-carousel-module__carousel
 ||sbermarket.tech^$all
 ||sbermarketing.ru^$all
 ||sentry-api.sberdevices.ru^$all
+||sentry-ingest.kuper.ru^$all
+||stories-res.online.sberbank.ru^$all
 ||sve.online.sberbank.ru^$domain=2gis.ru
 ||svi.online.sberbank.ru^$all
 ||visor.sberbank.ru^$all
-sbermarket.ru##.styles_b2bBanner__qoHGd
+api.kuper.ru*/track/
+kuper.ru##.styles_b2bBanner__qoHGd
 gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 
 ! Rambler Media Group
@@ -587,7 +592,6 @@ chromewebstore.google.com##.DKwHHf
 ||adjust.world^$3p
 ||adkernel.com^$3p
 ||adlook.me^$all$3p
-||adnitro.pro^$3p
 ||adobedtm.com^$3p
 ||adplay.ru^$3p
 ||ads.imgur.com^$all
@@ -604,6 +608,7 @@ chromewebstore.google.com##.DKwHHf
 ||aidata.io^$3p
 ||aidata.me^$3p
 ||ak-is2.net^$3p
+||alfabank.ru/*metrics
 ||altergeo.ru^$3p
 ||amp.cloudflare.com^$3p
 ||amp.dev^$3p
@@ -672,6 +677,7 @@ chromewebstore.google.com##.DKwHHf
 ||clickiocdn.com$3p
 ||cllctr.any.run^$all
 ||cloudflareinsights.com^$3p
+||cms.russoutdoor.ru/*counters
 ||comagic.ru^$3p
 ||connect.facebook.net^$3p
 ||consent.cookiebot.com^$3p
@@ -683,7 +689,6 @@ chromewebstore.google.com##.DKwHHf
 ||counter.ukr.net^$all
 ||customer.io^$3p
 ||d3c.life^$all
-||d3c8j8snkzfr1n.cloudfront.net^$3p
 ||d3vk40ihlliju7.cloudfront.net^$3p
 ||dashx4ae.ut.taobao.com^$all
 ||datacollector-drru.dt.hicloud.com^$3p
@@ -794,7 +799,6 @@ chromewebstore.google.com##.DKwHHf
 ||mixpanel.com^$3p
 ||mktoresp.com^$3p
 ||ml-attr.com^$3p
-||mmstat.com^$3p
 ||mobile-data.onetrust.io^$3p
 ||mon-va.byteoversea.com$3p
 ||mon.tiktokv.com^$3p
@@ -834,7 +838,6 @@ chromewebstore.google.com##.DKwHHf
 ||picreel.com^$3p
 ||pingdom.net^$3p
 ||pla.fwdcdn.com^$3p
-||plausible.io^$3p
 ||popin.cc^$3p
 ||poqup.com^$3p
 ||pricelib.ru^$3p
@@ -866,6 +869,7 @@ chromewebstore.google.com##.DKwHHf
 ||rucounter.ru^$3p
 ||rudderlabs.com^$3p
 ||rum.browser-intake-datadoghq.com^$3p
+||russoutdoor.ru^$3p
 ||rutarget.ru^$3p
 ||rutarget.ru^$all
 ||rutrk.org^$all
@@ -901,7 +905,6 @@ chromewebstore.google.com##.DKwHHf
 ||static.terratraf.io^$all
 ||stats.avito.ru^$3p
 ||stats.wp.com^$3p
-||stories-res.online.sberbank.ru^$all
 ||streetuptowind.com^$3p
 ||stretchsquirrel.com^$3p
 ||stt.nvidia.com^$all
@@ -914,7 +917,6 @@ chromewebstore.google.com##.DKwHHf
 ||target.ukr.net^$all
 ||targetads.io^$3p
 ||targetman.ru^$3p
-||tdum.alibaba.com^$all
 ||telega.in^$3p
 ||telemetry.jivo.ru^$3p
 ||telemetry.tradingview.com^$3p
@@ -924,7 +926,6 @@ chromewebstore.google.com##.DKwHHf
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
 ||tracker-api.my.com^$all
-||tracker.my.com^$3p
 ||tracking.miui.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
@@ -1070,6 +1071,7 @@ tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##div[class^="discord"],.flex-sbc.footer,.flex-cc.head-navigation
 wowcircle.net##div[class^="logo"],[src="https://wowcircle.net/images/corner_tbc.png"]
+@@||wowroad.info$domain=wowcircle.net
 xhamster.*,xhamstervideo.*,xhaccess.*##.promoMessageBanner-2fb52
 xhamster.*,xhamstervideo.*,xhaccess.*##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.*,xhamstervideo.*,xhaccess.*#@#.popup
