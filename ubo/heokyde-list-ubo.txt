@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 09 August 2024
+! Last modified: 3 October 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -336,12 +336,14 @@ music.yandex.ru##.notify_shown
 ||relap.mail.ru$all
 ||rs.mail.ru^$all
 ||sentry.rustore.ru^$all
+||stacks.vk-portal.net^$all
 ||stats.vk-portal.net^$all
 ||sun9-4.userapi.com^$all
 ||target.my.com^$3p
 ||top-fwz1.mail.ru^$all
 ||top.mail.ru^$all
 ||trk.mail.ru^$image
+||vk-analytics.ru^$all
 ||xray.mail.ru^$all
 
 dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
@@ -467,6 +469,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||firebaseinstallations.googleapis.com^$all
 ||firebaselogging-pa.googleapis.com^$all
 ||firebaselogging.googleapis.com^$all
+||geller-pa.googleapis.com^$all
 ||google-analytics.com^$all
 ||google-pagerank.net^$all
 ||googleadservices.com^$all
@@ -476,8 +479,10 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||googletagmanager.com^$all
 ||googletagservices.com^$all
 ||gvt2.com^$all
+||id.google.ru^$all
 ||imasdk.googleapis.com^$all
 ||mail-ads.google.com^$all
+||ogads-pa.googleapis.com^$all
 ||optimizationguide-pa.googleapis.com^$all
 ||play.google.com^$3p
 ||semanticlocation-pa.googleapis.com^$all
@@ -629,6 +634,8 @@ chromewebstore.google.com##.DKwHHf
 ||api.hubapi.com^$3p
 ||api.neon.click^$3p
 ||api.snoopi.io^$3p
+||api.tracking.al-array.com^$3p
+||app-analytics-services.com^$3p
 ||appsflyer.club^$3p
 ||appsflyer.com^$all
 ||appsflyersdk.com^$3p
@@ -657,8 +664,10 @@ chromewebstore.google.com##.DKwHHf
 ||carrotquest.app^$3p
 ||ccsyncuuid.net^$3p
 ||cdn-cookieyes.com^$3p
+||cdn-xp-ingest.edge.apple^$3p
 ||cdn.carrotquest.app^$3p
 ||cdn.cookielaw.org^$3p
+||cdn.parsely.com^$3p
 ||cdn.retailrocket.ru^$3p
 ||ced-ns.sascdn.com^$3p
 ||ced.sascdn.com^$3p
@@ -675,6 +684,7 @@ chromewebstore.google.com##.DKwHHf
 ||clickagy.com^$3p
 ||clickfrog.ru^$3p
 ||clickiocdn.com$3p
+||client-telemetry.roblox.com^$all
 ||cllctr.any.run^$all
 ||cloudflareinsights.com^$3p
 ||cms.russoutdoor.ru/*counters
@@ -682,11 +692,14 @@ chromewebstore.google.com##.DKwHHf
 ||connect.facebook.net^$3p
 ||consent.cookiebot.com^$3p
 ||const.uno^$3p
+||contile-images.services.mozilla.com^$all
+||contile.services.mozilla.com^$all
 ||convertize.io^$3p
 ||cookieyes.com^$3p
 ||counter.any.run^$all
 ||counter.log24.ru^$3p
 ||counter.ukr.net^$all
+||cstat.cdn-apple.com^$3p
 ||customer.io^$3p
 ||d3c.life^$all
 ||d3vk40ihlliju7.cloudfront.net^$3p
@@ -697,15 +710,18 @@ chromewebstore.google.com##.DKwHHf
 ||datago.ru^$3p
 ||deff.nelreports.net^$3p
 ||digitaltarget.ru^$3p
+||dit.whatsapp.net^$3p
 ||dnkeeper.platform.dbankcloud.cn^$3p
 ||dnn506yrbagrg.cloudfront.net^$3p
 ||ds-s7.addthis.com.edgekey.net^$all
 ||dsspn.com^3p
 ||easytarget.ru^$3p
+||ecsv2.roblox.com^$3p
 ||events-drru.op.dbankcloud.ru^$3p
 ||evt.mxplay.com^$all
 ||exdynsrv.com^$3p
 ||experience.ninetailed.co^$3p
+||experiments.apple.com^$3p
 ||ezodn.com^$3p
 ||factors.ai^$3p
 ||failover-telemetry-us.tradingview.com^$3p
@@ -717,6 +733,7 @@ chromewebstore.google.com##.DKwHHf
 ||gameanalytics.com^$3p
 ||gbqofs.com^$3p
 ||gdeslon.ru^$3p
+||gecko-sg.byteoversea.com^$3p
 ||gemius.pl^$3p
 ||geo.homenewtab.com^$all
 ||geo.mozilla.org^$all
@@ -738,6 +755,8 @@ chromewebstore.google.com##.DKwHHf
 ||heap.io^$3p
 ||heapanalytics.com^$3p
 ||heytapdl.com^$all
+||hm.baidu.com
+||hm.e.shifen.com
 ||honest-metrics.com^$3p
 ||hotjar.com^$all
 ||hotjar.dualsidedapp.com^$3p
@@ -752,6 +771,7 @@ chromewebstore.google.com##.DKwHHf
 ||i.mxplayer.j2inter.com^$all
 ||imgsct.cookiebot.com^$3p
 ||improving.duckduckgo.com^$all
+||incoming.telemetry.mozilla.org^$all
 ||informers.ukr.net^$all
 ||infox.sg^$3p
 ||insent.ai^$3p
@@ -780,15 +800,18 @@ chromewebstore.google.com##.DKwHHf
 ||lenmit.com^$all
 ||live2support.com^$3p
 ||livetex.ru^$3p
+||lms.roblox.com^$3p
 ||log.aliyuncs.com^$3p
 ||log.byteoversea.com^$3p
 ||logger.moviead55.ru^$all
 ||luckyorange.$3p
 ||luxcdn.com^$3p
 ||magsrv.com^$3p
+||marketing.services.apple^$3p
 ||marketo.net^$3p
 ||mbidadm.com^$3p
 ||mcs-va.tiktokv.com^$3p
+||media-stat.mail.ru^$3p
 ||media.net^$3p
 ||mediago.io^$3p
 ||mediascope.net^$3p
@@ -805,6 +828,7 @@ chromewebstore.google.com##.DKwHHf
 ||mouseflow.com^$all
 ||moviead55.ru^$3p
 ||ms-ssp.tinkoff.ru^$3p
+||msh.amazon.com^$3p
 ||mssdk-sg.byteoversea.com^$3p
 ||mutinycdn.com^$3p
 ||mxaserver.mxplay.com^$all
@@ -838,10 +862,12 @@ chromewebstore.google.com##.DKwHHf
 ||picreel.com^$3p
 ||pingdom.net^$3p
 ||pla.fwdcdn.com^$3p
+||player.ex.co^$3p
 ||popin.cc^$3p
 ||poqup.com^$3p
 ||pricelib.ru^$3p
 ||privacy-center.org^$3p
+||privacy-policy.truste.com^$3p
 ||prod-telemetry.paradox-interactive.com^$3p
 ||profitwell.com^$3p
 ||promo.livelib.ru^$all
@@ -897,6 +923,7 @@ chromewebstore.google.com##.DKwHHf
 ||soloway.ru^$3p
 ||solta.io^$3p
 ||sparrow.ru$all
+||spocs.getpocket.com^$all
 ||spotscenered.info^$3p
 ||ssp.bestssp.com^$3p
 ||statad.ru^$3p
@@ -926,6 +953,7 @@ chromewebstore.google.com##.DKwHHf
 ||tomi.ai^$3p
 ||track.hubspot.com^$3p
 ||tracker-api.my.com^$all
+||tracking.al-array.com^$3p
 ||tracking.miui.com^$all
 ||tracking.retailrocket.ru^$3p
 ||trackjs.com^$all
@@ -971,6 +999,8 @@ chromewebstore.google.com##.DKwHHf
 ||xg4ken.com^$3p
 ||xmetrics.ru^$3p
 ||xoalt.com^$3p
+||xp.apple.com.edgekey.net^$3p
+||xp.apple.com^$3p
 ||xtremetop100.com/images$image
 ||yadro.ru^$important,all
 ||yengo.com^$3p
@@ -1031,14 +1061,14 @@ addons.opera.com##.light
 adguard.*##.reviews,.video--welcome,.annoyance
 akbars.ru##.black-color.bg-white.important-announcement__container
 app.leonardo.ai##.css-2j71je
+app.writesonic.com##.eapps-countdown-timer-has-background.eapps-countdown-timer-area-clickable.eapps-countdown-timer-hide-seconds.eapps-countdown-timer-hide-minutes
 browserling.com###tool-fffff2
 browserling.com##div.item
-duckduckgo.com##.button_size-md__dS3Yr,.center_andText__ejUnC
-duckduckgo.com##.legacy-homepage-variants_belowTheFoldWrapper__7_DL2
-duckduckgo.com##legacy-homepage_ctaSection__5siuM
+duckduckgo.com##.minimal-homepage_taglineText__owJPH
 funpay.com##.cd-container
 fusionbrain.ai##div[class="styles_wrap__erzrS styles_visible__5L2Yv"]
 getliner.com##.css-kox94s,.css-1ftx246
+giga.chat##.hgIWUq.sc-94d4aa7f-0
 gigacode.ru##div[class="_banner_10dxo_1"]
 glasswire.com##.window
 glasswire.com##div[id^="CybotCookiebotDialog"]
