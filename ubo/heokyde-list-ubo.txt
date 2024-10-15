@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 3 October 2024
+! Last modified: 15 October 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -603,6 +603,7 @@ chromewebstore.google.com##.DKwHHf
 ||ads.imovideo.ru^$3p
 ||ads.linkedin.com^$all
 ||ads.tatar.ru^$all
+||adsgram.ai^$all
 ||adspend.space^$3p
 ||adsrvr.org^$3p
 ||advg.agency^$3p
@@ -752,6 +753,7 @@ chromewebstore.google.com##.DKwHHf
 ||grs.dbankcloud.$3p
 ||grs.platform.dbankcloud.ru^$3p
 ||gtm.wise.com^$3p
+||hbagency.it^$all
 ||heap.io^$3p
 ||heapanalytics.com^$3p
 ||heytapdl.com^$all
@@ -841,6 +843,7 @@ chromewebstore.google.com##.DKwHHf
 ||nicehash.com/*counter$xhr
 ||nitropay.com^$3p
 ||nitroscripts.com^$3p
+||normandy.cdn.mozilla.net^$all
 ||notification.kazanexpress.ru^$all
 ||notifications-pusher.gog.com^$3p
 ||nvidia.tt.omtrdc.net^$all
@@ -916,6 +919,7 @@ chromewebstore.google.com##.DKwHHf
 ||sentry.myshows.me^$3p
 ||sentry.odysee.tv^$all
 ||sentry.tinkoff.ru^$all
+||sentry.tuyaeu.com^$all
 ||sitereview.zscaler.com^$all
 ||skai.io^$3p
 ||skcrtxr.com^$all
@@ -947,6 +951,7 @@ chromewebstore.google.com##.DKwHHf
 ||telega.in^$3p
 ||telemetry.jivo.ru^$3p
 ||telemetry.tradingview.com^$3p
+||tganalytics.xyz^$3p
 ||tidio.co^$3p
 ||tinkoff.ru*/log/
 ||tns-counter.ru^$all
