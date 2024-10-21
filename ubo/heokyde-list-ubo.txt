@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: github.com/heokyde/blocklists
 ! License: MIT
-! Last modified: 15 October 2024
+! Last modified: 21 October 2024
 ! Expires: 1 days
 
 ! Список для uBlock Origin. Блокирует рекламу, трекеры, метрику, фишинг,  вредоносные и нелатинский домен верхнего уровня(интернационализованные доменные имена). Ориентирован на российский интернет.
@@ -337,11 +337,13 @@ music.yandex.ru##.notify_shown
 ||rs.mail.ru^$all
 ||sentry.rustore.ru^$all
 ||stacks.vk-portal.net^$all
+||stats.rustore.ru^$all
 ||stats.vk-portal.net^$all
 ||sun9-4.userapi.com^$all
 ||target.my.com^$3p
 ||top-fwz1.mail.ru^$all
 ||top.mail.ru^$all
+||tracking.rustore.ru^$all
 ||trk.mail.ru^$image
 ||vk-analytics.ru^$all
 ||xray.mail.ru^$all
@@ -462,6 +464,7 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||analytics.googleapis.com^$all
 ||app-measurement.com^$all
 ||beacons5.gvt3.com^$all
+||clienttracing-pa.googleapis.com^$all
 ||crashlytics.com^$all
 ||crashlyticsreports-pa.googleapis.com^$all
 ||csp.withgoogle.com^$all
@@ -478,10 +481,12 @@ gitverse.ru##.\[\&\>svg\]\:text-bl-60.\[\&\>svg\]\:absolute
 ||googlesyndication.com^$all
 ||googletagmanager.com^$all
 ||googletagservices.com^$all
+||growth-pa.googleapis.com^$all
 ||gvt2.com^$all
 ||id.google.ru^$all
 ||imasdk.googleapis.com^$all
 ||mail-ads.google.com^$all
+||ogads-pa.clients6.google.com^$all
 ||ogads-pa.googleapis.com^$all
 ||optimizationguide-pa.googleapis.com^$all
 ||play.google.com^$3p
@@ -636,6 +641,7 @@ chromewebstore.google.com##.DKwHHf
 ||api.neon.click^$3p
 ||api.snoopi.io^$3p
 ||api.tracking.al-array.com^$3p
+||api.vigo.one^$3p
 ||app-analytics-services.com^$3p
 ||appsflyer.club^$3p
 ||appsflyer.com^$all
@@ -718,6 +724,7 @@ chromewebstore.google.com##.DKwHHf
 ||dsspn.com^3p
 ||easytarget.ru^$3p
 ||ecsv2.roblox.com^$3p
+||effect.habr.com^$all
 ||events-drru.op.dbankcloud.ru^$3p
 ||evt.mxplay.com^$all
 ||exdynsrv.com^$3p
@@ -805,6 +812,7 @@ chromewebstore.google.com##.DKwHHf
 ||lms.roblox.com^$3p
 ||log.aliyuncs.com^$3p
 ||log.byteoversea.com^$3p
+||log16-platform-ycru.tiktokv.com^$all
 ||logger.moviead55.ru^$all
 ||luckyorange.$3p
 ||luxcdn.com^$3p
@@ -825,12 +833,14 @@ chromewebstore.google.com##.DKwHHf
 ||mktoresp.com^$3p
 ||ml-attr.com^$3p
 ||mobile-data.onetrust.io^$3p
+||mon-ru.tiktokv.com^$all
 ||mon-va.byteoversea.com$3p
 ||mon.tiktokv.com^$3p
 ||mouseflow.com^$all
 ||moviead55.ru^$3p
 ||ms-ssp.tinkoff.ru^$3p
 ||msh.amazon.com^$3p
+||mssdk-ru.tiktokv.com^$all
 ||mssdk-sg.byteoversea.com^$3p
 ||mutinycdn.com^$3p
 ||mxaserver.mxplay.com^$all
@@ -918,6 +928,7 @@ chromewebstore.google.com##.DKwHHf
 ||sentry.litres.io^$3p
 ||sentry.myshows.me^$3p
 ||sentry.odysee.tv^$all
+||sentry.srv.habr.com^$all
 ||sentry.tinkoff.ru^$all
 ||sentry.tuyaeu.com^$all
 ||sitereview.zscaler.com^$all
@@ -949,6 +960,7 @@ chromewebstore.google.com##.DKwHHf
 ||targetads.io^$3p
 ||targetman.ru^$3p
 ||telega.in^$3p
+||telemetry.battle.net^$all
 ||telemetry.jivo.ru^$3p
 ||telemetry.tradingview.com^$3p
 ||tganalytics.xyz^$3p
@@ -956,6 +968,7 @@ chromewebstore.google.com##.DKwHHf
 ||tinkoff.ru*/log/
 ||tns-counter.ru^$all
 ||tomi.ai^$3p
+||track.habr.com^$all
 ||track.hubspot.com^$3p
 ||tracker-api.my.com^$all
 ||tracking.al-array.com^$3p
