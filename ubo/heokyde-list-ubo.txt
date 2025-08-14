@@ -109,7 +109,7 @@
 ! Yandex general
 ||yandex.ru^$third-party,domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
 ||yastatic.net^$third-party,domain=dzen.ru|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
-/^https?:\/\/(?:[^\/:?#@]*metrika[^\/:?#@]*\.)+yandex\.(?:ru|com|net)(?:[\/:?#]|$)|^https?:\/\/(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metrika(?:[\/?#]|$)/
+/^https?:\/\/(?:(?:[^\/:?#@]*metri(?:ka|ca)[^\/:?#@]*\.)+yandex\.(?:ru|com|net)|(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metri(?:ka|ca))(?:[\/:?#]|$)/
 ||yandex.*/ads
 ||yandex.*/adv$third-party
 ||yandex.*/counter
