@@ -145,7 +145,7 @@
 @@||yandex.ru/showcaptcha$subdocument
 @@||yastatic.net/*alice-web
 @@||yastatic.net/*text$font
-@@||yandex.ru^$third-party,domain=dzen.ru,important
+||yandex.ru^$3p,badfilter,domain=~dzen.ru
 ||a.flow.yandex.*^
 ||abt.s3.yandex.*^
 ||ad-fox.yandex.*^
