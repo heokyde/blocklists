@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.08.14
+! Version: 2025.08.24
 ! Expires: 1 day
 
 ! Shows a warning before visiting sites using an IDN
@@ -11,13 +11,6 @@
 
 ! Cyrillic Unreliable TLDs
 ||рф^$document,domain=~мвд.рф|~мойучасток.рф|~мфц.рф|~правительство.рф|~президент.рф
-||дети^$document
-||ею^$document
-||ком^$document
-||мкд^$document
-||мон^$document
-||москва^$document
-||орг^$document
 ||рус^$document
 ||мир.рус^
 ||мск.рус^
@@ -145,7 +138,6 @@
 @@||yandex.ru/showcaptcha$subdocument
 @@||yastatic.net/*alice-web
 @@||yastatic.net/*text$font
-||yandex.ru^$3p,badfilter,domain=~dzen.ru
 ||a.flow.yandex.*^
 ||abt.s3.yandex.*^
 ||ad-fox.yandex.*^
@@ -184,6 +176,7 @@
 ||crash-reports.browser.yandex.net^
 ||csp.yandex.*^
 ||diagnostic.beru.tst.vs.market.yandex.*^
+||dr.yandex.net^
 ||external-promo-metrics.yandex.*^
 ||extmaps-api.yandex.*^
 ||feedback.send.yandex.ru^
@@ -789,7 +782,6 @@ chromewebstore.google.com##.DKwHHf
 ||dashx4ae.ut.taobao.com^
 ||datacollector-drru.dt.hicloud.com^$third-party
 ||datadoghq-browser-agent.com^$third-party
-||datadoghq.com^$third-party
 ||datago.ru^$third-party
 ||deff.nelreports.net^$third-party
 ||digitaltarget.ru^$third-party
@@ -813,6 +805,7 @@ chromewebstore.google.com##.DKwHHf
 ||fanplayr.com^$third-party
 ||flocktory.com^$third-party
 ||fourier.taobao.com^$third-party
+||fpjs.io^$third-party
 ||freegeoip.app^$third-party
 ||freshmarketer.com^$third-party
 ||gameanalytics.com^$third-party
@@ -890,6 +883,7 @@ chromewebstore.google.com##.DKwHHf
 ||log.byteoversea.com^$third-party
 ||log16-platform-ycru.tiktokv.com^
 ||logger.moviead55.ru^
+||logs.datadoghq.com^$third-party
 ||luckyorange.*^$third-party
 ||luxcdn.com^$third-party
 ||magsrv.com^$third-party
@@ -903,6 +897,7 @@ chromewebstore.google.com##.DKwHHf
 ||mediascope.net^$third-party
 ||mediatoday.ru^$third-party
 ||metrics.data.hicloud.com^$third-party
+||metrics.doppiostreams.com^$third-party
 ||metrics5.dt.dbankcloud.ru^$third-party
 ||mindbox.ru^$third-party
 ||mixpanel.com^$third-party
@@ -1098,6 +1093,14 @@ chromewebstore.google.com##.DKwHHf
 ||yieldmo.com^$third-party
 ||zoominfo.com^$third-party
 
+! badfilter
+||yandex.ru^$3p,badfilter,domain=~dzen.ru
+||doppiocdn.com^$badfilter
+||doppiocdn.net^$badfilter
+||stripchat.com^$badfilter
+||stripchat.global^$badfilter
+||strpst.com^$badfilter
+
 ! Blocks frequently created phishing sites, in Russian
 ||*rus-loto*2024.
 ||*rus-loto*2025.
@@ -1149,6 +1152,7 @@ chromewebstore.google.com##.DKwHHf
 ! Cosmetic filters
 @@||wowroad.info$domain=wowcircle.net
 addons.opera.com##.light
+adguard-dns.io##.hTBgfme9xpv2CukDCWQI > div > .uFIS7gsB1Ei42jK5TEZo > div > .Hiu40soJ2J0jkoUOdnZm
 adguard.com##.reviews,.video--welcome,.annoyance
 akbars.ru##.black-color.bg-white.important-announcement__container
 app.leonardo.ai##.css-2j71je
@@ -1163,6 +1167,7 @@ giga.chat##.hgIWUq.sc-94d4aa7f-0
 gigacode.ru##div[class="_banner_10dxo_1"]
 glasswire.com##.window
 glasswire.com##div[id^="CybotCookiebotDialog"]
+grok.com##.hover\:scale-\[1\.01\].dark.gap-4.flex.text-left.group.rounded-3xl.min-\[384px\]\:min-w-52.min-\[384px\]\:w-max.border-card.cursor-pointer.border.text-white.text-xs.bg-black.w-\[calc\(100\%-16px\)\].items-center.py-4.px-5.sm\:right-2.sm\:bottom-2.bottom-\[140px\].fixed.upsell-small
 hoster.ru##div[id^="disclaimer"]
 kaspersky.ru,kaspersky.com##.Analysis_titleWrapper_oFDqwpKL
 kaspersky.ru,kaspersky.com##.CookieBanner_transparent__A7PB1,.CookiesAccept_container_yATSJZap
@@ -1193,9 +1198,9 @@ tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##.discord,div.title:nth-of-type(3),div.title:nth-of-type(2)
 wowcircle.net##.flex-sbc.footer,.flex-cc.head-navigation,.right-column>nav
+xhamster.com,xhamstervideo.com,xhaccess.com##.promoMessageBanner-2fb52
 xhamster.com,xhamstervideo.com,xhaccess.com##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
-xhamster.com,xhamstervideo.com,xhaccess.com##.promoMessageBanner-2fb52
 
 ! General blocking filters
 *$ping
