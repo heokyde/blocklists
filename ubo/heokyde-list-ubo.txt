@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.08.24
+! Version: 2025.09.15
 ! Expires: 1 day
 
 ! Shows a warning before visiting sites using an IDN
@@ -11,33 +11,14 @@
 
 ! Cyrillic Unreliable TLDs
 ||рф^$document,domain=~мвд.рф|~мойучасток.рф|~мфц.рф|~правительство.рф|~президент.рф
-||рус^$document
 ||мир.рус^
 ||мск.рус^
 ||спб.рус^
 ||я.рус^
 
 ! Unreliable Russian Latin generic TLDs
-||moscow^$document
-||tatar^$document
-||adygeya.ru^$document
-||bashkiria.ru^$document
-||bir.ru^$document
-||cbg.ru^$document
-||dagestan.ru^$document
-||grozny.ru^$document
-||kalmykia.ru^$document
-||kustanai.ru^$document
-||marine.ru^$document
-||mordovia.ru^$document
-||mytis.ru^$document
-||nalchik.ru^$document
-||nov.ru^$document
-||pp.ru^$document
-||pyatigorsk.ru^$document
-||vladikavkaz.ru^$document
-||vladimir.ru^$document
 ||abkhazia.su^$document
+||adygeya.ru^$document
 ||adygeya.su^$document
 ||aktyubinsk.su^$document
 ||arkhangelsk.su^$document
@@ -45,16 +26,22 @@
 ||ashgabad.su^$document
 ||azerbaijan.su^$document
 ||balashov.su^$document
+||bashkiria.ru^$document
 ||bashkiria.su^$document
+||bir.ru^$document
 ||bryansk.su^$document
 ||bukhara.su^$document
+||cbg.ru^$document
 ||chimkent.su^$document
+||dagestan.ru^$document
 ||dagestan.su^$document
 ||exnet.su^$document
 ||georgia.su^$document
+||grozny.ru^$document
 ||grozny.su^$document
 ||ivanovo.su^$document
 ||jambyl.su^$document
+||kalmykia.ru^$document
 ||kalmykia.su^$document
 ||kaluga.su^$document
 ||karacol.su^$document
@@ -63,32 +50,44 @@
 ||khakassia.su^$document
 ||krasnodar.su^$document
 ||kurgan.su^$document
+||kustanai.ru^$document
 ||kustanai.su^$document
 ||lenug.su^$document
 ||mangyshlak.su^$document
+||marine.ru^$document
+||mordovia.ru^$document
 ||mordovia.su^$document
+||moscow^$document
 ||msk.su^$document
 ||murmansk.su^$document
+||mytis.ru^$document
+||nalchik.ru^$document
 ||nalchik.su^$document
 ||navoi.su^$document
+||nov.ru^$document
 ||nov.su^$document
 ||obninsk.su^$document
 ||penza.su^$document
 ||pokrovsk.su^$document
+||pp.ru^$document
+||pyatigorsk.ru^$document
 ||spb.su^$document
 ||tashkent.su^$document
+||tatar^$document
 ||termez.su^$document
 ||togliatti.su^$document
 ||troitsk.su^$document
 ||tselinograd.su^$document
 ||tula.su^$document
 ||tuva.su^$document
+||vladikavkaz.ru^$document
 ||vladikavkaz.su^$document
+||vladimir.ru^$document
 ||vladimir.su^$document
 ||vologda.su^$document
 
 ! Malicious TLDs
-||market^$document,domain=~digiseller.market|~plati.market
+||market^$document,domain=~digiseller.market|~plati.market|~gpay.market
 ||buzz^$document
 ||cf^$document
 ||ga^$document
@@ -99,10 +98,12 @@
 ||win^$document
 ||zip^$document
 
+! Purpose. Match Yandex URLs with "Metrika/Metrica" in subdomain or path
+/^https?:\/\/(?:(?:[^\/:?#@]*metri(?:ka|ca)[^\/:?#@]*\.)+yandex\.(?:ru|com|net)|(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metri(?:ka|ca))(?:[\/:?#]|$)/
+
 ! Yandex general
 ||yandex.ru^$third-party,domain=pikabu.ru|gazeta.ru|ria.ru|rbc.ru|inosmi.ru|vedomosti.ru|dp.ru|tinkoff.ru
 ||yastatic.net^$third-party,domain=dzen.ru|mail.ru|pikabu.ru|smi2.ru|ria.ru|iz.ru|rbc.ru|mk.ru|prokazan.ru|dp.ru
-/^https?:\/\/(?:(?:[^\/:?#@]*metri(?:ka|ca)[^\/:?#@]*\.)+yandex\.(?:ru|com|net)|(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metri(?:ka|ca))(?:[\/:?#]|$)/
 ||yandex.*/ads
 ||yandex.*/adv$third-party
 ||yandex.*/counter
@@ -1198,6 +1199,7 @@ tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##.discord,div.title:nth-of-type(3),div.title:nth-of-type(2)
 wowcircle.net##.flex-sbc.footer,.flex-cc.head-navigation,.right-column>nav
+www.oo-software.com###globalnav
 xhamster.com,xhamstervideo.com,xhaccess.com##.promoMessageBanner-2fb52
 xhamster.com,xhamstervideo.com,xhaccess.com##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
