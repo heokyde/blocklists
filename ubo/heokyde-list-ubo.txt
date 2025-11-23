@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.09.15
+! Version: 2025.11.23
 ! Expires: 1 day
 
 ! Shows a warning before visiting sites using an IDN
@@ -1151,7 +1151,9 @@ chromewebstore.google.com##.DKwHHf
 ||telegra.ph/vnimanie-03-22-338^$document
 
 ! Cosmetic filters
+@@||realtime.chatgpt.com^$xhr
 @@||wowroad.info$domain=wowcircle.net
+@@||ws.chatgpt.com^$websocket
 addons.opera.com##.light
 adguard-dns.io##.hTBgfme9xpv2CukDCWQI > div > .uFIS7gsB1Ei42jK5TEZo > div > .Hiu40soJ2J0jkoUOdnZm
 adguard.com##.reviews,.video--welcome,.annoyance
