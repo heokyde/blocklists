@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.11.23
+! Version: 2025.12.06
 ! Expires: 1 day
 
 ! Shows a warning before visiting sites using an IDN
@@ -95,8 +95,6 @@
 ||ml^$document
 ||tk^$document
 ||cfd^$document
-||win^$document
-||zip^$document
 
 ! Purpose. Match Yandex URLs with "Metrika/Metrica" in subdomain or path
 /^https?:\/\/(?:(?:[^\/:?#@]*metri(?:ka|ca)[^\/:?#@]*\.)+yandex\.(?:ru|com|net)|(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metri(?:ka|ca))(?:[\/:?#]|$)/
@@ -556,7 +554,6 @@ kuper.ru##.styles_b2bBanner__qoHGd
 ||googletagmanager.com^
 ||googletagservices.com^
 ||growth-pa.googleapis.com^
-||gvt2.com^$third-party
 ||id.google.*^$third-party
 ||imasdk.googleapis.com^
 ||mail-ads.google.com^
@@ -642,8 +639,7 @@ chromewebstore.google.com##.DKwHHf
 ||srtb.msn.com^
 ||uhf.microsoft.com^
 ||vortex.data.microsoft.com^
-@@||a-0001.a-msedge.net^
-@@||copilot.microsoft.com^
+@@||bing.com^$xhr,script,domain=copilot.com
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
 ||1rx.io^$third-party
