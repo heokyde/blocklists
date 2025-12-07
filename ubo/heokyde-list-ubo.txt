@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.12.06
+! Version: 2025.12.07
 ! Expires: 1 day
 
 ! Shows a warning before visiting sites using an IDN
@@ -639,7 +639,7 @@ chromewebstore.google.com##.DKwHHf
 ||srtb.msn.com^
 ||uhf.microsoft.com^
 ||vortex.data.microsoft.com^
-@@||bing.com^$xhr,script,domain=copilot.com
+@@||bing.com^$xhr,script,domain=copilot.com,copilot.microsoft.com
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
 ||1rx.io^$third-party
@@ -1147,6 +1147,7 @@ chromewebstore.google.com##.DKwHHf
 ||telegra.ph/vnimanie-03-22-338^$document
 
 ! Cosmetic filters
+@@||google.com/maps/embed$subdocument
 @@||realtime.chatgpt.com^$xhr
 @@||wowroad.info$domain=wowcircle.net
 @@||ws.chatgpt.com^$websocket
@@ -1187,6 +1188,8 @@ pastebin.com##div[class^="popup-container"],.header__logo
 poe.com##.Banner_info__OWUd0.Banner_root__p5sUz
 pornhub.com###age-verification-container,age-verification-wrapper,welcome
 pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
+pythonworld.ru##.clearfix.site-brand, .clearfix.site-footer, .center.widget_soc.widget
+pythonworld.ru##div#letpy, div#ytb
 reports.adguard.com###header
 search.brave.com##.type.theme--default,.svelte-156mu3h.desktop-small-regular
 sirus.su##.notice-content
@@ -1201,6 +1204,7 @@ www.oo-software.com###globalnav
 xhamster.com,xhamstervideo.com,xhaccess.com##.promoMessageBanner-2fb52
 xhamster.com,xhamstervideo.com,xhaccess.com##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
+||letpy.com^$domain=pythonworld.ru
 
 ! General blocking filters
 *$ping
