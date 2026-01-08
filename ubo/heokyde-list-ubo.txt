@@ -3,98 +3,8 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2025.12.07
+! Version: 2026.01.08
 ! Expires: 1 day
-
-! Shows a warning before visiting sites using an IDN
-||xn--$document,domain=~xn--p1ai
-
-! Cyrillic Unreliable TLDs
-||рф^$document,domain=~мвд.рф|~мойучасток.рф|~мфц.рф|~правительство.рф|~президент.рф
-||мир.рус^
-||мск.рус^
-||спб.рус^
-||я.рус^
-
-! Unreliable Russian Latin generic TLDs
-||abkhazia.su^$document
-||adygeya.ru^$document
-||adygeya.su^$document
-||aktyubinsk.su^$document
-||arkhangelsk.su^$document
-||armenia.su^$document
-||ashgabad.su^$document
-||azerbaijan.su^$document
-||balashov.su^$document
-||bashkiria.ru^$document
-||bashkiria.su^$document
-||bir.ru^$document
-||bryansk.su^$document
-||bukhara.su^$document
-||cbg.ru^$document
-||chimkent.su^$document
-||dagestan.ru^$document
-||dagestan.su^$document
-||exnet.su^$document
-||georgia.su^$document
-||grozny.ru^$document
-||grozny.su^$document
-||ivanovo.su^$document
-||jambyl.su^$document
-||kalmykia.ru^$document
-||kalmykia.su^$document
-||kaluga.su^$document
-||karacol.su^$document
-||karaganda.su^$document
-||karelia.su^$document
-||khakassia.su^$document
-||krasnodar.su^$document
-||kurgan.su^$document
-||kustanai.ru^$document
-||kustanai.su^$document
-||lenug.su^$document
-||mangyshlak.su^$document
-||marine.ru^$document
-||mordovia.ru^$document
-||mordovia.su^$document
-||moscow^$document
-||msk.su^$document
-||murmansk.su^$document
-||mytis.ru^$document
-||nalchik.ru^$document
-||nalchik.su^$document
-||navoi.su^$document
-||nov.ru^$document
-||nov.su^$document
-||obninsk.su^$document
-||penza.su^$document
-||pokrovsk.su^$document
-||pp.ru^$document
-||pyatigorsk.ru^$document
-||spb.su^$document
-||tashkent.su^$document
-||tatar^$document
-||termez.su^$document
-||togliatti.su^$document
-||troitsk.su^$document
-||tselinograd.su^$document
-||tula.su^$document
-||tuva.su^$document
-||vladikavkaz.ru^$document
-||vladikavkaz.su^$document
-||vladimir.ru^$document
-||vladimir.su^$document
-||vologda.su^$document
-
-! Malicious TLDs
-||market^$document,domain=~digiseller.market|~plati.market|~gpay.market
-||buzz^$document
-||cf^$document
-||ga^$document
-||gq^$document
-||ml^$document
-||tk^$document
-||cfd^$document
 
 ! Purpose. Match Yandex URLs with "Metrika/Metrica" in subdomain or path
 /^https?:\/\/(?:(?:[^\/:?#@]*metri(?:ka|ca)[^\/:?#@]*\.)+yandex\.(?:ru|com|net)|(?:[^\/:?#@]+\.)*yandex\.(?:ru|com|net)\/[^?#]*metri(?:ka|ca))(?:[\/:?#]|$)/
@@ -124,13 +34,12 @@
 @@||browser.translate.yandex.net^
 @@||captcha-api.yandex.ru^
 @@||captcha.yandex.net^
-@@||enterprise.api-maps.yandex.ru^$domain=avito.ru
+@@||enterprise.api-maps.yandex.ru^
 @@||passport.yandex.ru^$domain=kinopoisk.ru
 @@||redirect.appmetrica.yandex.com^
 @@||strm.yandex.ru^$xhr,media,domain=kinopoisk.ru
 @@||uniproxy.alice.ya.ru/uni.ws$websocket
 @@||widevine-proxy.ott.yandex.ru^
-@@||ya.ru/alisa_davay_pridumaem
 @@||yandex.*/portal/searchframe$subdocument
 @@||yandex.ru/captchapgrd$script
 @@||yandex.ru/search$subdocument
@@ -353,41 +262,29 @@
 ||surveys.yandex.ru^$document,subdocument
 ||ya.ru/project/vygoda/$document,subdocument
 
+#@#[class^="alice-fab"]
+mail.yandex.ru#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
+market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
+music.yandex.ru##.notify_shown
 ya.ru##[class^="dist-stripe dist-stripe_dark"]
 ya.ru##[class^="market-feed"]
 ya.ru,yandex.ru,yandex.com,yandex.net##.DistrNav,.DistrNav-Link
 ya.ru,yandex.ru,yandex.com,yandex.net##.ImagesViewer-SidebarAdv
 ya.ru,yandex.ru,yandex.com,yandex.net##.SplashscreenDefault
-ya.ru,yandex.ru,yandex.com,yandex.net##.alert
-ya.ru,yandex.ru,yandex.com,yandex.net##.dist-overlay__popup
-ya.ru,yandex.ru,yandex.com,yandex.net##.dist-popup
 ya.ru,yandex.ru,yandex.com,yandex.net##.i-mini-bem.banner
 ya.ru,yandex.ru,yandex.com,yandex.net##.link-bro
 ya.ru,yandex.ru,yandex.com,yandex.net##.market-banner
 ya.ru,yandex.ru,yandex.com,yandex.net##.message-promo
 ya.ru,yandex.ru,yandex.com,yandex.net##.search3__doodle
-ya.ru,yandex.ru,yandex.com,yandex.net##.simple-popup
 ya.ru,yandex.ru,yandex.com,yandex.net##[class^="PopupDesktop-Content"]
 ya.ru,yandex.ru,yandex.com,yandex.net##[class^="banner-media banner__content"]
 ya.ru,yandex.ru,yandex.com,yandex.net##[class^="simple-popup__overlay"]
 ya.ru,yandex.ru,yandex.com,yandex.net##[class^="verified-tooltip__popup"]
 ya.ru,yandex.ru,yandex.com,yandex.net##[id^="rsya-guarantee"]
 ya.ru,yandex.ru,yandex.com,yandex.net#@#.popup
-mail.yandex.ru#@#.Modal-Content,.Modal-Overlay,.Modal-Table,.Modal-Wrapper
-market.yandex.ru#@#div[data-zone-data*="banner"]:not([data-zone-name="deals-banner"])
-music.yandex.ru##.notify_shown
-#@#[class^="alice-fab"]
 
 ! vk.com | mail.ru
 ||vk.com^$third-party,domain=tinkoff.ru|pikabu.ru|afisha.ru|livelib.ru|inosmi.ru|dp.ru|2ch.hk|2ch.life|rutube.ru|kaspersky.ru|akbarsmed.ru|akbars.ru
-||mail.ru^$domain=livejournal.com
-||bar.love.mail.ru^$domain=mail.ru
-||vkplay.ru^$domain=mail.ru
-||dzen.ru/*counter
-||dzen.ru/clck$ping
-||dzen.ru/pingx
-||mail.ru/*counter
-||vk.com/*ads
 ||ad.mail.ru^
 ||ads.vk.com^
 ||adtech.vk.team^
@@ -399,13 +296,17 @@ music.yandex.ru##.notify_shown
 ||clck.dzen.ru^
 ||connect.ok.ru^$third-party
 ||cspreport.mail.ru^
+||dzen.ru/*counter
+||dzen.ru/clck$ping
+||dzen.ru/pingx
 ||likemore-go.imgsmail.ru^
 ||list.ru^
 ||log.dzen.ru^
+||mail.ru/*counter
+||mail.ru^$domain=livejournal.com
 ||mradx.net^
 ||ms.dzen.ru^
 ||qmaacxajsovk.com^
-||queuev4.vk.com^
 ||r.mail.ru^
 ||r3.mail.ru^
 ||radar.imgsmail.ru^
@@ -415,23 +316,26 @@ music.yandex.ru##.notify_shown
 ||sentry.rustore.ru^
 ||stacks.vk-portal.net^
 ||stats.rustore.ru^
-||stats.vk-portal.net^
 ||target.my.com^$third-party
 ||top-fwz1.mail.ru^
 ||top.mail.ru^
 ||tracking.rustore.ru^
 ||trk.mail.ru^$image
 ||vk-analytics.ru^
+||vk.com/*ads
+||vkplay.ru^$domain=mail.ru
 ||xray.mail.ru^
+@@||api.vk.com^$domain=vkvideo.ru
+@@||api.vkvideo.ru^$domain=vkvideo.ru
+@@||queuev4.vk.com^$domain=vkvideo.ru
+!||queuev4.vk.com^
+!||stats.vk-portal.net^
 
 dzen.ru##div[class="o5614941e"],[class="changeFilter"],[class="accaccbfb u5828c929"]
 dzen.ru##div[class*="dzen-desktop__bannerMain-1i"]
 dzen.ru##div[class*="banner"]
-m.vk.com##.Pad_theme_gray.Pad
 mail.ru##div[class^="geomap-tooltip qaodnia__bgus4g"]
 mail.ru##div[class^="tgb-wrapper qaodnia__1pidajk"]
-vk.com##.OpenInAppPromoButton-module__fixedLayout--RhOxJ.vkuiInternalFixedLayout--vertical-bottom.vkuiFixedLayout--vertical-bottom.vkuiFixedLayout
-vk.com##[class^="box_layout"]
 
 ! Gazprom Media
 ||rutube.ru/play/embed*$third-party,subdocument,redirect=click2load.html
@@ -538,7 +442,6 @@ kuper.ru##.styles_b2bBanner__qoHGd
 ||clienttracing-pa.googleapis.com^
 ||crashlytics.com^
 ||crashlyticsreports-pa.googleapis.com^
-||csp.withgoogle.com^
 ||doubleclick.com^
 ||doubleclick.net^
 ||firebaseinstallations.googleapis.com^
@@ -555,21 +458,18 @@ kuper.ru##.styles_b2bBanner__qoHGd
 ||googletagservices.com^
 ||growth-pa.googleapis.com^
 ||id.google.*^$third-party
-||imasdk.googleapis.com^
 ||mail-ads.google.com^
 ||ogads-pa.clients6.google.com^
 ||ogads-pa.googleapis.com^
-||optimizationguide-pa.googleapis.com^
-||play.google.com^$third-party
 ||semanticlocation-pa.googleapis.com^
 ||tagmanager.google.com^
-@@||suggestqueries.google.com^
-@@||s.youtube.com^
+@@||imasdk.googleapis.com^$frame,script
+@@||google.com/maps/embed$subdocument
+!||s.youtube.com^
+!||suggestqueries.google.com^
+notebooklm.google.com##[class*="featured-project"]
 youtube.com#@##logo:style(pointer-events: none !important; cursor: default !important)
 youtube.com#@#ytd-shelf-renderer[thumbnail-style]
-transparencyreport.google.com##.hercules
-transparencyreport.google.com##social-action
-chromewebstore.google.com##.DKwHHf
 
 ! Meta
 ||facebook.com^$domain=ya.ru|yandex.ru|yandex.com|yandex.net
@@ -640,6 +540,9 @@ chromewebstore.google.com##.DKwHHf
 ||uhf.microsoft.com^
 ||vortex.data.microsoft.com^
 @@||bing.com^$xhr,script,domain=copilot.com,copilot.microsoft.com
+@@||login.microsoftonline.com
+@@||microsoft.com/OneCollector/$script,xhr,ping,domain=cloud.microsoft.com|live.com|office.com
+@@||onecdn.static.microsoft^$script,xhr,ping,domain=cloud.microsoft.com|live.com|office.com
 
 ! Ads | Tracking | Telemetry | Annoyances #ATTA
 ||1rx.io^$third-party
@@ -994,6 +897,7 @@ chromewebstore.google.com##.DKwHHf
 ||sentry.myshows.me^$third-party
 ||sentry.odysee.tv^
 ||sentry.srv.habr.com^
+||sentry.stepik.net^$script,xhr
 ||sentry.tinkoff.ru^
 ||sentry.tuyaeu.com^
 ||sitereview.zscaler.com^
@@ -1011,6 +915,7 @@ chromewebstore.google.com##.DKwHHf
 ||static.criteo.net^
 ||static.terratraf.io^
 ||stats.avito.ru^$third-party
+||stats.kde.org^$script,image
 ||stats.wp.com^$third-party
 ||streetuptowind.com^$third-party
 ||stretchsquirrel.com^$third-party
@@ -1147,10 +1052,8 @@ chromewebstore.google.com##.DKwHHf
 ||telegra.ph/vnimanie-03-22-338^$document
 
 ! Cosmetic filters
-@@||google.com/maps/embed$subdocument
-@@||realtime.chatgpt.com^$xhr
 @@||wowroad.info$domain=wowcircle.net
-@@||ws.chatgpt.com^$websocket
+@@||realtime.chatgpt.com^$xhr
 addons.opera.com##.light
 adguard-dns.io##.hTBgfme9xpv2CukDCWQI > div > .uFIS7gsB1Ei42jK5TEZo > div > .Hiu40soJ2J0jkoUOdnZm
 adguard.com##.reviews,.video--welcome,.annoyance
@@ -1196,6 +1099,7 @@ sirus.su##.notice-content
 skiff.com##.gjdFDt.sc-ezbkAF,.iSjWsA.sc-ezbkAF
 startpage.com##.css-16xsqfc,.css-1qcfwib,.css-hi3728
 startpage.com##.hide-promo,.below-the-fold,.eu3pp1u0
+stepik.org##.woof-message__content
 tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##.discord,div.title:nth-of-type(3),div.title:nth-of-type(2)
@@ -1207,7 +1111,6 @@ xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
 ||letpy.com^$domain=pythonworld.ru
 
 ! General blocking filters
-*$ping
 /*lms-analytics
 /*type=analytics&
 /?log=experiment&
@@ -1577,3 +1480,92 @@ adguard*sentry$xhr
 ##sendsay-subscription-dialog
 !##.Popup_root_sl2fL
 !##.popup
+
+! Shows a warning before visiting sites using an IDN
+||xn--^$document
+
+! trusted-idn-ru
+@@||втб.рф^$document
+@@||мвд.рф^$document
+@@||мойучасток.рф^$document
+@@||президент.рф^$document
+
+! Unreliable Russian Latin generic TLDs
+||abkhazia.su^$document
+||adygeya.ru^$document
+||adygeya.su^$document
+||aktyubinsk.su^$document
+||arkhangelsk.su^$document
+||armenia.su^$document
+||ashgabad.su^$document
+||azerbaijan.su^$document
+||balashov.su^$document
+||bashkiria.ru^$document
+||bashkiria.su^$document
+||bir.ru^$document
+||bryansk.su^$document
+||bukhara.su^$document
+||cbg.ru^$document
+||chimkent.su^$document
+||dagestan.ru^$document
+||dagestan.su^$document
+||exnet.su^$document
+||georgia.su^$document
+||grozny.ru^$document
+||grozny.su^$document
+||ivanovo.su^$document
+||jambyl.su^$document
+||kalmykia.ru^$document
+||kalmykia.su^$document
+||kaluga.su^$document
+||karacol.su^$document
+||karaganda.su^$document
+||karelia.su^$document
+||khakassia.su^$document
+||krasnodar.su^$document
+||kurgan.su^$document
+||kustanai.ru^$document
+||kustanai.su^$document
+||lenug.su^$document
+||mangyshlak.su^$document
+||marine.ru^$document
+||mordovia.ru^$document
+||mordovia.su^$document
+||moscow^$document
+||msk.su^$document
+||murmansk.su^$document
+||mytis.ru^$document
+||nalchik.ru^$document
+||nalchik.su^$document
+||navoi.su^$document
+||nov.ru^$document
+||nov.su^$document
+||obninsk.su^$document
+||penza.su^$document
+||pokrovsk.su^$document
+||pp.ru^$document
+||pyatigorsk.ru^$document
+||spb.su^$document
+||tashkent.su^$document
+||tatar^$document
+||termez.su^$document
+||togliatti.su^$document
+||troitsk.su^$document
+||tselinograd.su^$document
+||tula.su^$document
+||tuva.su^$document
+||vladikavkaz.ru^$document
+||vladikavkaz.su^$document
+||vladimir.ru^$document
+||vladimir.su^$document
+||vologda.su^$document
+
+! Malicious TLDs
+||market^$document,domain=~digiseller.market|~plati.market|~gpay.market
+||buzz^$document
+||cf^$document
+||ga^$document
+||gq^$document
+||ml^$document
+||tk^$document
+||cfd^$document
