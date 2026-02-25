@@ -3,7 +3,7 @@
 ! The list contains CNAME trackers. For full functionality, it is advisable to use the firefox browser, with the "Uncloak canonical names" option enabled.
 ! Homepage: https://github.com/heokyde/blocklists
 ! License: MIT
-! Version: 2026.01.08
+! Version: 2026.02.25
 ! Expires: 1 day
 
 ! Purpose. Match Yandex URLs with "Metrika/Metrica" in subdomain or path
@@ -1052,21 +1052,11 @@ youtube.com#@#ytd-shelf-renderer[thumbnail-style]
 ||telegra.ph/vnimanie-03-22-338^$document
 
 ! Cosmetic filters
-@@||wowroad.info$domain=wowcircle.net
-@@||realtime.chatgpt.com^$xhr
-addons.opera.com##.light
 adguard-dns.io##.hTBgfme9xpv2CukDCWQI > div > .uFIS7gsB1Ei42jK5TEZo > div > .Hiu40soJ2J0jkoUOdnZm
 adguard.com##.reviews,.video--welcome,.annoyance
 akbars.ru##.black-color.bg-white.important-announcement__container
-app.leonardo.ai##.css-2j71je
-app.writesonic.com##.eapps-countdown-timer-has-background.eapps-countdown-timer-area-clickable.eapps-countdown-timer-hide-seconds.eapps-countdown-timer-hide-minutes
-browserling.com###tool-fffff2
-browserling.com##div.item
-duckduckgo.com##.minimal-homepage_taglineText__owJPH
 funpay.com##.cd-container
 fusionbrain.ai##div[class="styles_wrap__erzrS styles_visible__5L2Yv"]
-getliner.com##.css-kox94s,.css-1ftx246
-giga.chat##.hgIWUq.sc-94d4aa7f-0
 gigacode.ru##div[class="_banner_10dxo_1"]
 glasswire.com##.window
 glasswire.com##div[id^="CybotCookiebotDialog"]
@@ -1094,21 +1084,23 @@ pornhub.com##.abAlertInner,.realsex,socialIconsWrapper
 pythonworld.ru##.clearfix.site-brand, .clearfix.site-footer, .center.widget_soc.widget
 pythonworld.ru##div#letpy, div#ytb
 reports.adguard.com###header
+rutube.ru##.app-download-topbar-module__topbar
 search.brave.com##.type.theme--default,.svelte-156mu3h.desktop-small-regular
 sirus.su##.notice-content
-skiff.com##.gjdFDt.sc-ezbkAF,.iSjWsA.sc-ezbkAF
-startpage.com##.css-16xsqfc,.css-1qcfwib,.css-hi3728
-startpage.com##.hide-promo,.below-the-fold,.eu3pp1u0
 stepik.org##.woof-message__content
 tatarstan.ru##.banner-swiper__container--image.banner-swiper__container
 wink.ru##.chaubvc.r1bo5h80
 wowcircle.net##.discord,div.title:nth-of-type(3),div.title:nth-of-type(2)
 wowcircle.net##.flex-sbc.footer,.flex-cc.head-navigation,.right-column>nav
+www.moex.com##._layoutMobileBanner_11klj_977
+www.onlyoffice.com##.ru.oo-advent-announce
 www.oo-software.com###globalnav
 xhamster.com,xhamstervideo.com,xhaccess.com##.promoMessageBanner-2fb52
 xhamster.com,xhamstervideo.com,xhaccess.com##.wrapper-886ab.desktop-886ab,.cookiesAnnounce-30a9a
 xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
 ||letpy.com^$domain=pythonworld.ru
+@@||wowroad.info$domain=wowcircle.net
+@@||realtime.chatgpt.com^$xhr
 
 ! General blocking filters
 /*lms-analytics
@@ -1174,6 +1166,7 @@ xhamster.com,xhamstervideo.com,xhaccess.com#@#.popup
 /privacy_popup?
 /privacy_popup_
 /push-notification
+/rep/rep.js$script
 /report-
 /report.
 /report?
