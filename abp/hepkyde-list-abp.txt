@@ -303,38 +303,6 @@
 ||vk-analytics.ru^
 ||xray.mail.ru^
  
-! SBER
-||api.eapteka.ru^
-||counter.kuper.ru^
-||counter.sberbank.ru^
-||counter.sbermarket.ru^
-||s16376.cdn.ngenix.net^
-||sbermarket.tech^
-||sbermarketing.ru^
-||sentry-api.sberdevices.ru^
-||sentry-ingest.kuper.ru^
-||stories-res.online.sberbank.ru^
-||svi.online.sberbank.ru^
-||visor.sberbank.ru^
- 
-! Rambler Media Group
-||atlas.rambler.ru^
-||counter.rambler.ru^
-||csp.rambler-co.ru^
-||dsp-rambler.ru^
-||err.rambler.ru^
-||kraken.rambler.ru^
-||loyalty.rambler-co.ru^
-||rcmjs.rambler.ru^
-||rcounter.rambler.ru^
-||scounter.rambler.ru^
-||sentry-saas.rambler-co.ru^
-||ssp.rambler.ru^
-||sync.rambler.ru^
-||top100.ru^
-||trafffgen.rambler.ru^
-||xc3.services.livejournal.com^
- 
 ! Marketplaces ozon.ru | Wildberries | Avito
 ||banners-website.wildberries.ru^
 ||cdn1.ozonusercontent.com^
@@ -352,19 +320,36 @@
 ! Ru Mass Media
 ||a.pikabu.ru^
 ||a.ria.ru^
+||a.rutube.ru^
 ||ad.smi-press.ru^
 ||analytics.e1.ru^
 ||analytics.fontanka.ru^
 ||analytics.ngs.ru^
-||goya.rutube.ru^
+||counter.rambler.ru^
+||csp.rambler-co.ru^
+||dsp-rambler.ru^
+||kraken.rambler.ru^
 ||log.rutube.ru^
+||loyalty.rambler-co.ru^
+||pic.rutube.ru^
 ||polls.smi2.ru^
 ||r.rbc.ru^
+||rcmjs.rambler.ru^
+||rcounter.rambler.ru^
+||scounter.rambler.ru^
+||sentry-saas.rambler-co.ru^
 ||ssp.afp.ai^
+||ssp.rambler.ru^
+||ssp.rutube.ru^
 ||stat-analytics.mediavitrina.ru^
 ||stat.media^
 ||static.smi2.net^
+||sync.rambler.ru^
 ||target.smi2.net^
+||top100.ru^
+||trafffgen.rambler.ru^
+||xc3.services.livejournal.com^
+||yast.rutube.ru^
  
 ! Google
 ||ads.youtube.com^
@@ -613,7 +598,10 @@
 ||convertize.io^
 ||cookieyes.com^
 ||counter.any.run^
+||counter.kuper.ru^
 ||counter.log24.ru^
+||counter.sberbank.ru^
+||counter.sbermarket.ru^
 ||counter.ukr.net^
 ||crash.steampowered.com^
 ||crashlogs.whatsapp.net^
@@ -679,7 +667,6 @@
 ||gnezdo.ru^
 ||go-mpulse.net^
 ||gosmonitor.ru^
-||goya.rutube.ru^
 ||graph.facebook-hardware.com^
 ||growthbook.io^
 ||grs.dbankcloud.asia^
@@ -743,7 +730,6 @@
 ||lms.roblox.com^
 ||log.aliyuncs.com^
 ||log.byteoversea.com^
-||log.rutube.ru^
 ||log16-platform-ycru.tiktokv.com^
 ||logs.unchecky.com^
 ||luckyorange.com^
@@ -860,12 +846,15 @@
 ||s3.wi-fi.ru^
 ||sape.ru^
 ||sau-server-us.allawnos.com^
+||sbermarketing.ru^
 ||scorecardresearch.com^
 ||scripts.witstroom.com^
 ||segment.com^
 ||sendsay.ru^
+||sentry-api.sberdevices.ru^
 ||sentry-cdn.com^
 ||sentry-cdn.top^
+||sentry-ingest.kuper.ru^
 ||sentry.any.run^
 ||sentry.io^
 ||sentry.litres.io^
@@ -893,9 +882,11 @@
 ||static.terratraf.io^
 ||stats.avito.ru^
 ||stats.wp.com^
+||stories-res.online.sberbank.ru^
 ||streetuptowind.com^
 ||stretchsquirrel.com^
 ||stt.nvidia.com^
+||svi.online.sberbank.ru^
 ||svk-native.ru^
 ||syndication.twitter.com^
 ||t.imgur.com^
@@ -938,6 +929,7 @@
 ||vdx.tv^
 ||vercel-insights.com^
 ||videonow.ru^
+||visor.sberbank.ru^
 ||visualwebsiteoptimizer.com^
 ||vlitag.com^
 ||voicia.ru^
@@ -1018,6 +1010,7 @@
 @@||clck.yandex.ru^
 @@||diehard.yandex.net^
 @@||footprints-pa.googleapis.com^
+@@||goya.rutube.ru^
 @@||pool.ntp.org^
 @@||queuev4.vk.com^
 @@||redirect.appmetrica.yandex.com^
